@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Genesis</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://tonysteven.github.io/"/>
+  <updated>2017-12-14T07:10:03.000Z</updated>
+  <id>https://tonysteven.github.io/</id>
+  
+  <author>
+    <name>Steven Liu</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTTP和HTTPS</title>
+    <link href="https://tonysteven.github.io/2017/12/14/hello-world/"/>
+    <id>https://tonysteven.github.io/2017/12/14/hello-world/</id>
+    <published>2017-12-14T07:10:03.000Z</published>
+    <updated>2017-12-14T07:10:03.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTP协议（HyperText Transfer Protocol，超文本传输协议）：是一种发布和接收
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>问题总结</title>
+    <link href="https://tonysteven.github.io/2017/11/27/resumeexec/"/>
+    <id>https://tonysteven.github.io/2017/11/27/resumeexec/</id>
+    <published>2017-11-27T11:59:15.000Z</published>
+    <updated>2018-06-25T09:03:42.218Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;删除列表重复元素&quot;&gt;&lt;a href=&quot;#删除列表重复元素&quot; class=&quot;headerlink&quot; title=&quot;删除列表重复元素&quot;&gt;&lt;/a&gt;删除列表重复元素&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+      <category term="programming" scheme="https://tonysteven.github.io/tags/programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>data_structure</title>
+    <link href="https://tonysteven.github.io/2016/12/19/data-structure/"/>
+    <id>https://tonysteven.github.io/2016/12/19/data-structure/</id>
+    <published>2016-12-19T07:35:05.000Z</published>
+    <updated>2018-06-25T09:54:27.183Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;[转载]&lt;br&gt;作者：LeeLom&lt;br&gt;链接：&lt;a href=&quot;http://www.jianshu.com/p/7d037c332a9d&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="计算机,数据结构" scheme="https://tonysteven.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="programming" scheme="https://tonysteven.github.io/tags/programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mysql_advanced</title>
+    <link href="https://tonysteven.github.io/2016/12/11/mysql-advanced/"/>
+    <id>https://tonysteven.github.io/2016/12/11/mysql-advanced/</id>
+    <published>2016-12-11T08:29:00.000Z</published>
+    <updated>2018-06-25T09:03:28.962Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h1 id=&quot;5-MySQL高级&quot;&gt;&lt;a href=&quot;#5-MySQL高级&quot; class=&quot;headerlink&quot; title=&quot;5 MySQL高级&quot;&gt;&lt;/a&gt;5
+        
+      
+    
+    </summary>
+    
+    
+      <category term="programming" scheme="https://tonysteven.github.io/tags/programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mysql-primary</title>
+    <link href="https://tonysteven.github.io/2016/12/10/mysql-primary/"/>
+    <id>https://tonysteven.github.io/2016/12/10/mysql-primary/</id>
+    <published>2016-12-10T08:32:10.000Z</published>
+    <updated>2018-06-25T09:03:34.991Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&quot;服务器端安装&quot;&gt;&lt;a href=&quot;#服务器端安装&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="programming" scheme="https://tonysteven.github.io/tags/programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>section</title>
+    <link href="https://tonysteven.github.io/2016/08/13/section/"/>
+    <id>https://tonysteven.github.io/2016/08/13/section/</id>
+    <published>2016-08-13T07:29:15.000Z</published>
+    <updated>2018-06-25T09:03:48.304Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="programming" scheme="https://tonysteven.github.io/tags/programming/"/>
+    
+  </entry>
+  
+</feed>
