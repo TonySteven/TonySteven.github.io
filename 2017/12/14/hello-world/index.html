@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="HTTP协议（HyperText Transfer Protocol，超文本传输协议）：是一种发布和接收 HTML页面的方法。     HTTPS（Hypertext Transfer Protocol over Secure Socket Layer）简单讲是HTTP的安全版，在HTTP下加入SSL层     SSL（Secure Sockets Layer 安全套接层）主要用于Web的安全">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTTP和HTTPS">
+<meta property="og:url" content="https://tonysteven.github.io/2017/12/14/hello-world/index.html">
+<meta property="og:site_name" content="Genesis">
+<meta property="og:description" content="HTTP协议（HyperText Transfer Protocol，超文本传输协议）：是一种发布和接收 HTML页面的方法。     HTTPS（Hypertext Transfer Protocol over Secure Socket Layer）简单讲是HTTP的安全版，在HTTP下加入SSL层     SSL（Secure Sockets Layer 安全套接层）主要用于Web的安全">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-12-14T07:10:03.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTTP和HTTPS">
+<meta name="twitter:description" content="HTTP协议（HyperText Transfer Protocol，超文本传输协议）：是一种发布和接收 HTML页面的方法。     HTTPS（Hypertext Transfer Protocol over Secure Socket Layer）简单讲是HTTP的安全版，在HTTP下加入SSL层     SSL（Secure Sockets Layer 安全套接层）主要用于Web的安全">
+
+
+
+
+
+
+  <link rel="canonical" href="https://tonysteven.github.io/2017/12/14/hello-world/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>HTTP和HTTPS | Genesis</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Genesis</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://tonysteven.github.io/2017/12/14/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven Liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Genesis">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HTTP和HTTPS
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-12-14 15:10:03" itemprop="dateCreated datePublished" datetime="2017-12-14T15:10:03+08:00">2017-12-14</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<ul>
+<li>HTTP协议（HyperText Transfer Protocol，超文本传输协议）：是一种发布和接收 HTML页面的方法。</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>HTTPS（Hypertext Transfer Protocol over Secure Socket Layer）简单讲是HTTP的安全版，在HTTP下加入SSL层</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>SSL（Secure Sockets Layer 安全套接层）主要用于Web的安全传输协议，在传输层对网络连接进行加密，保障在Internet上数据传输的安全。</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>HTTP的端口号为80，</li>
+<li>HTTPS的端口号为443</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>URL（Uniform / Universal Resource Locator的缩写）：统一资源定位符，是用于完整地描述Internet上网页和其他资源的地址的一种标识方法。</p>
+</blockquote>
+<blockquote>
+<p>基本格式：<code>scheme://host[:port#]/path/…/[?query-string][#anchor]</code></p>
+</blockquote>
+<ul>
+<li>scheme：协议(例如：http, https, ftp)</li>
+<li>host：服务器的IP地址或者域名</li>
+<li>port#：服务器的端口（如果是走协议默认端口，缺省端口80）</li>
+<li>path：访问资源的路径</li>
+<li>query-string：参数，发送给http服务器的数据</li>
+<li>anchor：锚（跳转到网页的指定锚点位置）</li>
+</ul>
+<p>e.g.</p>
+<ul>
+<li><a href="ftp://192.168.0.116:8080/index" target="_blank" rel="noopener">ftp://192.168.0.116:8080/index</a></li>
+<li><a href="https://www.baidu.com" target="_blank" rel="noopener">https://www.baidu.com</a></li>
+</ul>
+<h2 id="客户端HTTP请求"><a href="#客户端HTTP请求" class="headerlink" title="客户端HTTP请求"></a>客户端HTTP请求</h2><p>URL只是标识资源的位置，而HTTP是用来提交和获取资源。客户端发送一个HTTP请求到服务器的请求消息，包括以下格式：</p>
+<ol>
+<li>请求行</li>
+<li>请求头部</li>
+<li>空行</li>
+</ol>
+<h2 id="请求方法"><a href="#请求方法" class="headerlink" title="请求方法"></a>请求方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET https://www.baidu.com/ HTTP/1.1</span><br></pre></td></tr></table></figure>
+<p>根据HTTP标准，HTTP请求可以使用多种请求方法。</p>
+<p>HTTP 0.9：只有基本的文本 GET 功能。</p>
+<p>HTTP 1.0：完善的请求/响应模型，并将协议补充完整，定义了三种请求方法： GET, POST 和 HEAD方法。</p>
+<p>HTTP 1.1：在 1.0 基础上进行更新，新增了五种请求方法：OPTIONS, PUT, DELETE, TRACE 和 CONNECT 方法。</p>
+<p>HTTP 2.0（未普及）：请求/响应首部的定义基本没有改变，只是所有首部键必须全部小写，而且请求行要独立为 :method、:scheme、:host、:path这些键值对。</p>
+<hr>
+<ol>
+<li>GET    请求指定的页面信息，并返回实体主体。</li>
+<li>HEAD    类似于get请求，只不过返回的响应中没有具体的内容，用于获取报头</li>
+<li>POST    向指定资源提交数据进行处理请求（例如提交表单或者上传文件），数据被包含在请求体中。POST请求可能会导致新的资源的建立和/或已有资源的修改。</li>
+<li>PUT    从客户端向服务器传送的数据取代指定的文档的内容。</li>
+<li>DELETE    请求服务器删除指定的页面。</li>
+<li>CONNECT    HTTP/1.1协议中预留给能够将连接改为管道方式的代理服务器。</li>
+<li>OPTIONS    允许客户端查看服务器的性能。</li>
+<li>TRACE    回显服务器收到的请求，主要用于测试或诊断。</li>
+</ol>
+<h3 id="常见的HTTP状态码"><a href="#常见的HTTP状态码" class="headerlink" title="常见的HTTP状态码"></a>常见的HTTP状态码</h3><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">1xx:信息</span><br><span class="line"></span><br><span class="line">100 Continue</span><br><span class="line">服务器仅接收到部分请求，但是一旦服务器并没有拒绝该请求，客户端应该继续发送其余的请求。</span><br><span class="line">101 Switching Protocols</span><br><span class="line">服务器转换协议：服务器将遵从客户的请求转换到另外一种协议。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">2xx:成功</span><br><span class="line"></span><br><span class="line">200 OK</span><br><span class="line">请求成功（其后是对GET和POST请求的应答文档）</span><br><span class="line">201 Created</span><br><span class="line">请求被创建完成，同时新的资源被创建。</span><br><span class="line">202 Accepted</span><br><span class="line">供处理的请求已被接受，但是处理未完成。</span><br><span class="line">203 Non-authoritative Information</span><br><span class="line">文档已经正常地返回，但一些应答头可能不正确，因为使用的是文档的拷贝。</span><br><span class="line">204 No Content</span><br><span class="line">没有新文档。浏览器应该继续显示原来的文档。如果用户定期地刷新页面，而Servlet可以确定用户文档足够新，这个状态代码是很有用的。</span><br><span class="line">205 Reset Content</span><br><span class="line">没有新文档。但浏览器应该重置它所显示的内容。用来强制浏览器清除表单输入内容。</span><br><span class="line">206 Partial Content</span><br><span class="line">客户发送了一个带有Range头的GET请求，服务器完成了它。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">3xx:重定向</span><br><span class="line"></span><br><span class="line">300 Multiple Choices</span><br><span class="line">多重选择。链接列表。用户可以选择某链接到达目的地。最多允许五个地址。</span><br><span class="line">301 Moved Permanently</span><br><span class="line">所请求的页面已经转移至新的url。</span><br><span class="line">302 Moved Temporarily</span><br><span class="line">所请求的页面已经临时转移至新的url。</span><br><span class="line">303 See Other</span><br><span class="line">所请求的页面可在别的url下被找到。</span><br><span class="line">304 Not Modified</span><br><span class="line">未按预期修改文档。客户端有缓冲的文档并发出了一个条件性的请求（一般是提供If-Modified-Since头表示客户只想比指定日期更新的文档）。服务器告诉客户，原来缓冲的文档还可以继续使用。</span><br><span class="line">305 Use Proxy</span><br><span class="line">客户请求的文档应该通过Location头所指明的代理服务器提取。</span><br><span class="line">306 Unused</span><br><span class="line">此代码被用于前一版本。目前已不再使用，但是代码依然被保留。</span><br><span class="line">307 Temporary Redirect</span><br><span class="line">被请求的页面已经临时移至新的url。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">4xx:客户端错误</span><br><span class="line"></span><br><span class="line">400 Bad Request</span><br><span class="line">服务器未能理解请求。</span><br><span class="line">401 Unauthorized</span><br><span class="line">被请求的页面需要用户名和密码。</span><br><span class="line">401.1</span><br><span class="line">登录失败。</span><br><span class="line">401.2</span><br><span class="line">服务器配置导致登录失败。</span><br><span class="line">401.3</span><br><span class="line">由于 ACL 对资源的限制而未获得授权。</span><br><span class="line">401.4</span><br><span class="line">筛选器授权失败。</span><br><span class="line">401.5</span><br><span class="line">ISAPI/CGI 应用程序授权失败。</span><br><span class="line">401.7</span><br><span class="line">访问被 Web 服务器上的 URL 授权策略拒绝。这个错误代码为 IIS 6.0 所专用。</span><br><span class="line">402 Payment Required</span><br><span class="line">此代码尚无法使用。</span><br><span class="line">403 Forbidden</span><br><span class="line">对被请求页面的访问被禁止。</span><br><span class="line">403.1</span><br><span class="line">执行访问被禁止。</span><br><span class="line">403.2</span><br><span class="line">读访问被禁止。</span><br><span class="line">403.3</span><br><span class="line">写访问被禁止。</span><br><span class="line">403.4</span><br><span class="line">要求 SSL。</span><br><span class="line">403.5</span><br><span class="line">要求 SSL 128。</span><br><span class="line">403.6</span><br><span class="line">IP 地址被拒绝。</span><br><span class="line">403.7</span><br><span class="line">要求客户端证书。</span><br><span class="line">403.8</span><br><span class="line">站点访问被拒绝。</span><br><span class="line">403.9</span><br><span class="line">用户数过多。</span><br><span class="line">403.10</span><br><span class="line">配置无效。</span><br><span class="line">403.11</span><br><span class="line">密码更改。</span><br><span class="line">403.12</span><br><span class="line">拒绝访问映射表。</span><br><span class="line">403.13</span><br><span class="line">客户端证书被吊销。</span><br><span class="line">403.14</span><br><span class="line">拒绝目录列表。</span><br><span class="line">403.15</span><br><span class="line">超出客户端访问许可。</span><br><span class="line">403.16</span><br><span class="line">客户端证书不受信任或无效。</span><br><span class="line">403.17</span><br><span class="line">客户端证书已过期或尚未生效。</span><br><span class="line">403.18</span><br><span class="line">在当前的应用程序池中不能执行所请求的 URL。这个错误代码为 IIS 6.0 所专用。</span><br><span class="line">403.19</span><br><span class="line">不能为这个应用程序池中的客户端执行 CGI。这个错误代码为 IIS 6.0 所专用。</span><br><span class="line">403.20</span><br><span class="line">Passport 登录失败。这个错误代码为 IIS 6.0 所专用。</span><br><span class="line">404 Not Found</span><br><span class="line">服务器无法找到被请求的页面。</span><br><span class="line">404.0</span><br><span class="line">没有找到文件或目录。</span><br><span class="line">404.1</span><br><span class="line">无法在所请求的端口上访问 Web 站点。</span><br><span class="line">404.2</span><br><span class="line">Web 服务扩展锁定策略阻止本请求。</span><br><span class="line">404.3</span><br><span class="line">MIME 映射策略阻止本请求。</span><br><span class="line">405 Method Not Allowed</span><br><span class="line">请求中指定的方法不被允许。</span><br><span class="line">406 Not Acceptable</span><br><span class="line">服务器生成的响应无法被客户端所接受。</span><br><span class="line">407 Proxy Authentication Required</span><br><span class="line">用户必须首先使用代理服务器进行验证，这样请求才会被处理。</span><br><span class="line">408 Request Timeout</span><br><span class="line">请求超出了服务器的等待时间。</span><br><span class="line">409 Conflict</span><br><span class="line">由于冲突，请求无法被完成。</span><br><span class="line">410 Gone</span><br><span class="line">被请求的页面不可用。</span><br><span class="line">411 Length Required</span><br><span class="line">&quot;Content-Length&quot; 未被定义。如果无此内容，服务器不会接受请求。</span><br><span class="line">412 Precondition Failed</span><br><span class="line">请求中的前提条件被服务器评估为失败。</span><br><span class="line">413 Request Entity Too Large</span><br><span class="line">由于所请求的实体的太大，服务器不会接受请求。</span><br><span class="line">414 Request-url Too Long</span><br><span class="line">由于url太长，服务器不会接受请求。当post请求被转换为带有很长的查询信息的get请求时，就会发生这种情况。</span><br><span class="line">415 Unsupported Media Type</span><br><span class="line">由于媒介类型不被支持，服务器不会接受请求。</span><br><span class="line">416 Requested Range Not Satisfiable</span><br><span class="line">服务器不能满足客户在请求中指定的Range头。</span><br><span class="line">417 Expectation Failed</span><br><span class="line">执行失败。</span><br><span class="line">423</span><br><span class="line">锁定的错误。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">5xx:服务器错误</span><br><span class="line"></span><br><span class="line">500 Internal Server Error</span><br><span class="line">请求未完成。服务器遇到不可预知的情况。</span><br><span class="line">500.12</span><br><span class="line">应用程序正忙于在 Web 服务器上重新启动。</span><br><span class="line">500.13</span><br><span class="line">Web 服务器太忙。</span><br><span class="line">500.15</span><br><span class="line">不允许直接请求 Global.asa。</span><br><span class="line">500.16</span><br><span class="line">UNC 授权凭据不正确。这个错误代码为 IIS 6.0 所专用。</span><br><span class="line">500.18</span><br><span class="line">URL 授权存储不能打开。这个错误代码为 IIS 6.0 所专用。</span><br><span class="line">500.100</span><br><span class="line">内部 ASP 错误。</span><br><span class="line">501 Not Implemented</span><br><span class="line">请求未完成。服务器不支持所请求的功能。</span><br><span class="line">502 Bad Gateway</span><br><span class="line">请求未完成。服务器从上游服务器收到一个无效的响应。</span><br><span class="line">502.1</span><br><span class="line">CGI 应用程序超时。　·</span><br><span class="line">502.2</span><br><span class="line">CGI 应用程序出错。</span><br><span class="line">503 Service Unavailable</span><br><span class="line">请求未完成。服务器临时过载或当机。</span><br><span class="line">504 Gateway Timeout</span><br><span class="line">网关超时。</span><br><span class="line">505 HTTP Version Not Supported</span><br><span class="line">服务器不支持请求中指明的HTTP协议版本</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/11/27/resumeexec/" rel="next" title="问题总结">
+                <i class="fa fa-chevron-left"></i> 问题总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Steven Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#客户端HTTP请求"><span class="nav-number">1.</span> <span class="nav-text">客户端HTTP请求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#请求方法"><span class="nav-number">2.</span> <span class="nav-text">请求方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#常见的HTTP状态码"><span class="nav-number">2.1.</span> <span class="nav-text">常见的HTTP状态码</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Steven Liu</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.3.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

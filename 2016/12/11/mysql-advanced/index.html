@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="[TOC] 5 MySQL高级 本节课程学习MySQL数据库的高级操作，这些操作主要是由DBA或项目经理来完成，对于初级开发人员，不需要熟练操作，这部分内容作为了解，对于未来的工作是加分项账户管理：创建账户、修改密码、分配权限等存储过程：创建、删除、查看存储过程函数：创建、删除、查看函数，mysql中定义变量、选择语句、循环语句视图：完成查询语句的封装事务：保证一个业务逻辑的完整性索引：对于大数据">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mysql_advanced">
+<meta property="og:url" content="https://tonysteven.github.io/2016/12/11/mysql-advanced/index.html">
+<meta property="og:site_name" content="Genesis">
+<meta property="og:description" content="[TOC] 5 MySQL高级 本节课程学习MySQL数据库的高级操作，这些操作主要是由DBA或项目经理来完成，对于初级开发人员，不需要熟练操作，这部分内容作为了解，对于未来的工作是加分项账户管理：创建账户、修改密码、分配权限等存储过程：创建、删除、查看存储过程函数：创建、删除、查看函数，mysql中定义变量、选择语句、循环语句视图：完成查询语句的封装事务：保证一个业务逻辑的完整性索引：对于大数据">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://img.blog.csdn.net/20170927212229341?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdG9ueXN0ZXZlbjE5OTY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170927220426817?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdG9ueXN0ZXZlbjE5OTY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170927222138118?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdG9ueXN0ZXZlbjE5OTY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2017-12-11T08:29:53.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="mysql_advanced">
+<meta name="twitter:description" content="[TOC] 5 MySQL高级 本节课程学习MySQL数据库的高级操作，这些操作主要是由DBA或项目经理来完成，对于初级开发人员，不需要熟练操作，这部分内容作为了解，对于未来的工作是加分项账户管理：创建账户、修改密码、分配权限等存储过程：创建、删除、查看存储过程函数：创建、删除、查看函数，mysql中定义变量、选择语句、循环语句视图：完成查询语句的封装事务：保证一个业务逻辑的完整性索引：对于大数据">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20170927212229341?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdG9ueXN0ZXZlbjE5OTY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+
+
+
+
+
+
+  <link rel="canonical" href="https://tonysteven.github.io/2016/12/11/mysql-advanced/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>mysql_advanced | Genesis</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Genesis</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://tonysteven.github.io/2016/12/11/mysql-advanced/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven Liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Genesis">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">mysql_advanced
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016-12-11 16:29:00" itemprop="dateCreated datePublished" datetime="2016-12-11T16:29:00+08:00">2016-12-11</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2017-12-11 16:29:53" itemprop="dateModified" datetime="2017-12-11T16:29:53+08:00">2017-12-11</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>[TOC]</p>
+<h1 id="5-MySQL高级"><a href="#5-MySQL高级" class="headerlink" title="5 MySQL高级"></a>5 MySQL高级</h1><blockquote>
+<p>本节课程学习MySQL数据库的高级操作，这些操作主要是由DBA或项目经理来完成，对于初级开发人员，不需要熟练操作，这部分内容作为了解，对于未来的工作是加分项<br>账户管理：创建账户、修改密码、分配权限等<br>存储过程：创建、删除、查看存储过程<br>函数：创建、删除、查看函数，mysql中定义变量、选择语句、循环语句<br>视图：完成查询语句的封装<br>事务：保证一个业务逻辑的完整性<br>索引：对于大数据量可以提高查询速度<br>练习：根据性格测试的数据设计表，并编写创建表的脚本</p>
+</blockquote>
+<h2 id="账户管理"><a href="#账户管理" class="headerlink" title="账户管理"></a>账户管理</h2><blockquote>
+<p>在生产环境下操作数据库时，绝对不可以使用root账户连接，而是创建特定的账户，授予这个账户特定的操作权限，然后连接进行操作，主要的操作就是数据的crud<br>MySQL账户体系：根据账户所具有的权限的不同，MySQL的账户可以分为以下几种<br>服务实例级账号：，启动了一个mysqld，即为一个数据库实例；如果某用户如root,拥有服务实例级分配的权限，那么该账号就可以删除所有的数据库、连同这些库中的表<br>数据库级别账号：对特定数据库执行增删改查的所有操作<br>数据表级别账号：对特定表执行增删改查等所有操作<br>字段级别的权限：对某些表的特定字段进行操作<br>存储程序级别的账号：对存储程序进行增删改查的操作<br>账户的操作主要包括创建账户、删除账户、修改密码、授权权限等<br>注意：进行账户操作时，需要使用root账户登录，这个账户拥有最高的实例级权限<br>下面主要演示数据库级操作权限，因为通常都使用这种方式</p>
+</blockquote>
+<ul>
+<li><p>查看所有用户</p>
+<blockquote>
+<p><code>desc user\G;</code></p>
+</blockquote>
+</li>
+<li><p>创建账户并授予权限</p>
+<blockquote>
+<p><code>grant 权限列表 on 数据库 to &#39;用户名&#39;@&#39;访问主机&#39; identified by &#39;密码&#39;;</code></p>
+</blockquote>
+</li>
+<li><p>授权</p>
+<blockquote>
+<p><code>grant 权限名称 on 数据库 to 账户1,账户2,... with grant option;</code></p>
+</blockquote>
+</li>
+</ul>
+<p>###示例</p>
+<ul>
+<li>step1：使用root登录</li>
+</ul>
+<blockquote>
+<p><code>mysql -uroot -p</code><br>回车后写密码，然后回车 </p>
+</blockquote>
+<ul>
+<li><p>step2: </p>
+</li>
+<li><p>用户名为tony，密码为mysql</p>
+</li>
+<li><p>操作python数据库的所有对象python.*</p>
+</li>
+<li><p>访问主机通常使用百分号%表示此账户可以使用任何ip的主机登录访问此数据库</p>
+</li>
+<li><p>访问主机可以设置成localhost或具体的ip，表示只允许本机或特定主机访问</p>
+<blockquote>
+<p><code>grant all privileges on python.* to &#39;tony&#39;@&#39;%&#39; identified by &#39;mysql&#39;;</code></p>
+</blockquote>
+</li>
+<li><p>查看用户有哪些权限</p>
+<blockquote>
+<p><code>show grant for tony</code></p>
+</blockquote>
+</li>
+<li>step3：退出root的登录<blockquote>
+<p><code>quit</code></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="回收权限"><a href="#回收权限" class="headerlink" title="回收权限"></a>回收权限</h3><ul>
+<li>语法如下：<blockquote>
+<p><code>revoke 权限列表 on 数据库名.* from  &#39;用户名&#39;@&#39;主机&#39;;</code></p>
+</blockquote>
+<h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4></li>
+<li><p>step1：使用py登录后，向表classes中插入数据python3</p>
+<blockquote>
+<p><code>use python;
+insert into classes(name) values(&#39;python3&#39;);</code></p>
+</blockquote>
+</li>
+<li><p>step2：退出py</p>
+</li>
+</ul>
+<blockquote>
+<p><code>quit</code></p>
+</blockquote>
+<ul>
+<li>step3：回收insert权限</li>
+</ul>
+<blockquote>
+<p><code>revoke insert on python.* from &#39;py&#39;@&#39;%&#39;;</code></p>
+</blockquote>
+<ul>
+<li>step4：退出root</li>
+</ul>
+<blockquote>
+<p><code>quit</code></p>
+</blockquote>
+<ul>
+<li>权限回收,inset失效</li>
+</ul>
+<h3 id="修改密码"><a href="#修改密码" class="headerlink" title="修改密码"></a>修改密码</h3><ul>
+<li>语法1：不需登录修改密码</li>
+</ul>
+<blockquote>
+<p><code>mysqladmin -u py -p password &#39;新密码&#39;</code><br>例：<br><code>mysqladmin -u py -p password &#39;123456&#39;</code><br>回车后写密码，然后回车 </p>
+</blockquote>
+<ul>
+<li>语法2：使用root登录，修改mysql数据库的user表</li>
+</ul>
+<blockquote>
+<p><code>update user set authentication_string=password(&#39;新密码&#39;) where user=&#39;用户名&#39;;</code><br>例：<br><code>update user set authentication_string=password(&#39;123&#39;) where user=&#39;py&#39;;</code><br>刷新权限：<code>flush privileges</code></p>
+</blockquote>
+<h3 id="删除账户"><a href="#删除账户" class="headerlink" title="删除账户"></a>删除账户</h3><ul>
+<li>语法1：使用root登录</li>
+</ul>
+<blockquote>
+<p><code>drop user &#39;用户名&#39;@&#39;主机&#39;;</code><br>例：<br><code>drop user &#39;py&#39;@&#39;%&#39;;</code></p>
+</blockquote>
+<ul>
+<li>语法2：使用root登录，删除mysql数据库的user表中数据</li>
+<li>这种方法还要删除db_mysql中的user表</li>
+</ul>
+<blockquote>
+<p><code>delete from user where user=&#39;用户名&#39;;</code><br>例：<br><code>delete from user where user=&#39;py&#39;;</code><br>– 操作结束之后需要刷新权限<br><code>flush privileges</code></p>
+</blockquote>
+<h4 id="忘记-root-账户密码怎么办"><a href="#忘记-root-账户密码怎么办" class="headerlink" title="忘记 root 账户密码怎么办 !_!"></a>忘记 root 账户密码怎么办 !_!</h4><ul>
+<li>去更改配置文件,实现免密登陆root账户,在重置密码</li>
+</ul>
+<h2 id="SQL注入攻击-数据安全"><a href="#SQL注入攻击-数据安全" class="headerlink" title="SQL注入攻击(数据安全)"></a>SQL注入攻击(数据安全)</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><blockquote>
+<p><strong>SQL注入攻击是黑客对数据库进行攻击的常用手段之一。随着B/S模式应用开发的发展，使用这种模式编写应用程序的程序员也越来越多。但是由于程序员的水平及经验也参差不齐，相当大一部分程序员在编写代码的时候，没有对用户输入数据的合法性进行判断，使应用程序存在安全隐患。用户可以提交一段数据库查询代码，根据程序返回的结果，获得某些他想得知的数据，这就是所谓的SQL Injection，即SQL注入。</strong></p>
+</blockquote>
+<blockquote>
+<p>SQL注入攻击属于数据库安全攻击手段之一，可以通过数据库安全防护技术实现有效防护，数据库安全防护技术包括：<strong>数据库漏扫、数据库加密、数据库防火墙、数据脱敏、数据库安全审计系统。</strong></p>
+</blockquote>
+<blockquote>
+<p>SQL注入攻击会导致的数据库安全风险包括：<strong>刷库、拖库、撞库。</strong></p>
+</blockquote>
+<p>###刷库</p>
+<blockquote>
+<p>黑客通过入侵网站或内部运维人员多次从数据库中窃取新的用户资料和敏感信息的行为。<br>现在的刷库方法，从开发公司开始渗透，从分站的C段开始渗透，社工目标方公司，社工目标方管理人员（google那些ID的资料）。其中用到的东西，目标方的习惯（文件夹文件名命名习惯，目标方的重要邮箱，目标方的MSN，电话，管理人员的资料，MSN，MSN密码，目标方用的安全软件等等）大杀器我见过很多了，office系列，pdf等社工邮件，一个接一个。没有大杀器的，就用chm木马，lnk后门，自解压包，不要以为这些方法很容易识破，但就是可以。我社工国内某目标，用的就是自解压包搞掂的。</p>
+</blockquote>
+<h3 id="拖库"><a href="#拖库" class="headerlink" title="拖库"></a>拖库</h3><blockquote>
+<p>拖库本来是数据库领域的术语，指从数据库中导出数据。到了黑客攻击泛滥的今天，它被用来指网站遭到入侵后，黑客窃取其数据库。</p>
+</blockquote>
+<h3 id="撞库"><a href="#撞库" class="headerlink" title="撞库"></a>撞库</h3><blockquote>
+<p>撞库是黑客通过收集互联网已泄露的用户和密码信息，生成对应的字典表，尝试批量登陆其他网站后，得到一系列可以登录的用户。很多用户在不同网站使用的是相同的帐号密码，因此黑客可以通过获取用户在A网站的账户从而尝试登录B网址，这就可以理解为撞库攻击。</p>
+</blockquote>
+<h3 id="提及“撞库”，就不能不说“脱库”和“洗库”。"><a href="#提及“撞库”，就不能不说“脱库”和“洗库”。" class="headerlink" title="提及“撞库”，就不能不说“脱库”和“洗库”。"></a>提及“撞库”，就不能不说“脱库”和“洗库”。</h3><blockquote>
+<p>在黑客术语里面，”脱库“是指黑客入侵有价值的网络站点，把注册用户的资料数据库全部盗走的行为，因为谐音，也经常被称作“脱库”，360的库带计划，奖励提交漏洞的白帽子，也是因此而得名。在取得大量的用户数据之后，黑客会通过一系列的技术手段和黑色产业链将有价值的用户数据变现，这通常也被称作“洗库”。最后黑客将得到的数据在其它网站上进行尝试登陆，叫做”撞库“，因为很多用户喜欢使用统一的用户名密码，”撞库“也可以使黑客收获颇丰。</p>
+</blockquote>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h3><ul>
+<li>语法如下<blockquote>
+<p>`delimiter $$<br>create function 函数名称(参数列表) returns 返回类型<br>begin<br>sql语句<br>end</p>
+</blockquote>
+</li>
+</ul>
+<p>$$<br>delimiter ;`</p>
+<ul>
+<li>说明：delimiter用于设置分割符，默认为分号</li>
+<li>在“sql语句”部分编写的语句需要以分号结尾，此时回车会直接执行，所以要创建存储过程前需要指定其它符号作为分割符，此处使用//，也可以使用其它字符</li>
+</ul>
+<h4 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h4><ul>
+<li>要求：创建函数py_trim，用于删除字符串左右两侧的空格</li>
+<li><p>step1：设置分割符</p>
+<blockquote>
+<p><code>delimiter $$</code></p>
+</blockquote>
+</li>
+<li><p>step2：创建函数</p>
+<blockquote>
+<p><code>create function py_trim(str varchar(100)) returns varchar(100)
+begin
+declare x varchar(100);
+set x=ltrim(rtrim(str));
+return x;
+end
+$$</code></p>
+</blockquote>
+</li>
+<li><p>step3：还原分割符</p>
+<blockquote>
+<p><code>delimiter ;</code></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h3><ul>
+<li><p>所有函数存储在mysql数据库下的proc表中</p>
+</li>
+<li><p>说明：存储过程与函数都存储在proc表中，区别在type字段，func表中无数据</p>
+</li>
+<li><p>查看python数据库中的函数</p>
+</li>
+</ul>
+<blockquote>
+<p><code>select name,type from mysql.proc where db=&#39;python&#39;;</code> </p>
+</blockquote>
+<p><img src="http://img.blog.csdn.net/20170927212229341?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdG9ueXN0ZXZlbjE5OTY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="select name,type from mysql.proc where db=&#39;python&#39;;"></p>
+<h3 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h3><ul>
+<li>语法如下</li>
+</ul>
+<blockquote>
+<p><code>select 函数名称(参数列表);</code></p>
+</blockquote>
+<h4 id="示例-2"><a href="#示例-2" class="headerlink" title="示例"></a>示例</h4><ul>
+<li>要求：调用自定义函数py_trim<blockquote>
+<p><code>select py_trim(&#39; a b c &#39;);</code></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><ul>
+<li><p>说明：函数的代码无法修改，如果不能满足要求可以删除后重新创建</p>
+</li>
+<li><p>语法如下</p>
+</li>
+</ul>
+<blockquote>
+<p><code>drop function 函数名称;</code></p>
+</blockquote>
+<h4 id="示例-3"><a href="#示例-3" class="headerlink" title="示例"></a>示例</h4><ul>
+<li>要求：删除函数py_trim</li>
+</ul>
+<blockquote>
+<p><code>drop function py_trim;</code></p>
+</blockquote>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><h4 id="临时变量"><a href="#临时变量" class="headerlink" title="临时变量"></a>临时变量</h4><ul>
+<li>声明临时变量，只能在 begin … end 体重语法如下</li>
+</ul>
+<blockquote>
+<p><code>declare 变量名 类型 default 默认值;
+例：
+declare x varchar(100);</code></p>
+</blockquote>
+<ul>
+<li>设置变量值，语法如下<blockquote>
+<p><code>set 变量名=值;
+例：
+set x=&#39;abc’;</code></p>
+</blockquote>
+</li>
+</ul>
+<h4 id="用户变量-会话变量"><a href="#用户变量-会话变量" class="headerlink" title="用户变量/会话变量"></a>用户变量/会话变量</h4><ul>
+<li><p>只有在当前连接用户有效,其他连接用户无法访问</p>
+</li>
+<li><p>使用@标识声明用户变量</p>
+</li>
+<li><p>使用 select 来查看用户变量</p>
+</li>
+</ul>
+<p><strong>定义</strong></p>
+<blockquote>
+<p><code>-- set @变量名 = 值;
+set @age = 20;
+-- 查看用户变量
+select @age;
+-- 但是如果在 select 语句中这么使用就会有问题, 因为 &#39;=&#39; 在 select 语句中是判断是否相等
+-- mysql 使用 := 在 select 语句中表示赋值
+set @maxage = 0;
+select @maxage := max(age) from students;</code></p>
+</blockquote>
+<p>####系统变量</p>
+<ul>
+<li>任何一个用户都可以访问</li>
+</ul>
+<ul>
+<li>使用 @@来标识系统变量</li>
+</ul>
+<ul>
+<li>使用 select 来查看系统变量</li>
+</ul>
+<blockquote>
+<p><code>-- 查询所有的系统变量
+show variables;
+-- 查看系统变量
+select @@max_connections;
+-- 当前用户/会话中修改系统变量
+set max_connections = 1000;
+-- 全局修改,所有的访问用户都会生效
+set global max_connection = 1000;</code></p>
+</blockquote>
+<h3 id="综合示例"><a href="#综合示例" class="headerlink" title="综合示例"></a>综合示例</h3><ul>
+<li><p>要求：定义函数odd，输出1-100间的偶数</p>
+</li>
+<li><p>代码 ：</p>
+</li>
+</ul>
+<blockquote>
+<p><code>delimiter $$
+create function odd () returns varchar(300)
+begin
+declare i int default 1;
+declare x varchar(300) default &#39;&#39;;
+while i &lt;=100 do
+if i%2=0 then
+set x=concat(x,&#39; &#39;,i);
+end if;
+set i=i+1;
+end while;
+return x;
+end</code></p>
+</blockquote>
+<blockquote>
+<p><code>$$
+delimiter ;</code></p>
+</blockquote>
+<ul>
+<li>调用函数<blockquote>
+<p><code>select odd();</code></p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+</blockquote>
+<p><img src="http://img.blog.csdn.net/20170927220426817?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdG9ueXN0ZXZlbjE5OTY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="调用函数"></p>
+<h2 id="刷新"><a href="#刷新" class="headerlink" title="刷新"></a>刷新</h2><blockquote>
+<p><code>flush privileges;</code></p>
+</blockquote>
+<h2 id="存储过程"><a href="#存储过程" class="headerlink" title="存储过程"></a>存储过程</h2><ul>
+<li><p>存储过程，也翻译为存储程序，是一条或者多条SQL语句的集合，可以视为批处理，但是其作用不仅仅局限于批处理</p>
+</li>
+<li><p>本节主要介绍如何创建存储过程，以及如何调用、查看、修改、删除存储过程</p>
+</li>
+</ul>
+<ul>
+<li><p>存储过程也可以调用其他存储过程</p>
+</li>
+<li><p>推荐阅读：<a href="http://blog.sina.com.cn/s/blog_52d20fbf0100ofd5.html" target="_blank" rel="noopener">存储过程详解</a></p>
+</li>
+</ul>
+<h3 id="创建-1"><a href="#创建-1" class="headerlink" title="创建"></a>创建</h3><ul>
+<li><p>语法如下</p>
+<blockquote>
+<p><code>delimiter //
+create procedure 存储过程名称(参数列表)
+begin
+sql语句
+end
+//
+delimiter ;</code></p>
+</blockquote>
+</li>
+<li><p>说明：delimiter用于设置分割符，默认为分号</p>
+</li>
+<li><p>在“sql语句”部分编写的语句需要以分号结尾，此时回车会直接执行，所以要创建存储过程前需要指定其它符号作为分割符，此处使用//，也可以使用其它字符</p>
+</li>
+</ul>
+<h4 id="示例-4"><a href="#示例-4" class="headerlink" title="示例"></a>示例</h4><ul>
+<li><p>要求：创建查询过程，查询学生信息</p>
+</li>
+<li><p>code:</p>
+<blockquote>
+<p><code>delimiter //
+create procedure proc_stu()
+begin
+select * from students;
+end
+//
+delimiter ;</code></p>
+</blockquote>
+</li>
+<li><p>执行效果图如下:<br><img src="http://img.blog.csdn.net/20170927222138118?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdG9ueXN0ZXZlbjE5OTY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="存储过程"></p>
+</li>
+</ul>
+<h3 id="查看-1"><a href="#查看-1" class="headerlink" title="查看"></a>查看</h3><ul>
+<li><p>所有存储过程和函数，都存储在mysql数据库下的proc表中</p>
+</li>
+<li><p>查看表结构</p>
+</li>
+<li><p>主要字段说明：</p>
+<ul>
+<li>name表示名称</li>
+<li>type表示类型，为存储过程、函数</li>
+<li>body表示正文脚本</li>
+<li>db表示属于的数据库</li>
+</ul>
+</li>
+<li><p>查看python数据库的所有存储过程</p>
+<blockquote>
+<p><code>select name,type,body from mysql.proc where db=&#39;python&#39;;</code></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="调用-1"><a href="#调用-1" class="headerlink" title="调用"></a>调用</h3><ul>
+<li>语法如下</li>
+</ul>
+<blockquote>
+<p><code>call 存储过程(参数列表);</code></p>
+</blockquote>
+<ul>
+<li>要求：调用存储过程proc_stu<blockquote>
+<p><code>call proc_stu();</code></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="删除-1"><a href="#删除-1" class="headerlink" title="删除"></a>删除</h3><ul>
+<li>语法如下</li>
+</ul>
+<blockquote>
+<p><code>drop procedure 存储过程名称;</code></p>
+</blockquote>
+<ul>
+<li>要求：删除存储过程proc_stu<blockquote>
+<p><code>drop procedure proc_stu;</code></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="存储过程和函数的区别"><a href="#存储过程和函数的区别" class="headerlink" title="存储过程和函数的区别"></a>存储过程和函数的区别</h3><blockquote>
+<h4 id="相同点"><a href="#相同点" class="headerlink" title="相同点"></a>相同点</h4><ul>
+<li>存储过程和函数都是为了可重复的执行操作数据库的 sql 语句的集合.</li>
+<li>存储过程和函数都是一次编译,就会被缓存起来,下次使用就直接命中缓存中已经编译好的 sql, 不需要重复编译</li>
+<li>减少网络交互,减少网络访问流量</li>
+</ul>
+</blockquote>
+<blockquote>
+<h4 id="不同点"><a href="#不同点" class="headerlink" title="不同点"></a>不同点</h4><ul>
+<li>标识符不同,函数的标识符是 function, 过程:procedure</li>
+<li>函数中有返回值,且必须有返回值,而过程没有返回值,但是可以通过设置参数类型(in,out)来实现多个参数或者返回值</li>
+<li>函数使用 select 调用,存储过程需要使用 call 调用</li>
+<li>select 语句可以在存储过中调用,但是除了 select … into 之外的 select 语句都不能再函数中调用</li>
+<li>通过 in out 参数,过程相关函数更加灵活,可以返回多个结果</li>
+<li>在实际开发中根据个人喜好选择使用函数或者存储过程</li>
+</ul>
+</blockquote>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/10/mysql-primary/" rel="next" title="mysql-primary">
+                <i class="fa fa-chevron-left"></i> mysql-primary
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/19/data-structure/" rel="prev" title="data_structure">
+                data_structure <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Steven Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#5-MySQL高级"><span class="nav-number">1.</span> <span class="nav-text">5 MySQL高级</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#账户管理"><span class="nav-number">1.1.</span> <span class="nav-text">账户管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#回收权限"><span class="nav-number">1.1.1.</span> <span class="nav-text">回收权限</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#示例"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">示例</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改密码"><span class="nav-number">1.1.2.</span> <span class="nav-text">修改密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除账户"><span class="nav-number">1.1.3.</span> <span class="nav-text">删除账户</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#忘记-root-账户密码怎么办"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">忘记 root 账户密码怎么办 !_!</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SQL注入攻击-数据安全"><span class="nav-number">1.2.</span> <span class="nav-text">SQL注入攻击(数据安全)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#简介"><span class="nav-number">1.2.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拖库"><span class="nav-number">1.2.2.</span> <span class="nav-text">拖库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#撞库"><span class="nav-number">1.2.3.</span> <span class="nav-text">撞库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提及“撞库”，就不能不说“脱库”和“洗库”。"><span class="nav-number">1.2.4.</span> <span class="nav-text">提及“撞库”，就不能不说“脱库”和“洗库”。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数"><span class="nav-number">1.3.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建"><span class="nav-number">1.3.1.</span> <span class="nav-text">创建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#示例-1"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">示例</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看"><span class="nav-number">1.3.2.</span> <span class="nav-text">查看</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调用"><span class="nav-number">1.3.3.</span> <span class="nav-text">调用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#示例-2"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">示例</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除"><span class="nav-number">1.3.4.</span> <span class="nav-text">删除</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#示例-3"><span class="nav-number">1.3.4.1.</span> <span class="nav-text">示例</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量"><span class="nav-number">1.3.5.</span> <span class="nav-text">变量</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#临时变量"><span class="nav-number">1.3.5.1.</span> <span class="nav-text">临时变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#用户变量-会话变量"><span class="nav-number">1.3.5.2.</span> <span class="nav-text">用户变量/会话变量</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#综合示例"><span class="nav-number">1.3.6.</span> <span class="nav-text">综合示例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#刷新"><span class="nav-number">1.4.</span> <span class="nav-text">刷新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#存储过程"><span class="nav-number">1.5.</span> <span class="nav-text">存储过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建-1"><span class="nav-number">1.5.1.</span> <span class="nav-text">创建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#示例-4"><span class="nav-number">1.5.1.1.</span> <span class="nav-text">示例</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看-1"><span class="nav-number">1.5.2.</span> <span class="nav-text">查看</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调用-1"><span class="nav-number">1.5.3.</span> <span class="nav-text">调用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除-1"><span class="nav-number">1.5.4.</span> <span class="nav-text">删除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#存储过程和函数的区别"><span class="nav-number">1.5.5.</span> <span class="nav-text">存储过程和函数的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#相同点"><span class="nav-number">1.5.5.1.</span> <span class="nav-text">相同点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#不同点"><span class="nav-number">1.5.5.2.</span> <span class="nav-text">不同点</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Steven Liu</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.3.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="删除列表重复元素123def deleteDuplicatedElementFromList3(listA):        #return list(set(listA))        return sorted(set(listA), key = listA.index) python中拷贝一个对象 如果需要拷贝对象，需要使用标准库中的copy模块  12import copynew_lis">
+<meta property="og:type" content="article">
+<meta property="og:title" content="问题总结">
+<meta property="og:url" content="https://tonysteven.github.io/2017/11/27/resumeexec/index.html">
+<meta property="og:site_name" content="Genesis">
+<meta property="og:description" content="删除列表重复元素123def deleteDuplicatedElementFromList3(listA):        #return list(set(listA))        return sorted(set(listA), key = listA.index) python中拷贝一个对象 如果需要拷贝对象，需要使用标准库中的copy模块  12import copynew_lis">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-12-11T08:37:58.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="问题总结">
+<meta name="twitter:description" content="删除列表重复元素123def deleteDuplicatedElementFromList3(listA):        #return list(set(listA))        return sorted(set(listA), key = listA.index) python中拷贝一个对象 如果需要拷贝对象，需要使用标准库中的copy模块  12import copynew_lis">
+
+
+
+
+
+
+  <link rel="canonical" href="https://tonysteven.github.io/2017/11/27/resumeexec/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>问题总结 | Genesis</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Genesis</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://tonysteven.github.io/2017/11/27/resumeexec/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven Liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Genesis">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">问题总结
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-11-27 19:59:15" itemprop="dateCreated datePublished" datetime="2017-11-27T19:59:15+08:00">2017-11-27</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2017-12-11 16:37:58" itemprop="dateModified" datetime="2017-12-11T16:37:58+08:00">2017-12-11</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="删除列表重复元素"><a href="#删除列表重复元素" class="headerlink" title="删除列表重复元素"></a>删除列表重复元素</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">def deleteDuplicatedElementFromList3(listA):</span><br><span class="line">        #return list(set(listA))</span><br><span class="line">        return sorted(set(listA), key = listA.index)</span><br></pre></td></tr></table></figure>
+<h4 id="python中拷贝一个对象"><a href="#python中拷贝一个对象" class="headerlink" title="python中拷贝一个对象"></a>python中拷贝一个对象</h4><blockquote>
+<p><strong>如果需要拷贝对象，需要使用标准库中的<br>copy模块</strong></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import copy</span><br><span class="line">new_list = copy.copy(existing_list)</span><br></pre></td></tr></table></figure>
+<hr>
+<h4 id="python单例模式"><a href="#python单例模式" class="headerlink" title="python单例模式"></a>python单例模式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">    #coding=utf-8  </span><br><span class="line">    print &apos;----------------------方法1--------------------------&apos;  </span><br><span class="line">    #方法1,实现__new__方法  </span><br><span class="line">    #并在将一个类的实例绑定到类变量_instance上,  </span><br><span class="line">    #如果cls._instance为None说明该类还没有实例化过,实例化该类,并返回  </span><br><span class="line">    #如果cls._instance不为None,直接返回cls._instance  </span><br><span class="line">    class Singleton(object):  </span><br><span class="line">        def __new__(cls, *args, **kw):  </span><br><span class="line">            if not hasattr(cls, &apos;_instance&apos;):  </span><br><span class="line">                orig = super(Singleton, cls)  </span><br><span class="line">                cls._instance = orig.__new__(cls, *args, **kw)  </span><br><span class="line">            return cls._instance  </span><br><span class="line">      </span><br><span class="line">    class MyClass(Singleton):  </span><br><span class="line">        a = 1  </span><br><span class="line">      </span><br><span class="line">    one = MyClass()  </span><br><span class="line">    two = MyClass()  </span><br><span class="line">      </span><br><span class="line">    two.a = 3  </span><br><span class="line">    print one.a  </span><br><span class="line">    #3  </span><br><span class="line">    #one和two完全相同,可以用id(), ==, is检测  </span><br><span class="line">    print id(one)  </span><br><span class="line">    #29097904  </span><br><span class="line">    print id(two)  </span><br><span class="line">    #29097904  </span><br><span class="line">    print one == two  </span><br><span class="line">    #True  </span><br><span class="line">    print one is two  </span><br><span class="line">    #True</span><br><span class="line">    </span><br><span class="line">print &apos;----------------------方法2--------------------------&apos;  </span><br><span class="line">#方法2,共享属性;所谓单例就是所有引用(实例、对象)拥有相同的状态(属性)和行为(方法)  </span><br><span class="line">#同一个类的所有实例天然拥有相同的行为(方法),  </span><br><span class="line">#只需要保证同一个类的所有实例具有相同的状态(属性)即可  </span><br><span class="line">#所有实例共享属性的最简单最直接的方法就是__dict__属性指向(引用)同一个字典(dict)  </span><br><span class="line">#可参看:http://code.activestate.com/recipes/66531/  </span><br><span class="line">class Borg(object):  </span><br><span class="line">    _state = &#123;&#125;  </span><br><span class="line">    def __new__(cls, *args, **kw):  </span><br><span class="line">        ob = super(Borg, cls).__new__(cls, *args, **kw)  </span><br><span class="line">        ob.__dict__ = cls._state  </span><br><span class="line">        return ob  </span><br><span class="line">  </span><br><span class="line">class MyClass2(Borg):  </span><br><span class="line">    a = 1  </span><br><span class="line">  </span><br><span class="line">one = MyClass2()  </span><br><span class="line">two = MyClass2()  </span><br><span class="line">  </span><br><span class="line">#one和two是两个不同的对象,id, ==, is对比结果可看出  </span><br><span class="line">two.a = 3  </span><br><span class="line">print one.a  </span><br><span class="line">#3  </span><br><span class="line">print id(one)  </span><br><span class="line">#28873680  </span><br><span class="line">print id(two)  </span><br><span class="line">#28873712  </span><br><span class="line">print one == two  </span><br><span class="line">#False  </span><br><span class="line">print one is two  </span><br><span class="line">#False  </span><br><span class="line">#但是one和two具有相同的（同一个__dict__属性）,见:  </span><br><span class="line">print id(one.__dict__)  </span><br><span class="line">#30104000  </span><br><span class="line">print id(two.__dict__)  </span><br><span class="line">#30104000  </span><br><span class="line">  </span><br><span class="line">print &apos;----------------------方法3--------------------------&apos;  </span><br><span class="line">#方法3:本质上是方法1的升级（或者说高级）版  </span><br><span class="line">#使用__metaclass__（元类）的高级python用法  </span><br><span class="line">class Singleton2(type):  </span><br><span class="line">    def __init__(cls, name, bases, dict):  </span><br><span class="line">        super(Singleton2, cls).__init__(name, bases, dict)  </span><br><span class="line">        cls._instance = None  </span><br><span class="line">    def __call__(cls, *args, **kw):  </span><br><span class="line">        if cls._instance is None:  </span><br><span class="line">            cls._instance = super(Singleton2, cls).__call__(*args, **kw)  </span><br><span class="line">        return cls._instance  </span><br><span class="line">  </span><br><span class="line">class MyClass3(object):  </span><br><span class="line">    __metaclass__ = Singleton2  </span><br><span class="line">  </span><br><span class="line">one = MyClass3()  </span><br><span class="line">two = MyClass3()  </span><br><span class="line">  </span><br><span class="line">two.a = 3  </span><br><span class="line">print one.a  </span><br><span class="line">#3  </span><br><span class="line">print id(one)  </span><br><span class="line">#31495472  </span><br><span class="line">print id(two)  </span><br><span class="line">#31495472  </span><br><span class="line">print one == two  </span><br><span class="line">#True  </span><br><span class="line">print one is two  </span><br><span class="line">#True  </span><br><span class="line">  </span><br><span class="line">print &apos;----------------------方法4--------------------------&apos;  </span><br><span class="line">#方法4:也是方法1的升级（高级）版本,  </span><br><span class="line">#使用装饰器(decorator),  </span><br><span class="line">#这是一种更pythonic,更elegant的方法,  </span><br><span class="line">#单例类本身根本不知道自己是单例的,因为他本身(自己的代码)并不是单例的  </span><br><span class="line">def singleton(cls, *args, **kw):  </span><br><span class="line">    instances = &#123;&#125;  </span><br><span class="line">    def _singleton():  </span><br><span class="line">        if cls not in instances:  </span><br><span class="line">            instances[cls] = cls(*args, **kw)  </span><br><span class="line">        return instances[cls]  </span><br><span class="line">    return _singleton  </span><br><span class="line"> </span><br><span class="line">@singleton  </span><br><span class="line">class MyClass4(object):  </span><br><span class="line">    a = 1  </span><br><span class="line">    def __init__(self, x=0):  </span><br><span class="line">        self.x = x  </span><br><span class="line">  </span><br><span class="line">one = MyClass4()  </span><br><span class="line">two = MyClass4()  </span><br><span class="line">  </span><br><span class="line">two.a = 3  </span><br><span class="line">print one.a  </span><br><span class="line">#3  </span><br><span class="line">print id(one)  </span><br><span class="line">#29660784  </span><br><span class="line">print id(two)  </span><br><span class="line">#29660784  </span><br><span class="line">print one == two  </span><br><span class="line">#True  </span><br><span class="line">print one is two  </span><br><span class="line">#True  </span><br><span class="line">one.x = 1  </span><br><span class="line">print one.x  </span><br><span class="line">#1  </span><br><span class="line">print two.x  </span><br><span class="line">#1</span><br></pre></td></tr></table></figure>
+<h4 id="lambda函数"><a href="#lambda函数" class="headerlink" title="lambda函数"></a>lambda函数</h4><ul>
+<li>lambda存在意义就是对简单函数的简洁表示</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.g = lambda x:x+1</span><br><span class="line">or </span><br><span class="line">lambda x:x+1(1)</span><br><span class="line">means</span><br><span class="line">def g(x):</span><br><span class="line">    return x+1</span><br></pre></td></tr></table></figure>
+<h4 id="python实现一个stack"><a href="#python实现一个stack" class="headerlink" title="python实现一个stack"></a>python实现一个stack</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">class Stack(object):</span><br><span class="line">    # 初始化栈为空列表</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.items = []</span><br><span class="line"></span><br><span class="line">    # 判断栈是否为空，返回布尔值</span><br><span class="line">    def is_empty(self):</span><br><span class="line">        return self.items == []</span><br><span class="line"></span><br><span class="line">    # 返回栈顶元素</span><br><span class="line">    def peek(self):</span><br><span class="line">        return self.items[len(self.items) - 1]</span><br><span class="line"></span><br><span class="line">    # 返回栈的大小</span><br><span class="line">    def size(self):</span><br><span class="line">        return len(self.items)</span><br><span class="line"></span><br><span class="line">    # 把新的元素堆进栈里面（程序员喜欢把这个过程叫做压栈，入栈，进栈……）</span><br><span class="line">    def push(self, item):</span><br><span class="line">        self.items.append(item)</span><br><span class="line"></span><br><span class="line">    # 把栈顶元素丢出去（程序员喜欢把这个过程叫做出栈……）</span><br><span class="line">    def pop(self, item):</span><br><span class="line">        return self.items.pop()</span><br><span class="line"></span><br><span class="line">if __name__ == __main__:</span><br><span class="line">    # 初始化一个栈对象</span><br><span class="line">    my_stack = Stack()</span><br><span class="line">    # 把&apos;h&apos;丢进栈里</span><br><span class="line">    my_stack.push(&apos;h&apos;)</span><br><span class="line">    # 把&apos;a&apos;丢进栈里</span><br><span class="line">    my_stack.push(&apos;a&apos;)</span><br><span class="line">    # 看一下栈的大小（有几个元素）</span><br><span class="line">    print my_stack.size()</span><br><span class="line">    # 打印栈顶元素</span><br><span class="line">    print my_stack.peek()</span><br><span class="line">    # 把栈顶元素丢出去，并打印出来</span><br><span class="line">    print my_stack.pop()</span><br><span class="line">    # 再看一下栈顶元素是谁</span><br><span class="line">    print my_stack.peek()</span><br><span class="line">    # 这个时候栈的大小是多少？</span><br><span class="line">    print my_stack.size()</span><br><span class="line">    # 再丢一个栈顶元素</span><br><span class="line">    print my_stack.pop()</span><br><span class="line">    # 看一下栈的大小</span><br><span class="line">    print my_stack.size</span><br><span class="line">    # 栈是不是空了？</span><br><span class="line">    print my_stack.is_empty()</span><br><span class="line">    # 哇~真好吃~</span><br><span class="line">    print &apos;Yummy~&apos;</span><br></pre></td></tr></table></figure>
+<h4 id="str对象方法"><a href="#str对象方法" class="headerlink" title="str对象方法"></a>str对象方法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">1. 首字母大写</span><br><span class="line"></span><br><span class="line">capitalize()</span><br><span class="line"></span><br><span class="line">s.capitalize()</span><br><span class="line">　　返回s的一份拷贝，并不改变s。如果 s 的首字符是一个字母，则拷贝的首字母将其改成大写，其余所有字母转成小写。</span><br><span class="line"></span><br><span class="line">例如：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; &apos;this is a test string.&apos;.capitalize()</span><br><span class="line">&apos;This is a test string.&apos;</span><br><span class="line">&gt;&gt;&gt; &apos;_this is a test string.&apos;.capitalize()# 开头不是字母，不变</span><br><span class="line">&apos;_this is a test string.&apos;</span><br><span class="line">&gt;&gt;&gt; &apos;this is A test string.&apos;.capitalize()# 除开头外的其他位置上的字母全转成小写</span><br><span class="line">&apos;This is a test string.&apos;</span><br><span class="line">　　</span><br><span class="line"></span><br><span class="line">2. 对齐方式</span><br><span class="line"></span><br><span class="line">（1）左右对齐　　ljust()、rjust()</span><br><span class="line"></span><br><span class="line">s.ljust(width[, fillchar])</span><br><span class="line">s.rjust(width[, fillchar])</span><br><span class="line">　　返回一个长度为 max(len(s), width) 的字符串，如果 width &gt; len(s)，则左/右对齐，并在另一端填充 fillchar</span><br><span class="line"></span><br><span class="line">例如：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; &apos;1234&apos;.rjust(8, &apos;#&apos;)</span><br><span class="line">&apos;####1234&apos;</span><br><span class="line">&gt;&gt;&gt; &apos;1234&apos;.ljust(8, &apos;#&apos;)</span><br><span class="line">&apos;1234####&apos;</span><br><span class="line">&gt;&gt;&gt; &apos;1234&apos;.ljust(2, &apos;#&apos;)</span><br><span class="line">&apos;1234&apos;</span><br><span class="line">（2）居中　　center()</span><br><span class="line"></span><br><span class="line">s.center(n, fillchar=&apos; &apos;)</span><br><span class="line">　　返回一个新的字符串，新字符串的长度为 max(len(s), n)，当 n &gt; len(s)时，使用参数 fillchar （默认为空格）填充新字符串中其余的位置，并将 s 置于新字符串的中部。</span><br><span class="line"></span><br><span class="line">例如：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; &apos;test&apos;.center(3)</span><br><span class="line">&apos;test&apos;</span><br><span class="line">&gt;&gt;&gt; &apos;test&apos;.center(5)</span><br><span class="line">&apos; test&apos;</span><br><span class="line">&gt;&gt;&gt; &apos;test&apos;.center(6, &apos;#&apos;)</span><br><span class="line">&apos;#test#&apos;</span><br><span class="line">&gt;&gt;&gt; &apos;test&apos;.center(7, &apos;~&apos;)</span><br><span class="line">&apos;~~test~&apos;</span><br><span class="line">　　可见当左右无法均衡填充时，优先填充左侧。</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">3. 计数</span><br><span class="line"></span><br><span class="line">count()</span><br><span class="line"></span><br><span class="line">s.count(sub, start=0, end=sys.maxint)</span><br><span class="line">　　统计 s[start:end] 中，子串 sub 出现的次数。</span><br></pre></td></tr></table></figure>
+<h4 id="http请求头-常见的响应状态码"><a href="#http请求头-常见的响应状态码" class="headerlink" title="http请求头,常见的响应状态码"></a>http请求头,常见的响应状态码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line">HTTP由两部分组成：请求和响应。当你在Web浏览器中输入一个URL时，浏览器将根据你的要求创建并发送请求，该请求包含所输入的URL以及一些与浏览器本身相关的信息。当服务器收到这个请求时将返回一个响应，该响应包括与该请求相关的信息以及位于指定URL（如果有的话）的数据。直到浏览器解析该响应并显示出网页（或其他资源）为止。</span><br><span class="line">HTTP请求</span><br><span class="line">HTTP请求的格式如下所示：</span><br><span class="line">&lt;request-line&gt;</span><br><span class="line">&lt;headers&gt;</span><br><span class="line">&lt;blank line&gt;</span><br><span class="line">[&lt;request-body&gt;]</span><br><span class="line">在HTTP请求中，第一行必须是一个请求行（request line），用来说明请求类型、要访问的资源以及使用的HTTP版本。紧接着是一个首部（header）小节，用来说明服务器要使用的附加信息。在首部之后是一个空行，再此之后可以添加任意的其他数据[称之为主体（body）]。</span><br><span class="line">在HTTP中，定义了多种请求类型，通常我们关心的只有GET请求和POST请求。只要在Web浏览器上输入一个URL，浏览器就将基于该URL向服务器发送一个GET请求，以告诉服务器获取并返回什么资源。对于www.baidu.com的GET请求如下所示：</span><br><span class="line">GET / HTTP/1.1</span><br><span class="line">Host: www.baidu.com</span><br><span class="line">User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.6)</span><br><span class="line">Gecko/20050225 Firefox/1.0.1</span><br><span class="line">Connection: Keep-Alive</span><br><span class="line">请求行的第一部分说明了该请求是GET请求。该行的第二部分是一个斜杠（/），用来说明请求的是该域名的根目录。该行的最后一部分说明使用的是HTTP 1.1版本（另一个可选项是1.0）。那么请求发到哪里去呢？这就是第二行的内容。</span><br><span class="line">第2行是请求的第一个首部，HOST。首部HOST将指出请求的目的地。结合HOST和上一行中的斜杠（/），可以通知服务器请求的是www.baidu.com/（HTTP 1.1才需要使用首部HOST，而原来的1.0版本则不需要使用）。第三行中包含的是首部User-Agent，服务器端和客户端脚本都能够访问它，它是浏览器类型检测逻辑的重要基础。该信息由你使用的浏览器来定义（在本例中是Firefox 1.0.1），并且在每个请求中将自动发送。最后一行是首部Connection，通常将浏览器操作设置为Keep-Alive（当然也可以设置为其他值）。注意，在最后一个首部之后有一个空行。即使不存在请求主体，这个空行也是必需的。</span><br><span class="line">要发送GET请求的参数，则必须将这些额外的信息附在URL本身的后面。其格式类似于：</span><br><span class="line">URL ? name1=value1&amp;name2=value2&amp;..&amp;nameN=valueN</span><br><span class="line">该信息称之为查询字符串（query string），它将会复制在HTTP请求的请求行中，如下所示：</span><br><span class="line">GET /books/?name=Professional%20Ajax HTTP/1.1</span><br><span class="line">Host: www.baidu.com</span><br><span class="line">User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.6)</span><br><span class="line">Gecko/20050225 Firefox/1.0.1</span><br><span class="line">Connection: Keep-Alive</span><br><span class="line">注意，为了将文本“Professional Ajax”作为URL的参数，需要编码处理其内容，将空格替换成%20，这称为URL编码（URL encoding），常用于HTTP的许多地方（JavaScript提供了内建的函数来处理URL编码和解码）。“名称—值”（name—value）对用 &amp; 隔开。绝大部分的服务器端技术能够自动对请求主体进行解码，并为这些值的访问提供一些逻辑方式。当然，如何使用这些数据还是由服务器决定的。</span><br><span class="line">另一方面，POST请求在请求主体中为服务器提供了一些附加的信息。通常，当填写一个在线表单并提交它时，这些填入的数据将以POST请求的方式发送给服务器。</span><br><span class="line">以下就是一个典型的POST请求：</span><br><span class="line">POST / HTTP/1.1</span><br><span class="line">Host: www.baidu.com</span><br><span class="line">User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.6)</span><br><span class="line">Gecko/20050225 Firefox/1.0.1</span><br><span class="line">Content-Type: application/x-www-form-urlencoded</span><br><span class="line">Content-Length: 40</span><br><span class="line">Connection: Keep-Alive</span><br><span class="line">name=Professional%20Ajax&amp;publisher=Wiley</span><br><span class="line">从上面可以发现， POST请求和GET请求之间有一些区别。首先，请求行开始处的GET改为了POST，以表示不同的请求类型。你会发现首部Host和User-Agent仍然存在，在后面有两个新行。其中首部Content-Type说明了请求主体的内容是如何编码的。浏览器始终以application/ x-www-form- urlencoded的格式编码来传送数据，这是针对简单URL编码的MIME类型。首部Content-Length说明了请求主体的字节数。在首部Connection后是一个空行，再后面就是请求主体。与大多数浏览器的POST请求一样，这是以简单的“名称—值”对的形式给出的，其中name是Professional Ajax，publisher是Wiley。你可以以同样的格式来组织URL的查询字符串参数。</span><br><span class="line">下面是一些最常见的请求头：</span><br><span class="line">    Accept：浏览器可接受的MIME类型。</span><br><span class="line">    Accept - Charset：浏览器可接受的字符集。</span><br><span class="line">    Accept - Encoding：浏览器能够进行解码的数据编码方式，比如gzip。Servlet能够向支持gzip的浏览器返回经gzip编码的HTML页面。许多情形下这可以减少5到10倍的下载时间。</span><br><span class="line">    Accept - Language：浏览器所希望的语言种类，当服务器能够提供一种以上的语言版本时要用到。</span><br><span class="line">    Authorization：授权信息，通常出现在对服务器发送的WWW - Authenticate头的应答中。</span><br><span class="line">    Connection：表示是否需要持久连接。如果Servlet看到这里的值为“Keep - Alive”，或者看到请求使用的是HTTP 1.1（HTTP 1.1默认进行持久连接），它就可以利用持久连接的优点，当页面包含多个元素时（例如Applet，图片），显著地减少下载所需要的时间。要实现这一点，Servlet需要在应答中发送一个Content - Length头，最简单的实现方法是：先把内容写入ByteArrayOutputStream，然后在正式写出内容之前计算它的大小。</span><br><span class="line">    Content - Length：表示请求消息正文的长度。</span><br><span class="line">    Cookie：这是最重要的请求头信息之一，参见后面《Cookie处理》一章中的讨论。</span><br><span class="line">    From：请求发送者的email地址，由一些特殊的Web客户程序使用，浏览器不会用到它。</span><br><span class="line">    Host：初始URL中的主机和端口。</span><br><span class="line">    If - Modified - Since：只有当所请求的内容在指定的日期之后又经过修改才返回它，否则返回304“Not Modified”应答。</span><br><span class="line">    Pragma：指定“no - cache”值表示服务器必须返回一个刷新后的文档，即使它是代理服务器而且已经有了页面的本地拷贝。</span><br><span class="line">    Referer：包含一个URL，用户从该URL代表的页面出发访问当前请求的页面。</span><br><span class="line">    User - Agent：浏览器类型，如果Servlet返回的内容与浏览器类型有关则该值非常有用。</span><br><span class="line">    UA - Pixels，UA - Color，UA - OS，UA - CPU：由某些版本的IE浏览器所发送的非标准的请求头，表示屏幕大小、颜色深度、操作系统和CPU类型。</span><br><span class="line"></span><br><span class="line">HTTP响应</span><br><span class="line">如下所示，HTTP响应的格式与请求的格式十分类似：</span><br><span class="line">&lt;status-line&gt;</span><br><span class="line">&lt;headers&gt;</span><br><span class="line">&lt;blank line&gt;</span><br><span class="line">[&lt;response-body&gt;]</span><br><span class="line">正如你所见，在响应中唯一真正的区别在于第一行中用状态信息代替了请求信息。状态行（status line）通过提供一个状态码来说明所请求的资源情况。以下就是一个HTTP响应的例子：</span><br><span class="line">HTTP/1.1 200 OK</span><br><span class="line">Date: Sat, 31 Dec 2005 23:59:59 GMT</span><br><span class="line">Content-Type: text/html;charset=ISO-8859-1</span><br><span class="line">Content-Length: 122</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;title&gt;Wrox Homepage&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;!-- body goes here --&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line">在本例中，状态行给出的HTTP状态代码是200，以及消息OK。状态行始终包含的是状态码和相应的简短消息，以避免混乱。最常用的状态码有：</span><br><span class="line">◆200 (OK): 找到了该资源，并且一切正常。</span><br><span class="line">◆304 (NOT MODIFIED): 该资源在上次请求之后没有任何修改。这通常用于浏览器的缓存机制。</span><br><span class="line">◆401 (UNAUTHORIZED): 客户端无权访问该资源。这通常会使得浏览器要求用户输入用户名和密码，以登录到服务器。</span><br><span class="line">◆403 (FORBIDDEN): 客户端未能获得授权。这通常是在401之后输入了不正确的用户名或密码。</span><br><span class="line">◆404 (NOT FOUND): 在指定的位置不存在所申请的资源。</span><br></pre></td></tr></table></figure>
+<h4 id="js-window-onload-和-jq-ready-函数有何不同"><a href="#js-window-onload-和-jq-ready-函数有何不同" class="headerlink" title="js window.onload 和 jq ready 函数有何不同"></a>js window.onload 和 jq ready 函数有何不同</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1.执行时间 </span><br><span class="line"></span><br><span class="line">        window.onload必须等到页面内包括图片的所有元素加载完毕后才能执行。 </span><br><span class="line">        $(document).ready()是DOM结构绘制完毕后就执行，不必等到加载完毕。 </span><br><span class="line"></span><br><span class="line">2.编写个数不同 </span><br><span class="line"></span><br><span class="line">         window.onload不能同时编写多个，如果有多个window.onload方法，只会执行一个 </span><br><span class="line">         $(document).ready()可以同时编写多个，并且都可以得到执行 </span><br><span class="line"></span><br><span class="line">3.简化写法 </span><br><span class="line"></span><br><span class="line">         window.onload没有简化写法 </span><br><span class="line">         $(document).ready(function()&#123;&#125;)可以简写成$(function()&#123;&#125;);</span><br></pre></td></tr></table></figure>
+<h4 id="jq-选中所有段落内部的div标签"><a href="#jq-选中所有段落内部的div标签" class="headerlink" title="jq 选中所有段落内部的div标签"></a>jq 选中所有段落内部的div标签</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">子元素选择器（&gt;），例如 $(&quot;div&gt;img&quot;) 获取div下的img子元素；</span><br><span class="line">遍历函数children()，例如 $(&quot;div&quot;).children(&quot;img&quot;) 同样是获取div下的img子元素。</span><br><span class="line">如果想要获取DIV下的不仅是子元素，而且还包括其他后代元素（孙辈、曾孙辈元素...），那么，相应的两种方法是：</span><br><span class="line"></span><br><span class="line">后代元素选择器（空格），例如 $(&quot;div img&quot;)  获取div下的所有级别的img后代元素；</span><br><span class="line">遍历函数find()，例如 $(&quot;div&quot;).find(&quot;img&quot;)  获取div下的所有级别的ing后代子元素。</span><br></pre></td></tr></table></figure>
+<h4 id="jq-的选择器"><a href="#jq-的选择器" class="headerlink" title="jq 的选择器"></a>jq 的选择器</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line">jQuery 的选择器可谓之强大无比，这里简单地总结一下常用的元素查找方法 </span><br><span class="line"></span><br><span class="line">$(&quot;#myELement&quot;)    选择id值等于myElement的元素，id值不能重复在文档中只能有一个id值是myElement所以得到的是唯一的元素 </span><br><span class="line">$(&quot;div&quot;)           选择所有的div标签元素，返回div元素数组 </span><br><span class="line">$(&quot;.myClass&quot;)      选择使用myClass类的css的所有元素 </span><br><span class="line">$(&quot;*&quot;)             选择文档中的所有的元素，可以运用多种的选择方式进行联合选择：例如$(&quot;#myELement,div,.myclass&quot;) </span><br><span class="line"></span><br><span class="line">层叠选择器： </span><br><span class="line">$(&quot;form input&quot;)         选择所有的form元素中的input元素 </span><br><span class="line">$(&quot;#main &gt; *&quot;)          选择id值为main的所有的子元素 </span><br><span class="line">$(&quot;label + input&quot;)     选择所有的label元素的下一个input元素节点，经测试选择器返回的是label标签后面直接跟一个input标签的所有input标签元素 </span><br><span class="line">$(&quot;#prev ~ div&quot;)       同胞选择器，该选择器返回的为id为prev的标签元素的所有的属于同一个父元素的div标签 </span><br><span class="line"></span><br><span class="line">基本过滤选择器： </span><br><span class="line">$(&quot;tr:first&quot;)               选择所有tr元素的第一个 </span><br><span class="line">$(&quot;tr:last&quot;)                选择所有tr元素的最后一个 </span><br><span class="line">$(&quot;input:not(:checked) + span&quot;)   </span><br><span class="line"></span><br><span class="line">过滤掉：checked的选择器的所有的input元素 </span><br><span class="line"></span><br><span class="line">$(&quot;tr:even&quot;)               选择所有的tr元素的第0，2，4... ...个元素（注意：因为所选择的多个元素时为数组，所以序号是从0开始） </span><br><span class="line"></span><br><span class="line">$(&quot;tr:odd&quot;)                选择所有的tr元素的第1，3，5... ...个元素 </span><br><span class="line">$(&quot;td:eq(2)&quot;)             选择所有的td元素中序号为2的那个td元素 </span><br><span class="line">$(&quot;td:gt(4)&quot;)             选择td元素中序号大于4的所有td元素 </span><br><span class="line">$(&quot;td:ll(4)&quot;)              选择td元素中序号小于4的所有的td元素 </span><br><span class="line">$(&quot;:header&quot;) </span><br><span class="line">$(&quot;div:animated&quot;) </span><br><span class="line">内容过滤选择器： </span><br><span class="line"></span><br><span class="line">$(&quot;div:contains(&apos;John&apos;)&quot;) 选择所有div中含有John文本的元素 </span><br><span class="line">$(&quot;td:empty&quot;)           选择所有的为空（也不包括文本节点）的td元素的数组 </span><br><span class="line">$(&quot;div:has(p)&quot;)        选择所有含有p标签的div元素 </span><br><span class="line">$(&quot;td:parent&quot;)          选择所有的以td为父节点的元素数组 </span><br><span class="line">可视化过滤选择器： </span><br><span class="line"></span><br><span class="line">$(&quot;div:hidden&quot;)        选择所有的被hidden的div元素 </span><br><span class="line">$(&quot;div:visible&quot;)        选择所有的可视化的div元素 </span><br><span class="line">属性过滤选择器： </span><br><span class="line"></span><br><span class="line">$(&quot;div[id]&quot;)              选择所有含有id属性的div元素 </span><br><span class="line">$(&quot;input[name=&apos;newsletter&apos;]&quot;)    选择所有的name属性等于&apos;newsletter&apos;的input元素 </span><br><span class="line"></span><br><span class="line">$(&quot;input[name!=&apos;newsletter&apos;]&quot;) 选择所有的name属性不等于&apos;newsletter&apos;的input元素 </span><br><span class="line"></span><br><span class="line">$(&quot;input[name^=&apos;news&apos;]&quot;)         选择所有的name属性以&apos;news&apos;开头的input元素 </span><br><span class="line">$(&quot;input[name$=&apos;news&apos;]&quot;)         选择所有的name属性以&apos;news&apos;结尾的input元素 </span><br><span class="line">$(&quot;input[name*=&apos;man&apos;]&quot;)          选择所有的name属性包含&apos;news&apos;的input元素 </span><br><span class="line"></span><br><span class="line">$(&quot;input[id][name$=&apos;man&apos;]&quot;)    可以使用多个属性进行联合选择，该选择器是得到所有的含有id属性并且那么属性以man结尾的元素 </span><br><span class="line"></span><br><span class="line">子元素过滤选择器： </span><br><span class="line"></span><br><span class="line">$(&quot;ul li:nth-child(2)&quot;),$(&quot;ul li:nth-child(odd)&quot;),$(&quot;ul li:nth-child(3n + 1)&quot;) </span><br><span class="line"></span><br><span class="line">$(&quot;div span:first-child&quot;)          返回所有的div元素的第一个子节点的数组 </span><br><span class="line">$(&quot;div span:last-child&quot;)           返回所有的div元素的最后一个节点的数组 </span><br><span class="line">$(&quot;div button:only-child&quot;)       返回所有的div中只有唯一一个子节点的所有子节点的数组 </span><br><span class="line"></span><br><span class="line">表单元素选择器： </span><br><span class="line"></span><br><span class="line">$(&quot;:input&quot;)                  选择所有的表单输入元素，包括input, textarea, select 和 button </span><br><span class="line"></span><br><span class="line">$(&quot;:text&quot;)                     选择所有的text input元素 </span><br><span class="line">$(&quot;:password&quot;)           选择所有的password input元素 </span><br><span class="line">$(&quot;:radio&quot;)                   选择所有的radio input元素 </span><br><span class="line">$(&quot;:checkbox&quot;)            选择所有的checkbox input元素 </span><br><span class="line">$(&quot;:submit&quot;)               选择所有的submit input元素 </span><br><span class="line">$(&quot;:image&quot;)                 选择所有的image input元素 </span><br><span class="line">$(&quot;:reset&quot;)                   选择所有的reset input元素 </span><br><span class="line">$(&quot;:button&quot;)                选择所有的button input元素 </span><br><span class="line">$(&quot;:file&quot;)                     选择所有的file input元素 </span><br><span class="line">$(&quot;:hidden&quot;)               选择所有类型为hidden的input元素或表单的隐藏域 </span><br><span class="line"></span><br><span class="line">表单元素过滤选择器： </span><br><span class="line"></span><br><span class="line">$(&quot;:enabled&quot;)             选择所有的可操作的表单元素 </span><br><span class="line">$(&quot;:disabled&quot;)            选择所有的不可操作的表单元素 </span><br><span class="line">$(&quot;:checked&quot;)            选择所有的被checked的表单元素 </span><br><span class="line">$(&quot;select option:selected&quot;) 选择所有的select 的子元素中被selected的元素 </span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">选取一个 name 为”S_03_22″的input text框的上一个td的text值</span><br><span class="line">$(”input[@ name =S_03_22]“).parent().prev().text() </span><br><span class="line"></span><br><span class="line">名字以”S_”开始，并且不是以”_R”结尾的</span><br><span class="line">$(”input[@ name ^=&apos;S_&apos;]“).not(”[@ name $=&apos;_R&apos;]“) </span><br><span class="line"></span><br><span class="line">一个名为 radio_01的radio所选的值</span><br><span class="line">$(”input[@ name =radio_01][@checked]“).val();</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/19/data-structure/" rel="next" title="data_structure">
+                <i class="fa fa-chevron-left"></i> data_structure
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/12/14/hello-world/" rel="prev" title="HTTP和HTTPS">
+                HTTP和HTTPS <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Steven Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#删除列表重复元素"><span class="nav-number">1.</span> <span class="nav-text">删除列表重复元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#python中拷贝一个对象"><span class="nav-number">2.</span> <span class="nav-text">python中拷贝一个对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#python单例模式"><span class="nav-number">3.</span> <span class="nav-text">python单例模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lambda函数"><span class="nav-number">4.</span> <span class="nav-text">lambda函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#python实现一个stack"><span class="nav-number">5.</span> <span class="nav-text">python实现一个stack</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#str对象方法"><span class="nav-number">6.</span> <span class="nav-text">str对象方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#http请求头-常见的响应状态码"><span class="nav-number">7.</span> <span class="nav-text">http请求头,常见的响应状态码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#js-window-onload-和-jq-ready-函数有何不同"><span class="nav-number">8.</span> <span class="nav-text">js window.onload 和 jq ready 函数有何不同</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#jq-选中所有段落内部的div标签"><span class="nav-number">9.</span> <span class="nav-text">jq 选中所有段落内部的div标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#jq-的选择器"><span class="nav-number">10.</span> <span class="nav-text">jq 的选择器</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Steven Liu</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.3.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
