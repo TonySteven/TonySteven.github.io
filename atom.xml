@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2018-06-26T01:42:01.467Z</updated>
+  <updated>2018-06-26T08:29:31.730Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://tonysteven.github.io/2017/11/27/resumeexec/"/>
     <id>https://tonysteven.github.io/2017/11/27/resumeexec/</id>
     <published>2017-11-27T11:59:15.000Z</published>
-    <updated>2018-06-26T01:42:01.467Z</updated>
+    <updated>2018-06-26T08:29:31.730Z</updated>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;删除列表重复元素&quot;&gt;&lt;a href=&quot;#删除列表重复元素&quot; class=&quot;headerlink&quot; title=&quot;删除列表重复元素&quot;&gt;&lt;/a&gt;删除列表重复元素&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;def deleteDuplicatedElementFromList3(listA):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        #return list(set(listA))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        return sorted(set(listA), key = listA.index)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;h4 id=&quot;删除列表重复元素&quot;&gt;&lt;a href=&quot;#删除列表重复元素&quot; class=&quot;headerlink&quot; title=&quot;删除列表重复元素&quot;&gt;&lt;/a&gt;删除列表重复元素&lt;/h4&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;deleteDuplicatedElementFromList3&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(listA)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;#return list(set(listA))&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; sorted(set(listA), key = listA.index)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -81,7 +81,7 @@
     <link href="https://tonysteven.github.io/2016/12/19/data-structure/"/>
     <id>https://tonysteven.github.io/2016/12/19/data-structure/</id>
     <published>2016-12-19T07:35:05.000Z</published>
-    <updated>2018-06-26T01:39:36.542Z</updated>
+    <updated>2018-06-26T08:34:08.739Z</updated>
     
     <summary type="html">
     
@@ -171,7 +171,7 @@
     
     <summary type="html">
     
-      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;取一个list或tuple的部分元素是非常常见的操作。比如，一个list如下：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; L = [&amp;apos;Michael&amp;apos;, &amp;apos;Sarah&amp;apos;, &amp;apos;Tracy&amp;apos;, &amp;apos;Bob&amp;apos;, &amp;apos;Jack&amp;apos;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;取前3个元素，应该怎么做？&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;取一个list或tuple的部分元素是非常常见的操作。比如，一个list如下：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;&amp;gt; L = [&lt;span class=&quot;string&quot;&gt;&#39;Michael&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;Sarah&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;Tracy&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;Bob&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;Jack&#39;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;取前&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;个元素，应该怎么做？&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
