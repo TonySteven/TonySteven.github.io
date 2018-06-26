@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2018-06-26T01:27:56.207Z</updated>
+  <updated>2018-06-26T01:42:01.467Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>问题总结</title>
+    <link href="https://tonysteven.github.io/2017/11/27/resumeexec/"/>
+    <id>https://tonysteven.github.io/2017/11/27/resumeexec/</id>
+    <published>2017-11-27T11:59:15.000Z</published>
+    <updated>2018-06-26T01:42:01.467Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;删除列表重复元素&quot;&gt;&lt;a href=&quot;#删除列表重复元素&quot; class=&quot;headerlink&quot; title=&quot;删除列表重复元素&quot;&gt;&lt;/a&gt;删除列表重复元素&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;def deleteDuplicatedElementFromList3(listA):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        #return list(set(listA))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        return sorted(set(listA), key = listA.index)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Problem" scheme="https://tonysteven.github.io/categories/Problem/"/>
+    
+    
+      <category term="Problem" scheme="https://tonysteven.github.io/tags/Problem/"/>
+    
+  </entry>
+  
+  <entry>
     <title>HTTP和HTTPS</title>
-    <link href="https://tonysteven.github.io/2017/12/14/hello-world/"/>
-    <id>https://tonysteven.github.io/2017/12/14/hello-world/</id>
-    <published>2017-12-14T07:10:03.000Z</published>
-    <updated>2018-06-26T01:27:56.207Z</updated>
+    <link href="https://tonysteven.github.io/2016/12/19/hello-world/"/>
+    <id>https://tonysteven.github.io/2016/12/19/hello-world/</id>
+    <published>2016-12-19T07:35:05.000Z</published>
+    <updated>2018-06-26T01:39:10.308Z</updated>
     
     <summary type="html">
     
@@ -49,24 +69,10 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>问题总结</title>
-    <link href="https://tonysteven.github.io/2017/11/27/resumeexec/"/>
-    <id>https://tonysteven.github.io/2017/11/27/resumeexec/</id>
-    <published>2017-11-27T11:59:15.000Z</published>
-    <updated>2018-06-26T01:28:59.681Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;删除列表重复元素&quot;&gt;&lt;a href=&quot;#删除列表重复元素&quot; class=&quot;headerlink&quot; title=&quot;删除列表重复元素&quot;&gt;&lt;/a&gt;删除列表重复元素&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;def deleteDuplicatedElementFromList3(listA):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        #return list(set(listA))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        return sorted(set(listA), key = listA.index)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
+      <category term="网络" scheme="https://tonysteven.github.io/categories/%E7%BD%91%E7%BB%9C/"/>
     
     
-      <category term="programming" scheme="https://tonysteven.github.io/tags/programming/"/>
+      <category term="net" scheme="https://tonysteven.github.io/tags/net/"/>
     
   </entry>
   
@@ -75,7 +81,7 @@
     <link href="https://tonysteven.github.io/2016/12/19/data-structure/"/>
     <id>https://tonysteven.github.io/2016/12/19/data-structure/</id>
     <published>2016-12-19T07:35:05.000Z</published>
-    <updated>2018-06-26T01:28:11.200Z</updated>
+    <updated>2018-06-26T01:39:36.542Z</updated>
     
     <summary type="html">
     
@@ -84,7 +90,7 @@
     
     </summary>
     
-      <category term="计算机,数据结构" scheme="https://tonysteven.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="算法" scheme="https://tonysteven.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="programming" scheme="https://tonysteven.github.io/tags/programming/"/>
@@ -96,7 +102,7 @@
     <link href="https://tonysteven.github.io/2016/12/11/mysql-advanced/"/>
     <id>https://tonysteven.github.io/2016/12/11/mysql-advanced/</id>
     <published>2016-12-11T08:29:00.000Z</published>
-    <updated>2018-06-26T01:28:31.164Z</updated>
+    <updated>2018-06-26T01:40:13.986Z</updated>
     
     <summary type="html">
     
@@ -105,6 +111,8 @@
 &lt;p&gt;本节课程学习MySQL数据库的高级操作，这些操作主要是由DBA或项目经理来完成，对于初级开发人员，不需要熟练操作，这部分内容作为了解，对于未来的工作是加分项&lt;br&gt;账户管理：创建账户、修改密码、分配权限等&lt;br&gt;存储过程：创建、删除、查看存储过程&lt;br&gt;函数：创建、删除、查看函数，mysql中定义变量、选择语句、循环语句&lt;br&gt;视图：完成查询语句的封装&lt;br&gt;事务：保证一个业务逻辑的完整性&lt;br&gt;索引：对于大数据量可以提高查询速度&lt;br&gt;练习：根据性格测试的数据设计表，并编写创建表的脚本&lt;br&gt;
     
     </summary>
+    
+      <category term="MySQL" scheme="https://tonysteven.github.io/categories/MySQL/"/>
     
     
       <category term="programming" scheme="https://tonysteven.github.io/tags/programming/"/>
@@ -116,7 +124,7 @@
     <link href="https://tonysteven.github.io/2016/12/10/mysql-primary/"/>
     <id>https://tonysteven.github.io/2016/12/10/mysql-primary/</id>
     <published>2016-12-10T08:32:10.000Z</published>
-    <updated>2018-06-26T01:28:44.730Z</updated>
+    <updated>2018-06-26T01:41:14.297Z</updated>
     
     <summary type="html">
     
@@ -147,6 +155,8 @@
     
     </summary>
     
+      <category term="MySQL" scheme="https://tonysteven.github.io/categories/MySQL/"/>
+    
     
       <category term="programming" scheme="https://tonysteven.github.io/tags/programming/"/>
     
@@ -157,20 +167,15 @@
     <link href="https://tonysteven.github.io/2016/08/13/section/"/>
     <id>https://tonysteven.github.io/2016/08/13/section/</id>
     <published>2016-08-13T07:29:15.000Z</published>
-    <updated>2018-06-26T01:29:18.197Z</updated>
+    <updated>2018-06-26T01:44:18.318Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;取一个list或tuple的部分元素是非常常见的操作。比如，一个list如下：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; L = [&amp;apos;Michael&amp;apos;, &amp;apos;Sarah&amp;apos;, &amp;apos;Tracy&amp;apos;, &amp;apos;Bob&amp;apos;, &amp;apos;Jack&amp;apos;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;取前3个元素，应该怎么做？&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
+    
+      <category term="Problem" scheme="https://tonysteven.github.io/categories/Problem/"/>
     
     
       <category term="programming" scheme="https://tonysteven.github.io/tags/programming/"/>
