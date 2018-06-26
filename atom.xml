@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2017-12-14T07:10:03.000Z</updated>
+  <updated>2018-06-26T01:27:56.207Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -21,19 +21,31 @@
     <link href="https://tonysteven.github.io/2017/12/14/hello-world/"/>
     <id>https://tonysteven.github.io/2017/12/14/hello-world/</id>
     <published>2017-12-14T07:10:03.000Z</published>
-    <updated>2017-12-14T07:10:03.000Z</updated>
+    <updated>2018-06-26T01:27:56.207Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;blockquote&gt;
+      &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;HTTP协议（HyperText Transfer Protocol，超文本传输协议）：是一种发布和接收
-        
-      
+&lt;li&gt;HTTP协议（HyperText Transfer Protocol，超文本传输协议）：是一种发布和接收 HTML页面的方法。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTPS（Hypertext Transfer Protocol over Secure Socket Layer）简单讲是HTTP的安全版，在HTTP下加入SSL层&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;SSL（Secure Sockets Layer 安全套接层）主要用于Web的安全传输协议，在传输层对网络连接进行加密，保障在Internet上数据传输的安全。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTP的端口号为80，&lt;/li&gt;
+&lt;li&gt;HTTPS的端口号为443&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -45,17 +57,11 @@
     <link href="https://tonysteven.github.io/2017/11/27/resumeexec/"/>
     <id>https://tonysteven.github.io/2017/11/27/resumeexec/</id>
     <published>2017-11-27T11:59:15.000Z</published>
-    <updated>2018-06-25T09:03:42.218Z</updated>
+    <updated>2018-06-26T01:28:59.681Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h4 id=&quot;删除列表重复元素&quot;&gt;&lt;a href=&quot;#删除列表重复元素&quot; class=&quot;headerlink&quot; title=&quot;删除列表重复元素&quot;&gt;&lt;/a&gt;删除列表重复元素&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
+      &lt;h4 id=&quot;删除列表重复元素&quot;&gt;&lt;a href=&quot;#删除列表重复元素&quot; class=&quot;headerlink&quot; title=&quot;删除列表重复元素&quot;&gt;&lt;/a&gt;删除列表重复元素&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;def deleteDuplicatedElementFromList3(listA):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        #return list(set(listA))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        return sorted(set(listA), key = listA.index)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -69,17 +75,12 @@
     <link href="https://tonysteven.github.io/2016/12/19/data-structure/"/>
     <id>https://tonysteven.github.io/2016/12/19/data-structure/</id>
     <published>2016-12-19T07:35:05.000Z</published>
-    <updated>2018-06-25T09:54:27.183Z</updated>
+    <updated>2018-06-26T01:28:11.200Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;[转载]&lt;br&gt;作者：LeeLom&lt;br&gt;链接：&lt;a href=&quot;http://www.jianshu.com/p/7d037c332a9d&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;[转载]&lt;br&gt;作者：LeeLom&lt;br&gt;链接：&lt;a href=&quot;http://www.jianshu.com/p/7d037c332a9d&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.jianshu.com/p/7d037c332a9d&lt;/a&gt;&lt;br&gt;來源：简书&lt;/p&gt;
+&lt;h1 id=&quot;数据结构常见的八大排序算法（详细整理）&quot;&gt;&lt;a href=&quot;#数据结构常见的八大排序算法（详细整理）&quot; class=&quot;headerlink&quot; title=&quot;数据结构常见的八大排序算法（详细整理）&quot;&gt;&lt;/a&gt;数据结构常见的八大排序算法（详细整理）&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/1156494-ab4cecff133d87b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700&quot; alt=&quot;总&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -95,18 +96,13 @@
     <link href="https://tonysteven.github.io/2016/12/11/mysql-advanced/"/>
     <id>https://tonysteven.github.io/2016/12/11/mysql-advanced/</id>
     <published>2016-12-11T08:29:00.000Z</published>
-    <updated>2018-06-25T09:03:28.962Z</updated>
+    <updated>2018-06-26T01:28:31.164Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h1 id=&quot;5-MySQL高级&quot;&gt;&lt;a href=&quot;#5-MySQL高级&quot; class=&quot;headerlink&quot; title=&quot;5 MySQL高级&quot;&gt;&lt;/a&gt;5
-        
-      
+      &lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h1 id=&quot;5-MySQL高级&quot;&gt;&lt;a href=&quot;#5-MySQL高级&quot; class=&quot;headerlink&quot; title=&quot;5 MySQL高级&quot;&gt;&lt;/a&gt;5 MySQL高级&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;本节课程学习MySQL数据库的高级操作，这些操作主要是由DBA或项目经理来完成，对于初级开发人员，不需要熟练操作，这部分内容作为了解，对于未来的工作是加分项&lt;br&gt;账户管理：创建账户、修改密码、分配权限等&lt;br&gt;存储过程：创建、删除、查看存储过程&lt;br&gt;函数：创建、删除、查看函数，mysql中定义变量、选择语句、循环语句&lt;br&gt;视图：完成查询语句的封装&lt;br&gt;事务：保证一个业务逻辑的完整性&lt;br&gt;索引：对于大数据量可以提高查询速度&lt;br&gt;练习：根据性格测试的数据设计表，并编写创建表的脚本&lt;br&gt;
     
     </summary>
     
@@ -120,18 +116,34 @@
     <link href="https://tonysteven.github.io/2016/12/10/mysql-primary/"/>
     <id>https://tonysteven.github.io/2016/12/10/mysql-primary/</id>
     <published>2016-12-10T08:32:10.000Z</published>
-    <updated>2018-06-25T09:03:34.991Z</updated>
+    <updated>2018-06-26T01:28:44.730Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;服务器端安装&quot;&gt;&lt;a href=&quot;#服务器端安装&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&quot;服务器端安装&quot;&gt;&lt;a href=&quot;#服务器端安装&quot; class=&quot;headerlink&quot; title=&quot;服务器端安装&quot;&gt;&lt;/a&gt;服务器端安装&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;安装服务器端：在终端中输入如下命令，回车后，然后按照提示输入&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;sudo apt-get install mysql-server&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;启动服务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;sudo service mysql start&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;停止服务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;sudo service mysql stop&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;重启服务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;sudo service mysql restart&lt;/code&gt;&lt;br&gt;
     
     </summary>
     
@@ -145,7 +157,7 @@
     <link href="https://tonysteven.github.io/2016/08/13/section/"/>
     <id>https://tonysteven.github.io/2016/08/13/section/</id>
     <published>2016-08-13T07:29:15.000Z</published>
-    <updated>2018-06-25T09:03:48.304Z</updated>
+    <updated>2018-06-26T01:29:18.197Z</updated>
     
     <summary type="html">
     
@@ -153,7 +165,8 @@
       
         
         
-          &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
         
       
     
