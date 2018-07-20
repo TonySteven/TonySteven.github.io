@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2018-06-26T08:29:31.730Z</updated>
+  <updated>2018-07-20T10:14:06.579Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>翻墙教程</title>
+    <link href="https://tonysteven.github.io/2018/07/20/free-ss/"/>
+    <id>https://tonysteven.github.io/2018/07/20/free-ss/</id>
+    <published>2018-07-20T09:23:59.000Z</published>
+    <updated>2018-07-20T10:14:06.579Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/shadowsocks&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;下载shadowsocks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://free-ss.cf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;获取SS服务器账号密码&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="网络" scheme="https://tonysteven.github.io/categories/%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="net" scheme="https://tonysteven.github.io/tags/net/"/>
+    
+  </entry>
   
   <entry>
     <title>问题总结</title>
