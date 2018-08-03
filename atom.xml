@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2018-07-20T10:14:06.579Z</updated>
+  <updated>2018-08-03T02:54:38.071Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ueditor设置默认输入的字体、行间距</title>
+    <link href="https://tonysteven.github.io/2018/08/03/ueditor%E8%AE%BE%E7%BD%AE%E9%BB%98%E8%AE%A4%E8%BE%93%E5%85%A5%E7%9A%84%E5%AD%97%E4%BD%93%E3%80%81%E8%A1%8C%E9%97%B4%E8%B7%9D/"/>
+    <id>https://tonysteven.github.io/2018/08/03/ueditor设置默认输入的字体、行间距/</id>
+    <published>2018-08-03T02:23:56.000Z</published>
+    <updated>2018-08-03T02:54:38.071Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;问题分析&quot;&gt;&lt;a href=&quot;#问题分析&quot; class=&quot;headerlink&quot; title=&quot;问题分析&quot;&gt;&lt;/a&gt;问题分析&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;项目需求，要求在Ueditor中，不勾选任何样式编辑的情况下，存入数据库中的是微软雅黑的字体，目前问题是存入数据库的只有p标签&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://ws4.sinaimg.cn/large/0069RVTdly1ftwb3au8pgj312v0qe1kx.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="problems" scheme="https://tonysteven.github.io/categories/problems/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>翻墙教程</title>

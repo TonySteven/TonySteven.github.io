@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ueditor设置默认输入的字体、行间距]]></title>
+    <url>%2F2018%2F08%2F03%2Fueditor%E8%AE%BE%E7%BD%AE%E9%BB%98%E8%AE%A4%E8%BE%93%E5%85%A5%E7%9A%84%E5%AD%97%E4%BD%93%E3%80%81%E8%A1%8C%E9%97%B4%E8%B7%9D%2F</url>
+    <content type="text"><![CDATA[问题分析 项目需求，要求在Ueditor中，不勾选任何样式编辑的情况下，存入数据库中的是微软雅黑的字体，目前问题是存入数据库的只有p标签 后来尝试改P标签的样式改成 这么设置确实在ue的编辑页面，显示成为默认的字体了，但是提交后台保存时，并没有将改样式保存至数据库中，经过对比发现，点击编辑区域更改后的字体样式，是直接在\&lt;p>中标注标签,而我们设置好的字体，是写在样式表中的（如下图2），ue在提交后台保存时，只提交了\&lt;p>标签样式信息被过滤。 ###解决方法 在初始化ueditor时,手动设置即可 var editor12345editor.ready(function()&#123; editor.execCommand('fontfamily','微软雅黑'); //字体 editor.execCommand('lineheight', 1.5); //行间距 editor.execCommand('fontsize', '16px'); //字号&#125;);]]></content>
+      <categories>
+        <category>problems</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[翻墙教程]]></title>
     <url>%2F2018%2F07%2F20%2Ffree-ss%2F</url>
     <content type="text"><![CDATA[下载shadowsocks 获取SS服务器账号密码 步骤1根据版本下载Shadowsocks以MAC OS为例 步骤2简单免费方法打开网站http://free-ss.cf 费事免费一年方法自己搭建SS服务器(Google Cloud Platform) 步骤3发现新世界]]></content>
