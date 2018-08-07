@@ -167,13 +167,17 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Genesis">
-<meta property="og:url" content="https://tonysteven.github.io/categories/problems/index.html">
+  <meta name="description" content="概述 幂等性原本是数学上的概念，即使公式：f(x)=f(f(x)) 能够成立的数学性质。用在编程领域，则意为对同一个系统，使用同样的条件，一次请求和重复的多次请求对系统资源的影响是一致的  幂等性是分布式系统设计中十分重要的概念，具有这一性质的接口在设计时总是秉持这样的一种理念：调用接口发生异常并且重复尝试时，总是会造成系统所无法承受的损失，所以必须阻止这种现象的发生  幂等有两个维度：一是空间维">
+<meta property="og:type" content="article">
+<meta property="og:title" content="幂等性浅谈">
+<meta property="og:url" content="https://tonysteven.github.io/2018/08/07/Idempotency/index.html">
 <meta property="og:site_name" content="Genesis">
+<meta property="og:description" content="概述 幂等性原本是数学上的概念，即使公式：f(x)=f(f(x)) 能够成立的数学性质。用在编程领域，则意为对同一个系统，使用同样的条件，一次请求和重复的多次请求对系统资源的影响是一致的  幂等性是分布式系统设计中十分重要的概念，具有这一性质的接口在设计时总是秉持这样的一种理念：调用接口发生异常并且重复尝试时，总是会造成系统所无法承受的损失，所以必须阻止这种现象的发生  幂等有两个维度：一是空间维">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-08-07T09:13:40.824Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Genesis">
+<meta name="twitter:title" content="幂等性浅谈">
+<meta name="twitter:description" content="概述 幂等性原本是数学上的概念，即使公式：f(x)=f(f(x)) 能够成立的数学性质。用在编程领域，则意为对同一个系统，使用同样的条件，一次请求和重复的多次请求对系统资源的影响是一致的  幂等性是分布式系统设计中十分重要的概念，具有这一性质的接口在设计时总是秉持这样的一种理念：调用接口发生异常并且重复尝试时，总是会造成系统所无法承受的损失，所以必须阻止这种现象的发生  幂等有两个维度：一是空间维">
 
 
 
@@ -182,7 +186,7 @@
 
 
 
-  <link rel="canonical" href="https://tonysteven.github.io/categories/problems/"/>
+  <link rel="canonical" href="https://tonysteven.github.io/2018/08/07/Idempotency/"/>
 
 
 
@@ -192,7 +196,7 @@
   };
 </script>
 
-  <title>分类: problems | Genesis</title>
+  <title>幂等性浅谈 | Genesis</title>
   
 
 
@@ -239,7 +243,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -300,7 +304,7 @@
         
         
           
-          <li class="menu-item menu-item-categories menu-item-active">
+          <li class="menu-item menu-item-categories">
     <a href="/categories/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
   </li>
@@ -328,28 +332,6 @@
 
   
     
-
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
 
   
 
@@ -398,87 +380,249 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>problems<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://tonysteven.github.io/2018/08/07/Idempotency/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Steven Liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Genesis">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/08/07/oracle_solution_to_unlock_tab/" itemprop="url">
-              
-                <span itemprop="name">oracle数据库锁表解决办法</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">幂等性浅谈
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-07T15:40:54+08:00"
-              content="2018-08-07" >
-          08-07
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
 
-    </header>
-  </article>
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-08-07 16:47:32 / 修改时间：17:13:40" itemprop="dateCreated datePublished" datetime="2018-08-07T16:47:32+08:00">2018-08-07</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/算法/" itemprop="url" rel="index"><span itemprop="name">算法</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
+      
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/08/03/ueditor_set_fontsize/" itemprop="url">
-              
-                <span itemprop="name">ueditor设置默认输入的字体、行间距</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-03T10:23:56+08:00"
-              content="2018-08-03" >
-          08-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
+        <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ul>
+<li><p>幂等性原本是数学上的概念，即使公式：f(x)=f(f(x)) 能够成立的数学性质。用在编程领域，则意为<font color="#FF7F50">对同一个系统，使用同样的条件，一次请求和重复的多次请求对系统资源的影响是一致的</font></p>
+</li>
+<li><p>幂等性是分布式系统设计中十分重要的概念，具有这一性质的接口在设计时总是秉持这样的一种理念：<font color="#FF7F50">调用接口发生异常并且重复尝试时，总是会造成系统所无法承受的损失，所以必须阻止这种现象的发生</font></p>
+</li>
+<li><p>幂等有两个维度：一是空间维度上的幂等，即幂等对象的范围，是个人还是机构，是某一次交易还是某种类型的交易…二是时间维度上的幂等，即幂等的保证时间，是几秒、几分钟还是永久性的…</p>
+</li>
+<li><p>不同的需求，会有不一样的解决方案，难度和成本也不一样</p>
+</li>
+</ul>
+<a id="more"></a>
+<h3 id="幂等性适用领域"><a href="#幂等性适用领域" class="headerlink" title="幂等性适用领域"></a>幂等性适用领域</h3><p>试想这样的一种场景：在电商平台上支付后，因为网络原因导致系统提示你支付失败，于是你又重新付款了一次，等完成后检查网银发现被系统扣了两次款，这是一种什么样的体验？</p>
+<p>造成上述问题的原因可能有很多，比如第一次付款时实际支付成功，但是信息返回时网络中断导致系统误判；又比如第一次付款的确失败了，但第二次付款时发生意外，导致支付请求被重复发送等等。在一次支付的过程中，每个环节都有可能会发生问题，我们要如何规避这类问题引发的分险？</p>
+<p>幂等性是解决这类问题的方案之一，所以在电商，银行，互联网金融等对数据准确性要求很高的领域中，这一特性具有十分重要的地位。</p>
+<h3 id="幂等的常用思路"><a href="#幂等的常用思路" class="headerlink" title="幂等的常用思路"></a>幂等的常用思路</h3><h4 id="1-MVCC"><a href="#1-MVCC" class="headerlink" title="1. MVCC"></a>1. MVCC</h4><p>多版本并发控制，乐观锁的一种实现，在数据更新时需要去比较持有数据的版本号，版本号不一致的操作无法成功。例如博客点赞次数自动+1的接口：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public boolean addCount(Long id, Long version);</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">update</span> blogTable <span class="keyword">set</span> <span class="keyword">count</span>= <span class="keyword">count</span>+<span class="number">1</span>,<span class="keyword">version</span>=<span class="keyword">version</span>+<span class="number">1</span> <span class="keyword">where</span> <span class="keyword">id</span>=<span class="number">321</span> <span class="keyword">and</span> <span class="keyword">version</span>=<span class="number">123</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-去重表"><a href="#2-去重表" class="headerlink" title="2. 去重表"></a>2. 去重表</h4><p>利用数据库表单的特性来实现幂等，常用的一个思路是在表上构建唯一性索引，保证某一类数据一旦执行完毕，后续同样的请求再也无法成功写入。</p>
+<p>例子还是上述的博客点赞问题，要想防止一个人重复点赞，可以设计一张表，将博客id与用户id绑定建立唯一索引，每当用户点赞时就往表中写入一条数据，这样重复点赞的数据就无法写入。</p>
+<h4 id="3-TOKEN机制"><a href="#3-TOKEN机制" class="headerlink" title="3. TOKEN机制"></a>3. TOKEN机制</h4><p>这种机制就比较重要了，适用范围较广，有多种不同的实现方式。其核心思想是为每一次操作生成一个唯一性的凭证，也就是token。一个token在操作的每一个阶段只有一次执行权，一旦执行成功则保存执行结果。对重复的请求，返回同一个结果。</p>
+<p>以电商平台为例子，电商平台上的订单id就是最适合的token。当用户下单时，会经历多个环节，比如生成订单，减库存，减优惠券等等。</p>
+<p>每一个环节执行时都先检测一下该订单id是否已经执行过这一步骤，对未执行的请求，执行操作并缓存结果，而对已经执行过的id，则直接返回之前的执行结果，不做任何操作。这样可以在最大程度上避免操作的重复执行问题，缓存起来的执行结果也能用于事务的控制等。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>幂等性是分布式领域的一把利刃，每一个有志与分布式领域的程序员都应该熟悉它的设计思想</p>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div align="center">
+ 
+   <div class="">
+   <p><span>
+   <b>本文地址：</b><a href="/2018/08/07/Idempotency/" title="幂等性浅谈">https://tonysteven.github.io/2018/08/07/Idempotency/</a><br/><b>转载请注明出处，谢谢！</b>
+   </span></p>
+   </div>
+ 
+</div>
+<div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Steven Liu 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Steven Liu 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/07/eclipse-keymap/" rel="next" title="eclipse操作指南">
+                <i class="fa fa-chevron-left"></i> eclipse操作指南
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/07/java-RESTful-api/" rel="prev" title="接口Demo(Java)">
+                接口Demo(Java) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -499,8 +643,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -598,6 +751,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#幂等性适用领域"><span class="nav-number">2.</span> <span class="nav-text">幂等性适用领域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#幂等的常用思路"><span class="nav-number">3.</span> <span class="nav-text">幂等的常用思路</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-MVCC"><span class="nav-number">3.1.</span> <span class="nav-text">1. MVCC</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-去重表"><span class="nav-number">3.2.</span> <span class="nav-text">2. 去重表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-TOKEN机制"><span class="nav-number">3.3.</span> <span class="nav-text">3. TOKEN机制</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -759,6 +928,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
 
   
 
