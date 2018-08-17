@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2018-08-07T09:32:46.628Z</updated>
+  <updated>2018-08-17T02:55:55.976Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git 常用命令</title>
+    <link href="https://tonysteven.github.io/2018/08/17/git-command/"/>
+    <id>https://tonysteven.github.io/2018/08/17/git-command/</id>
+    <published>2018-08-17T02:32:46.000Z</published>
+    <updated>2018-08-17T02:55:55.976Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一般配置&quot;&gt;&lt;a href=&quot;#一般配置&quot; class=&quot;headerlink&quot; title=&quot;一般配置&quot;&gt;&lt;/a&gt;一般配置&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git --version   //查看git的版本信息&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git config --global user.name   //获取当前登录的用户&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git config --global user.email  //获取当前登录用户的邮箱&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="git" scheme="https://tonysteven.github.io/categories/git/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>接口Demo(Java)</title>
