@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2018-09-13T09:43:36.450Z</updated>
+  <updated>2018-10-17T09:39:38.647Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>查看out实时日志</title>
+    <link href="https://tonysteven.github.io/2018/10/17/linux-Log/"/>
+    <id>https://tonysteven.github.io/2018/10/17/linux-Log/</id>
+    <published>2018-10-17T09:34:12.000Z</published>
+    <updated>2018-10-17T09:39:38.647Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;查看log&quot;&gt;&lt;a href=&quot;#查看log&quot; class=&quot;headerlink&quot; title=&quot;查看log&quot;&gt;&lt;/a&gt;查看log&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://tonysteven.github.io/categories/linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>验证sign的API</title>
+    <link href="https://tonysteven.github.io/2018/10/17/IDS-Api/"/>
+    <id>https://tonysteven.github.io/2018/10/17/IDS-Api/</id>
+    <published>2018-10-17T09:32:58.000Z</published>
+    <updated>2018-10-17T09:38:01.904Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;验证sign的API&quot;&gt;&lt;a href=&quot;#验证sign的API&quot; class=&quot;headerlink&quot; title=&quot;验证sign的API&quot;&gt;&lt;/a&gt;验证sign的API&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="java" scheme="https://tonysteven.github.io/categories/java/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>遍历取数据库字段值</title>
@@ -119,7 +161,7 @@
     <link href="https://tonysteven.github.io/2018/08/07/Idempotency/"/>
     <id>https://tonysteven.github.io/2018/08/07/Idempotency/</id>
     <published>2018-08-07T08:47:32.000Z</published>
-    <updated>2018-08-07T09:13:40.824Z</updated>
+    <updated>2018-10-17T09:38:04.296Z</updated>
     
     <summary type="html">
     
