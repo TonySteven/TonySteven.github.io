@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[outline 服务器搭建(AWS)]]></title>
+    <url>%2F2018%2F10%2F24%2Foutline%2F</url>
+    <content type="text"><![CDATA[outline简介Outline 是一款爱国工具，Jigsaw 开发的项目——Jigsaw 属于 alphabet 旗下，而 alphabet 是 Google 母公司。那么，这是一款 Google 出品工具？ Outline Manager下载https://github.com/Jigsaw-Code/outline-releases/tree/master/manager 服务器端安装 可以用DigitalOcean,google Cloud,AWS,VULTR,Lindo… 个人选择AWS,因为12个月免费,且国内能访问,不用单币卡 1bash -c &quot;$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)&quot; 在服务器上执行 这段代码添加到Outline Manager ss添加到客户端 大功告成]]></content>
+      <categories>
+        <category>free</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[查看out实时日志]]></title>
     <url>%2F2018%2F10%2F17%2Flinux-Log%2F</url>
     <content type="text"><![CDATA[查看log12345find /opt/ -name logscd /opt/Oracle/Middleware/wlserver_10.3/common/nodemanager/servers/public_server1/logstail -f public_server1.out]]></content>
