@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2018-10-24T16:39:23.366Z</updated>
+  <updated>2018-11-23T08:22:42.810Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>js自动计算相差天数</title>
+    <link href="https://tonysteven.github.io/2018/11/23/autoCulDaysinDate/"/>
+    <id>https://tonysteven.github.io/2018/11/23/autoCulDaysinDate/</id>
+    <published>2018-11-23T08:09:21.000Z</published>
+    <updated>2018-11-23T08:22:42.810Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;JS自动计算相差天数&quot;&gt;&lt;a href=&quot;#JS自动计算相差天数&quot; class=&quot;headerlink&quot; title=&quot;JS自动计算相差天数&quot;&gt;&lt;/a&gt;JS自动计算相差天数&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="js" scheme="https://tonysteven.github.io/categories/js/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>outline 服务器搭建(AWS)</title>

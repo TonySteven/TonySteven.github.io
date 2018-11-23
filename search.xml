@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[js自动计算相差天数]]></title>
+    <url>%2F2018%2F11%2F23%2FautoCulDaysinDate%2F</url>
+    <content type="text"><![CDATA[JS自动计算相差天数 12345678//计算相差天数方法function daysBetween(sDate1, sDate2) &#123; //Date.parse() 解析一个日期时间字符串，并返回1970/1/1 午夜距离该日期时间的毫秒数 var time1 = Date.parse(new Date(sDate1)); var time2 = Date.parse(new Date(sDate2)); var nDays = Math.abs(parseInt((time2 - time1) / 1000 / 3600 / 24)); return nDays;&#125;; JS获取当前日期123456789101112131415getNowFormatDate: function () &#123; var date = new Date(); var seperator1 = "-"; var year = date.getFullYear(); var month = date.getMonth() + 1; var strDate = date.getDate(); if (month &gt;= 1 &amp;&amp; month &lt;= 9) &#123; month = "0" + month; &#125; if (strDate &gt;= 0 &amp;&amp; strDate &lt;= 9) &#123; strDate = "0" + strDate; &#125; var currentdate = year + seperator1 + month + seperator1 + strDate; return currentdate; &#125;, 绑定开始时间和结束时间change时间1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950bindListenerSDate();bindListenerEDate();function bindListenerSDate() &#123; $('[data-name="KSSJ"]') .bind() .change(function () &#123; var formData = $("#emapForm").emapForm("getValue"); var kssj = formData.KSSJ; var jssj = formData.JSSJ; // var ksNum = parseInt(kssj); // var jsNum = parseInt(jssj); // var abs = jsNum - ksNum; var time1 = Date.parse(new Date(kssj)); var time2 = Date.parse(new Date(jssj)); var abs = parseInt(time2 - time1); if (abs &lt; 0) &#123; $(this).children("input").val(""); alert("开始时间大于结束时间!请重新选择") &#125; var GJ = daysBetween(kssj, jssj); $("#emapForm").emapForm("setValue", &#123; GJTS: GJ &#125;); &#125;);&#125;function bindListenerEDate() &#123; $('[data-name="JSSJ"]') .bind() .change(function () &#123; var formData = $("#emapForm").emapForm("getValue"); var kssj = formData.KSSJ; var jssj = formData.JSSJ; var time1 = Date.parse(new Date(kssj)); var time2 = Date.parse(new Date(jssj)); var abs = parseInt(time2 - time1); if (abs &lt; 0) &#123; $(this).children("input").val(""); alert("开始时间大于结束时间!请重新选择") &#125; var GJ = daysBetween(kssj, jssj); $("#emapForm").emapForm("setValue", &#123; GJTS: GJ &#125;); &#125;);&#125;]]></content>
+      <categories>
+        <category>js</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[outline 服务器搭建(AWS)]]></title>
     <url>%2F2018%2F10%2F24%2Foutline%2F</url>
     <content type="text"><![CDATA[outline简介Outline 是一款爱国工具，Jigsaw 开发的项目——Jigsaw 属于 alphabet 旗下，而 alphabet 是 Google 母公司。那么，这是一款 Google 出品工具？ Outline Manager下载https://github.com/Jigsaw-Code/outline-releases/tree/master/manager 服务器端安装 可以用DigitalOcean,google Cloud,AWS,VULTR,Lindo… 个人选择AWS,因为12个月免费,且国内能访问,不用单币卡 1bash -c &quot;$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)&quot; 在服务器上执行 这段代码添加到Outline Manager ss添加到客户端 大功告成]]></content>
