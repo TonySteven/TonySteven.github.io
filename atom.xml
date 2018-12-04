@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2018-11-23T08:22:42.810Z</updated>
+  <updated>2018-12-04T07:16:55.996Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Oauth2.0</title>
+    <link href="https://tonysteven.github.io/2018/11/30/Oauth/"/>
+    <id>https://tonysteven.github.io/2018/11/30/Oauth/</id>
+    <published>2018-11-30T06:40:51.000Z</published>
+    <updated>2018-12-04T07:16:55.996Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;center&gt;&lt;br&gt;    &lt;img src=&quot;https://oauth.net/images/oauth-2-sm.png&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;h3 id=&quot;OAuth2-0简介&quot;&gt;&lt;a href=&quot;#OAuth2-0简介&quot; class=&quot;headerlink&quot; title=&quot;OAuth2.0简介&quot;&gt;&lt;/a&gt;OAuth2.0简介&lt;/h3&gt;&lt;p&gt;OAuth 2.0是行业标准的授权协议。OAuth 2.0取代了2006年创建的原始OAuth协议所做的工作.OAuth 2.0专注于客户端开发人员的简单性，同时为Web应用程序，桌面应用程序，移动电话和客厅设备提供特定的授权流程。该规范及其扩展正在IETF OAuth工作组内开发。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="api" scheme="https://tonysteven.github.io/categories/api/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>js自动计算相差天数</title>
     <link href="https://tonysteven.github.io/2018/11/23/autoCulDaysinDate/"/>
     <id>https://tonysteven.github.io/2018/11/23/autoCulDaysinDate/</id>
     <published>2018-11-23T08:09:21.000Z</published>
-    <updated>2018-11-23T08:22:42.810Z</updated>
+    <updated>2018-11-23T08:24:56.336Z</updated>
     
     <summary type="html">
     
@@ -140,11 +159,11 @@
   </entry>
   
   <entry>
-    <title>apply_api_demo</title>
+    <title>接口调用Demo</title>
     <link href="https://tonysteven.github.io/2018/08/23/apply-api-demo/"/>
     <id>https://tonysteven.github.io/2018/08/23/apply-api-demo/</id>
     <published>2018-08-23T09:15:42.000Z</published>
-    <updated>2018-08-23T09:38:11.123Z</updated>
+    <updated>2018-12-04T07:18:30.936Z</updated>
     
     <summary type="html">
     
@@ -442,26 +461,6 @@
     </summary>
     
       <category term="MySQL" scheme="https://tonysteven.github.io/categories/MySQL/"/>
-    
-    
-      <category term="programming" scheme="https://tonysteven.github.io/tags/programming/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>section</title>
-    <link href="https://tonysteven.github.io/2016/08/13/section/"/>
-    <id>https://tonysteven.github.io/2016/08/13/section/</id>
-    <published>2016-08-13T07:29:15.000Z</published>
-    <updated>2018-06-26T01:44:18.318Z</updated>
-    
-    <summary type="html">
-    
-      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;取一个list或tuple的部分元素是非常常见的操作。比如，一个list如下：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; L = [&amp;apos;Michael&amp;apos;, &amp;apos;Sarah&amp;apos;, &amp;apos;Tracy&amp;apos;, &amp;apos;Bob&amp;apos;, &amp;apos;Jack&amp;apos;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;取前3个元素，应该怎么做？&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Problem" scheme="https://tonysteven.github.io/categories/Problem/"/>
     
     
       <category term="programming" scheme="https://tonysteven.github.io/tags/programming/"/>
