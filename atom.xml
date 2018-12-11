@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2018-12-04T07:16:55.996Z</updated>
+  <updated>2018-12-11T03:17:27.165Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java httpclient 跳过SSL证书验证的GET请求 工具类</title>
+    <link href="https://tonysteven.github.io/2018/12/11/httpclient-Get-Skip-SSL-certificate-authentication/"/>
+    <id>https://tonysteven.github.io/2018/12/11/httpclient-Get-Skip-SSL-certificate-authentication/</id>
+    <published>2018-12-11T03:11:30.000Z</published>
+    <updated>2018-12-11T03:17:27.165Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;HttpClient工具类&quot;&gt;&lt;a href=&quot;#HttpClient工具类&quot; class=&quot;headerlink&quot; title=&quot;HttpClient工具类&quot;&gt;&lt;/a&gt;HttpClient工具类&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="util" scheme="https://tonysteven.github.io/categories/util/"/>
+    
+    
+      <category term="工具类" scheme="https://tonysteven.github.io/tags/%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>Oauth2.0</title>
@@ -414,49 +434,6 @@
       &lt;p&gt;[TOC]&lt;/p&gt;
 &lt;h1 id=&quot;5-MySQL高级&quot;&gt;&lt;a href=&quot;#5-MySQL高级&quot; class=&quot;headerlink&quot; title=&quot;5 MySQL高级&quot;&gt;&lt;/a&gt;5 MySQL高级&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;本节课程学习MySQL数据库的高级操作，这些操作主要是由DBA或项目经理来完成，对于初级开发人员，不需要熟练操作，这部分内容作为了解，对于未来的工作是加分项&lt;br&gt;账户管理：创建账户、修改密码、分配权限等&lt;br&gt;存储过程：创建、删除、查看存储过程&lt;br&gt;函数：创建、删除、查看函数，mysql中定义变量、选择语句、循环语句&lt;br&gt;视图：完成查询语句的封装&lt;br&gt;事务：保证一个业务逻辑的完整性&lt;br&gt;索引：对于大数据量可以提高查询速度&lt;br&gt;练习：根据性格测试的数据设计表，并编写创建表的脚本&lt;br&gt;
-    
-    </summary>
-    
-      <category term="MySQL" scheme="https://tonysteven.github.io/categories/MySQL/"/>
-    
-    
-      <category term="programming" scheme="https://tonysteven.github.io/tags/programming/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mysql-primary</title>
-    <link href="https://tonysteven.github.io/2016/12/10/mysql-primary/"/>
-    <id>https://tonysteven.github.io/2016/12/10/mysql-primary/</id>
-    <published>2016-12-10T08:32:10.000Z</published>
-    <updated>2018-06-26T01:41:14.297Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;服务器端安装&quot;&gt;&lt;a href=&quot;#服务器端安装&quot; class=&quot;headerlink&quot; title=&quot;服务器端安装&quot;&gt;&lt;/a&gt;服务器端安装&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;安装服务器端：在终端中输入如下命令，回车后，然后按照提示输入&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;sudo apt-get install mysql-server&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;启动服务&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;sudo service mysql start&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;停止服务&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;sudo service mysql stop&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;重启服务&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;sudo service mysql restart&lt;/code&gt;&lt;br&gt;
     
     </summary>
     
