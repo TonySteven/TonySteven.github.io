@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2018-12-11T03:17:27.165Z</updated>
+  <updated>2019-01-07T02:32:45.646Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Proxyee</title>
+    <link href="https://tonysteven.github.io/2019/01/07/Proxyee/"/>
+    <id>https://tonysteven.github.io/2019/01/07/Proxyee/</id>
+    <published>2019-01-07T02:09:34.000Z</published>
+    <updated>2019-01-07T02:32:45.646Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Proxyee简介&quot;&gt;&lt;a href=&quot;#Proxyee简介&quot; class=&quot;headerlink&quot; title=&quot;Proxyee简介&quot;&gt;&lt;/a&gt;Proxyee简介&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="tools" scheme="https://tonysteven.github.io/categories/tools/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>java httpclient 跳过SSL证书验证的GET请求 工具类</title>
@@ -416,28 +434,6 @@
     </summary>
     
       <category term="算法" scheme="https://tonysteven.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="programming" scheme="https://tonysteven.github.io/tags/programming/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mysql_advanced</title>
-    <link href="https://tonysteven.github.io/2016/12/11/mysql-advanced/"/>
-    <id>https://tonysteven.github.io/2016/12/11/mysql-advanced/</id>
-    <published>2016-12-11T08:29:00.000Z</published>
-    <updated>2018-06-26T01:40:13.986Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h1 id=&quot;5-MySQL高级&quot;&gt;&lt;a href=&quot;#5-MySQL高级&quot; class=&quot;headerlink&quot; title=&quot;5 MySQL高级&quot;&gt;&lt;/a&gt;5 MySQL高级&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;本节课程学习MySQL数据库的高级操作，这些操作主要是由DBA或项目经理来完成，对于初级开发人员，不需要熟练操作，这部分内容作为了解，对于未来的工作是加分项&lt;br&gt;账户管理：创建账户、修改密码、分配权限等&lt;br&gt;存储过程：创建、删除、查看存储过程&lt;br&gt;函数：创建、删除、查看函数，mysql中定义变量、选择语句、循环语句&lt;br&gt;视图：完成查询语句的封装&lt;br&gt;事务：保证一个业务逻辑的完整性&lt;br&gt;索引：对于大数据量可以提高查询速度&lt;br&gt;练习：根据性格测试的数据设计表，并编写创建表的脚本&lt;br&gt;
-    
-    </summary>
-    
-      <category term="MySQL" scheme="https://tonysteven.github.io/categories/MySQL/"/>
     
     
       <category term="programming" scheme="https://tonysteven.github.io/tags/programming/"/>
