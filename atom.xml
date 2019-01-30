@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2019-01-07T02:32:45.646Z</updated>
+  <updated>2019-01-30T09:52:02.959Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mac 开启安装root权限</title>
+    <link href="https://tonysteven.github.io/2019/01/30/mac-anywhere/"/>
+    <id>https://tonysteven.github.io/2019/01/30/mac-anywhere/</id>
+    <published>2019-01-30T05:54:05.000Z</published>
+    <updated>2019-01-30T09:52:02.959Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;mac-开启安装root权限&quot;&gt;&lt;a href=&quot;#mac-开启安装root权限&quot; class=&quot;headerlink&quot; title=&quot;mac 开启安装root权限&quot;&gt;&lt;/a&gt;mac 开启安装root权限&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://ws4.sinaimg.cn/large/006tNc79ly1fzor9qq9kaj30lo0j1n24.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Tutorial" scheme="https://tonysteven.github.io/categories/Tutorial/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Proxyee</title>
@@ -416,27 +434,6 @@
     
     
       <category term="net" scheme="https://tonysteven.github.io/tags/net/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>data_structure</title>
-    <link href="https://tonysteven.github.io/2016/12/19/data-structure/"/>
-    <id>https://tonysteven.github.io/2016/12/19/data-structure/</id>
-    <published>2016-12-19T07:35:05.000Z</published>
-    <updated>2018-08-23T09:37:44.336Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[转载]&lt;br&gt;作者：LeeLom&lt;br&gt;链接：&lt;a href=&quot;http://www.jianshu.com/p/7d037c332a9d&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.jianshu.com/p/7d037c332a9d&lt;/a&gt;&lt;br&gt;來源：简书&lt;/p&gt;
-&lt;h1 id=&quot;数据结构常见的八大排序算法（详细整理）&quot;&gt;&lt;a href=&quot;#数据结构常见的八大排序算法（详细整理）&quot; class=&quot;headerlink&quot; title=&quot;数据结构常见的八大排序算法（详细整理）&quot;&gt;&lt;/a&gt;数据结构常见的八大排序算法（详细整理）&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/1156494-ab4cecff133d87b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700&quot; alt=&quot;总&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="算法" scheme="https://tonysteven.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="programming" scheme="https://tonysteven.github.io/tags/programming/"/>
     
   </entry>
   
