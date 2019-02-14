@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2019-01-30T09:52:02.959Z</updated>
+  <updated>2019-02-14T07:59:06.198Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>win10 1809 激活教程</title>
+    <link href="https://tonysteven.github.io/2019/02/14/win10-1809-active/"/>
+    <id>https://tonysteven.github.io/2019/02/14/win10-1809-active/</id>
+    <published>2019-02-14T07:47:47.000Z</published>
+    <updated>2019-02-14T07:59:06.198Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;win10-1809-激活教程&quot;&gt;&lt;a href=&quot;#win10-1809-激活教程&quot; class=&quot;headerlink&quot; title=&quot;win10 1809 激活教程&quot;&gt;&lt;/a&gt;win10 1809 激活教程&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="Tutorial" scheme="https://tonysteven.github.io/categories/Tutorial/"/>
+    
+    
+      <category term="Tutorial" scheme="https://tonysteven.github.io/tags/Tutorial/"/>
+    
+  </entry>
+  
+  <entry>
     <title>mac 开启安装root权限</title>
     <link href="https://tonysteven.github.io/2019/01/30/mac-anywhere/"/>
     <id>https://tonysteven.github.io/2019/01/30/mac-anywhere/</id>
     <published>2019-01-30T05:54:05.000Z</published>
-    <updated>2019-01-30T09:52:02.959Z</updated>
+    <updated>2019-02-14T07:54:02.046Z</updated>
     
     <summary type="html">
     
@@ -394,46 +414,6 @@
     
     
       <category term="Problem" scheme="https://tonysteven.github.io/tags/Problem/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTTP和HTTPS</title>
-    <link href="https://tonysteven.github.io/2016/12/19/hello-world/"/>
-    <id>https://tonysteven.github.io/2016/12/19/hello-world/</id>
-    <published>2016-12-19T07:35:05.000Z</published>
-    <updated>2018-06-26T01:39:10.308Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;HTTP协议（HyperText Transfer Protocol，超文本传输协议）：是一种发布和接收 HTML页面的方法。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;HTTPS（Hypertext Transfer Protocol over Secure Socket Layer）简单讲是HTTP的安全版，在HTTP下加入SSL层&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;SSL（Secure Sockets Layer 安全套接层）主要用于Web的安全传输协议，在传输层对网络连接进行加密，保障在Internet上数据传输的安全。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;HTTP的端口号为80，&lt;/li&gt;
-&lt;li&gt;HTTPS的端口号为443&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="网络" scheme="https://tonysteven.github.io/categories/%E7%BD%91%E7%BB%9C/"/>
-    
-    
-      <category term="net" scheme="https://tonysteven.github.io/tags/net/"/>
     
   </entry>
   

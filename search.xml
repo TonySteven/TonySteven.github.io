@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[win10 1809 激活教程]]></title>
+    <url>%2F2019%2F02%2F14%2Fwin10-1809-active%2F</url>
+    <content type="text"><![CDATA[win10 1809 激活教程 1.打开CMD(快捷键:Win+x) 2.在命令提示符中依次输入1234567slmgr.vbs /upk （此时弹出窗口显未“已成功卸载了产品密钥”）slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX （弹出窗口提示：“成功的安装了产品密钥”）slmgr /skms zh.us.to （弹出窗口提示：“密钥管理服务计算机名成功的设置为 zh.us.to”）slmgr /ato （弹出窗口提示：“成功的激活了产品”） 3.Win10 1809各个版本激活密钥1234567891011121314151617专业版：W269N-WFGWX-YVC9B-4J6C9-T83GX教育版：NW6C2-QMPVW-D7KKK-3GKT6-VCFB2专业版N：MH37W-N47XK-V7XM9-C7227-GCQG9企业版N：DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4教育版N：2WH4N-8QGBV-H22JP-CT43Q-MDWWJ 企业版：NPPR9-FWDCX-D2C8J-H872K-2YT43家庭版：TX9XD-98N7V-6WMQ6-BX7FG-H8Q99企业版LSTB：WNMTR-4C88C-JK8YV-HQ7T2-76DF9企业版LSTB N：2F77B-TNFGY-69QQF-B8YKP-D69TJ]]></content>
+      <categories>
+        <category>Tutorial</category>
+      </categories>
+      <tags>
+        <tag>Tutorial</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[mac 开启安装root权限]]></title>
     <url>%2F2019%2F01%2F30%2Fmac-anywhere%2F</url>
     <content type="text"><![CDATA[mac 开启安装root权限 显示anywhere 1sudo spctl --master-disable 隐藏anywhere 1sudo spctl --master-enable]]></content>
