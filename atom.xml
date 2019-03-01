@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2019-02-14T07:59:06.198Z</updated>
+  <updated>2019-03-01T02:54:56.055Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>获取当前日期方法</title>
+    <link href="https://tonysteven.github.io/2019/03/01/getnowformatdate/"/>
+    <id>https://tonysteven.github.io/2019/03/01/getnowformatdate/</id>
+    <published>2019-03-01T02:06:18.000Z</published>
+    <updated>2019-03-01T02:54:56.055Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;JS-获取当前日期方法&quot;&gt;&lt;a href=&quot;#JS-获取当前日期方法&quot; class=&quot;headerlink&quot; title=&quot;JS 获取当前日期方法&quot;&gt;&lt;/a&gt;JS 获取当前日期方法&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="function" scheme="https://tonysteven.github.io/categories/function/"/>
+    
+    
+      <category term="function" scheme="https://tonysteven.github.io/tags/function/"/>
+    
+  </entry>
   
   <entry>
     <title>win10 1809 激活教程</title>
@@ -394,26 +414,6 @@
     
     
       <category term="net" scheme="https://tonysteven.github.io/tags/net/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>问题总结</title>
-    <link href="https://tonysteven.github.io/2017/11/27/resumeexec/"/>
-    <id>https://tonysteven.github.io/2017/11/27/resumeexec/</id>
-    <published>2017-11-27T11:59:15.000Z</published>
-    <updated>2018-06-26T08:29:31.730Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;删除列表重复元素&quot;&gt;&lt;a href=&quot;#删除列表重复元素&quot; class=&quot;headerlink&quot; title=&quot;删除列表重复元素&quot;&gt;&lt;/a&gt;删除列表重复元素&lt;/h4&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;deleteDuplicatedElementFromList3&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(listA)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;#return list(set(listA))&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; sorted(set(listA), key = listA.index)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Problem" scheme="https://tonysteven.github.io/categories/Problem/"/>
-    
-    
-      <category term="Problem" scheme="https://tonysteven.github.io/tags/Problem/"/>
     
   </entry>
   
