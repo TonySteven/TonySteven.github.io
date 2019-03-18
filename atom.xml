@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2019-03-01T02:54:56.055Z</updated>
+  <updated>2019-03-18T03:39:11.518Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在GitLab/GitHub（Mac环境）使用SSH Key</title>
+    <link href="https://tonysteven.github.io/2019/03/18/gitlabSSH/"/>
+    <id>https://tonysteven.github.io/2019/03/18/gitlabSSH/</id>
+    <published>2019-03-18T03:23:56.000Z</published>
+    <updated>2019-03-18T03:39:11.518Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;在GitLab-GitHub（Mac环境）&quot;&gt;&lt;a href=&quot;#在GitLab-GitHub（Mac环境）&quot; class=&quot;headerlink&quot; title=&quot;在GitLab/GitHub（Mac环境）&quot;&gt;&lt;/a&gt;在GitLab/GitHub（Mac环境）&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="Tutorial" scheme="https://tonysteven.github.io/categories/Tutorial/"/>
+    
+    
+      <category term="Tutorial" scheme="https://tonysteven.github.io/tags/Tutorial/"/>
+    
+  </entry>
   
   <entry>
     <title>获取当前日期方法</title>
@@ -391,29 +411,6 @@
     
       <category term="problems" scheme="https://tonysteven.github.io/categories/problems/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>翻墙教程</title>
-    <link href="https://tonysteven.github.io/2018/07/20/free-ss/"/>
-    <id>https://tonysteven.github.io/2018/07/20/free-ss/</id>
-    <published>2018-07-20T09:23:59.000Z</published>
-    <updated>2018-09-04T09:11:54.053Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/shadowsocks&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;下载shadowsocks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://free-ss.cf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;获取SS服务器账号密码&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-      <category term="网络" scheme="https://tonysteven.github.io/categories/%E7%BD%91%E7%BB%9C/"/>
-    
-    
-      <category term="net" scheme="https://tonysteven.github.io/tags/net/"/>
     
   </entry>
   

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[在GitLab/GitHub（Mac环境）使用SSH Key]]></title>
+    <url>%2F2019%2F03%2F18%2FgitlabSSH%2F</url>
+    <content type="text"><![CDATA[在GitLab/GitHub（Mac环境） 1.概念介绍 git是分布式的代码管理工具，远程的代码管理是基于ssh的，所以要使用远程的git则需要ssh的配置。简单的说，Git - 版本控制工具；Github是一个网站，提供给用户空间创建git仓储，保存用户的一些数据文档或者代码等；GitLab是基于Git的项目管理软件 首先，使用代码管理工具把本地的代码上传到服务器时需要加密处理，加密传输的算法有很多种，git可使用rsa，rsa要解决的一个核心问题是，如何使用一对密钥，使其中一个可以用来加密，而另外一个可以用来解密。这这对密钥就是public key（公钥）和private key（私钥）。​ 其中，公钥就是那个用来加密的密钥，这也就是为什么你在本机生成了公钥之后，要上传到github的原因。从github发回来的，用那公钥加密过的数据，可以用你本地的私钥来还原。如果你的key丢失了，不管是公钥还是私钥，丢失一个都不能用了，解决方法也很简单，删除原有的key，重新再生成一次，然后在GitHub/GitLab里再设置一次就行​ 在个人电脑生成ssh密钥后，会同时生成一个公开密钥和一个私有密钥，默认情况下在用户主目录下的.ssh目录中，密钥为id_rsa，公开密钥为id_rsa.pub。 密钥和公开密钥是共同使用的，协同开发中，一般会将公钥配置在服务器中，这样方便经常登录，也不需要输入密码，这是现在集群和各种云平台常用的登录方式，密钥在本地不被泄漏就非常安全。 2.如何生成并设置SSH Key2.1 检查是否已经存在SSH Key打开电脑终端，输入以下命令： 1ls -al ~/.ssh 2.2 如已有 复制SSH KEY 1pbcopy &lt; ~/.ssh/id_rsa.pub 在gitlab添加即可 2.3 终端未出现id_rsa.pub 或 id_dsa.pub文件，表示该电脑还没有配置SSH Key1ssh-keygen -t rsa -C &quot;your_email@example.com&quot; 默认会在相应路径下（/your_home_path）生成id_rsa和id_rsa.pub两个文件，此时终端会显示： 123Generating public/private rsa key pair.Enter file in which to save the key (/your_home_path/.ssh/id_rsa): 连续回车即可，也可能会让你输入密码，密码就是你的开机密码 此时再输入命令：ls -al ~/.ssh 就会出现id_rsa.pub 和 id_dsa.pub两个文件,再执行上面的SSH KEY 复制语句即可]]></content>
+      <categories>
+        <category>Tutorial</category>
+      </categories>
+      <tags>
+        <tag>Tutorial</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[获取当前日期方法]]></title>
     <url>%2F2019%2F03%2F01%2Fgetnowformatdate%2F</url>
     <content type="text"><![CDATA[JS 获取当前日期方法 1234567891011121314151617181920212223242526272829303132333435//yyyy-mm-dd hh:mm:ssgetNowFormatDate: function () &#123; var date = new Date(); var seperator1 = "-"; var seperator2 = ":"; var month = date.getMonth() + 1; var strDate = date.getDate(); if (month &gt;= 1 &amp;&amp; month &lt;= 9) &#123; month = "0" + month; &#125; if (strDate &gt;= 0 &amp;&amp; strDate &lt;= 9) &#123; strDate = "0" + strDate; &#125; var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate + " " + date.getHours() + seperator2 + date.getMinutes() + seperator2 + date.getSeconds(); return currentdate; &#125;, //yyyy-mm-dd getNowFormatDate: function () &#123; var date = new Date(); var seperator1 = "-"; var year = date.getFullYear(); var month = date.getMonth() + 1; var strDate = date.getDate(); if (month &gt;= 1 &amp;&amp; month &lt;= 9) &#123; month = "0" + month; &#125; if (strDate &gt;= 0 &amp;&amp; strDate &lt;= 9) &#123; strDate = "0" + strDate; &#125; var currentdate = year + seperator1 + month + seperator1 + strDate; return currentdate; &#125;,]]></content>
