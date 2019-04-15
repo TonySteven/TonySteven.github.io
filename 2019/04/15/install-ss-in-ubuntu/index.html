@@ -167,18 +167,23 @@
 
 
 
-  <meta name="description" content="1234取一个list或tuple的部分元素是非常常见的操作。比如，一个list如下：&amp;gt;&amp;gt;&amp;gt; L = [&amp;apos;Michael&amp;apos;, &amp;apos;Sarah&amp;apos;, &amp;apos;Tracy&amp;apos;, &amp;apos;Bob&amp;apos;, &amp;apos;Jack&amp;apos;]取前3个元素，应该怎么做？">
-<meta name="keywords" content="programming">
+  <meta name="description" content="AWS Ubuntu 安装SS服务">
+<meta name="keywords" content="Tutorial">
 <meta property="og:type" content="article">
-<meta property="og:title" content="section">
-<meta property="og:url" content="https://tonysteven.github.io/2016/08/13/section/index.html">
+<meta property="og:title" content="AWS Ubuntu 安装SS服务">
+<meta property="og:url" content="https://tonysteven.github.io/2019/04/15/install-ss-in-ubuntu/index.html">
 <meta property="og:site_name" content="Genesis">
-<meta property="og:description" content="1234取一个list或tuple的部分元素是非常常见的操作。比如，一个list如下：&amp;gt;&amp;gt;&amp;gt; L = [&amp;apos;Michael&amp;apos;, &amp;apos;Sarah&amp;apos;, &amp;apos;Tracy&amp;apos;, &amp;apos;Bob&amp;apos;, &amp;apos;Jack&amp;apos;]取前3个元素，应该怎么做？">
+<meta property="og:description" content="AWS Ubuntu 安装SS服务">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-26T01:44:18.318Z">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNc79ly1g23e7y5b9pj30nd02iabq.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79ly1g23e9hlcinj30k201w0tn.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79ly1g23ee35a2sj316u0r1gtr.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79ly1g23ef2javsj317b0q9qe6.jpg">
+<meta property="og:updated_time" content="2019-04-15T08:34:30.873Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="section">
-<meta name="twitter:description" content="1234取一个list或tuple的部分元素是非常常见的操作。比如，一个list如下：&amp;gt;&amp;gt;&amp;gt; L = [&amp;apos;Michael&amp;apos;, &amp;apos;Sarah&amp;apos;, &amp;apos;Tracy&amp;apos;, &amp;apos;Bob&amp;apos;, &amp;apos;Jack&amp;apos;]取前3个元素，应该怎么做？">
+<meta name="twitter:title" content="AWS Ubuntu 安装SS服务">
+<meta name="twitter:description" content="AWS Ubuntu 安装SS服务">
+<meta name="twitter:image" content="https://ws3.sinaimg.cn/large/006tNc79ly1g23e7y5b9pj30nd02iabq.jpg">
 
 
 
@@ -187,7 +192,7 @@
 
 
 
-  <link rel="canonical" href="https://tonysteven.github.io/2016/08/13/section/"/>
+  <link rel="canonical" href="https://tonysteven.github.io/2019/04/15/install-ss-in-ubuntu/"/>
 
 
 
@@ -197,7 +202,7 @@
   };
 </script>
 
-  <title>section | Genesis</title>
+  <title>AWS Ubuntu 安装SS服务 | Genesis</title>
   
 
 
@@ -397,7 +402,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tonysteven.github.io/2016/08/13/section/">
+    <link itemprop="mainEntityOfPage" href="https://tonysteven.github.io/2019/04/15/install-ss-in-ubuntu/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Steven Liu">
@@ -414,7 +419,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">section
+          <h1 class="post-title" itemprop="name headline">AWS Ubuntu 安装SS服务
               
             
           </h1>
@@ -439,24 +444,12 @@
                 
               
 
-              <time title="创建时间：2016-08-13 15:29:15" itemprop="dateCreated datePublished" datetime="2016-08-13T15:29:15+08:00">2016-08-13</time>
+              <time title="创建时间：2019-04-15 16:07:46 / 修改时间：16:34:30" itemprop="dateCreated datePublished" datetime="2019-04-15T16:07:46+08:00">2019-04-15</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-26 09:44:18" itemprop="dateModified" datetime="2018-06-26T09:44:18+08:00">2018-06-26</time>
               
             
           </span>
@@ -473,7 +466,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Problem/" itemprop="url" rel="index"><span itemprop="name">Problem</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tutorial/" itemprop="url" rel="index"><span itemprop="name">Tutorial</span></a></span>
 
                 
                 
@@ -507,9 +500,29 @@
       
 
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">取一个list或tuple的部分元素是非常常见的操作。比如，一个list如下：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; L = [&apos;Michael&apos;, &apos;Sarah&apos;, &apos;Tracy&apos;, &apos;Bob&apos;, &apos;Jack&apos;]</span><br><span class="line">取前3个元素，应该怎么做？</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line">笨办法：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; [L[0], L[1], L[2]]</span><br><span class="line">[&apos;Michael&apos;, &apos;Sarah&apos;, &apos;Tracy&apos;]</span><br><span class="line">之所以是笨办法是因为扩展一下，取前N个元素就没辙了。</span><br><span class="line"></span><br><span class="line">取前N个元素，也就是索引为0-(N-1)的元素，可以用循环：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; r = []</span><br><span class="line">&gt;&gt;&gt; n = 3</span><br><span class="line">&gt;&gt;&gt; for i in range(n):</span><br><span class="line">...     r.append(L[i])</span><br><span class="line">... </span><br><span class="line">&gt;&gt;&gt; r</span><br><span class="line">[&apos;Michael&apos;, &apos;Sarah&apos;, &apos;Tracy&apos;]</span><br><span class="line">对这种经常取指定索引范围的操作，用循环十分繁琐，因此，Python提供了切片（Slice）操作符，能大大简化这种操作。</span><br><span class="line"></span><br><span class="line">对应上面的问题，取前3个元素，用一行代码就可以完成切片：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; L[0:3]</span><br><span class="line">[&apos;Michael&apos;, &apos;Sarah&apos;, &apos;Tracy&apos;]</span><br><span class="line">L[0:3]表示，从索引0开始取，直到索引3为止，但不包括索引3。即索引0，1，2，正好是3个元素。</span><br><span class="line"></span><br><span class="line">如果第一个索引是0，还可以省略：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; L[:3]</span><br><span class="line">[&apos;Michael&apos;, &apos;Sarah&apos;, &apos;Tracy&apos;]</span><br><span class="line">也可以从索引1开始，取出2个元素出来：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; L[1:3]</span><br><span class="line">[&apos;Sarah&apos;, &apos;Tracy&apos;]</span><br><span class="line">类似的，既然Python支持L[-1]取倒数第一个元素，那么它同样支持倒数切片，试试：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; L[-2:]</span><br><span class="line">[&apos;Bob&apos;, &apos;Jack&apos;]</span><br><span class="line">&gt;&gt;&gt; L[-2:-1]</span><br><span class="line">[&apos;Bob&apos;]</span><br><span class="line">记住倒数第一个元素的索引是-1。</span><br><span class="line"></span><br><span class="line">切片操作十分有用。我们先创建一个0-99的数列：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; L = range(100)</span><br><span class="line">&gt;&gt;&gt; L</span><br><span class="line">[0, 1, 2, 3, ..., 99]</span><br><span class="line">可以通过切片轻松取出某一段数列。比如前10个数：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; L[:10]</span><br><span class="line">[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span><br><span class="line">后10个数：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; L[-10:]</span><br><span class="line">[90, 91, 92, 93, 94, 95, 96, 97, 98, 99]</span><br><span class="line">前11-20个数：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; L[10:20]</span><br><span class="line">[10, 11, 12, 13, 14, 15, 16, 17, 18, 19]</span><br><span class="line">前10个数，每两个取一个：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; L[:10:2]</span><br><span class="line">[0, 2, 4, 6, 8]</span><br><span class="line">所有数，每5个取一个：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; L[::5]</span><br><span class="line">[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95]</span><br><span class="line">甚至什么都不写，只写[:]就可以原样复制一个list：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; L[:]</span><br><span class="line">[0, 1, 2, 3, ..., 99]</span><br><span class="line">tuple也是一种list，唯一区别是tuple不可变。因此，tuple也可以用切片操作，只是操作的结果仍是tuple：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; (0, 1, 2, 3, 4, 5)[:3]</span><br><span class="line">(0, 1, 2)</span><br><span class="line">字符串&apos;xxx&apos;或Unicode字符串u&apos;xxx&apos;也可以看成是一种list，每个元素就是一个字符。因此，字符串也可以用切片操作，只是操作结果仍是字符串：</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; &apos;ABCDEFG&apos;[:3]</span><br><span class="line">&apos;ABC&apos;</span><br><span class="line">&gt;&gt;&gt; &apos;ABCDEFG&apos;[::2]</span><br><span class="line">&apos;ACEG&apos;</span><br><span class="line">在很多编程语言中，针对字符串提供了很多各种截取函数，其实目的就是对字符串切片。Python没有针对字符串的截取函数，只需要切片一个操作就可以完成，非常简单。</span><br><span class="line"></span><br><span class="line">小结</span><br><span class="line"></span><br><span class="line">有了切片操作，很多地方循环就不再需要了。Python的切片非常灵活，一行代码就可以实现很多行循环才能完成的操作。</span><br></pre></td></tr></table></figure>
+        <h3 id="AWS-Ubuntu-安装SS服务"><a href="#AWS-Ubuntu-安装SS服务" class="headerlink" title="AWS Ubuntu 安装SS服务"></a>AWS Ubuntu 安装SS服务</h3><a id="more"></a>
+<h4 id="1-安装SS服务"><a href="#1-安装SS服务" class="headerlink" title="1. 安装SS服务"></a>1. 安装SS服务</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install python-pip</span><br><span class="line">sudo pip install shadowsocks</span><br></pre></td></tr></table></figure>
+<h4 id="2-编写配置文件"><a href="#2-编写配置文件" class="headerlink" title="2.编写配置文件"></a>2.编写配置文件</h4><h5 id="2-1-在根目录新建ss文件夹-并创建ss-json配置文件"><a href="#2-1-在根目录新建ss文件夹-并创建ss-json配置文件" class="headerlink" title="2.1 在根目录新建ss文件夹,并创建ss.json配置文件"></a>2.1 在根目录新建ss文件夹,并创建ss.json配置文件</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd /</span><br><span class="line">mkdir ss</span><br><span class="line">cd ss</span><br><span class="line">sudo vim ss.json</span><br></pre></td></tr></table></figure>
+<h5 id="2-2-填写如下内容-新手无需改动配置-大神随便改"><a href="#2-2-填写如下内容-新手无需改动配置-大神随便改" class="headerlink" title="2.2 填写如下内容(新手无需改动配置,大神随便改)"></a>2.2 填写如下内容<font color="#FF7F50">(新手无需改动配置,大神随便改)</font></h5><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"server"</span>: <span class="string">"0.0.0.0"</span>,</span><br><span class="line">    <span class="attr">"server_port"</span>: <span class="number">8989</span>,</span><br><span class="line">    <span class="attr">"local_address"</span>: <span class="string">"127.0.0.1"</span>,</span><br><span class="line">    <span class="attr">"local_port"</span>: <span class="number">1080</span>,</span><br><span class="line">    <span class="attr">"password"</span>: <span class="string">"123456"</span>,</span><br><span class="line">    <span class="attr">"timeout"</span>: <span class="number">300</span>,</span><br><span class="line">    <span class="attr">"method"</span>: <span class="string">"aes-256-cfb"</span>,</span><br><span class="line">    <span class="attr">"fast_open"</span>: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="3-启动与关闭"><a href="#3-启动与关闭" class="headerlink" title="3.启动与关闭"></a>3.启动与关闭</h4><h5 id="3-1-启动"><a href="#3-1-启动" class="headerlink" title="3.1 启动"></a>3.1 启动</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssserver -c /ss/ss.json -d start</span><br></pre></td></tr></table></figure>
+<ul>
+<li>strated表示启动成功</li>
+</ul>
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1g23e7y5b9pj30nd02iabq.jpg" alt=""></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssserver -c /ss/ss.json -stop</span><br></pre></td></tr></table></figure>
+<ul>
+<li>stoped表示关闭成功</li>
+</ul>
+<p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1g23e9hlcinj30k201w0tn.jpg" alt=""></p>
+<h4 id="4-如有端口占用-查看并清除进程"><a href="#4-如有端口占用-查看并清除进程" class="headerlink" title="4.如有端口占用,查看并清除进程"></a>4.如有端口占用,查看并清除进程</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo kill -9 $(lsof -i:端口号 -t)</span><br></pre></td></tr></table></figure>
+<h4 id="5-如果还是有问题-查看下AWS实例安全组"><a href="#5-如果还是有问题-查看下AWS实例安全组" class="headerlink" title="5.如果还是有问题,查看下AWS实例安全组"></a>5.如果还是有问题,查看下AWS实例安全组</h4><p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1g23ee35a2sj316u0r1gtr.jpg" alt=""></p>
+<p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1g23ef2javsj317b0q9qe6.jpg" alt=""></p>
+<ul>
+<li><font color="#FF7F50">出站配置同上</font>
+
+
+</li>
+</ul>
 
       
     </div>
@@ -528,7 +541,7 @@
  
    <div class="">
    <p><span>
-   <b>本文地址：</b><a href="/2016/08/13/section/" title="section">https://tonysteven.github.io/2016/08/13/section/</a><br/><b>转载请注明出处，谢谢！</b>
+   <b>本文地址：</b><a href="/2019/04/15/install-ss-in-ubuntu/" title="AWS Ubuntu 安装SS服务">https://tonysteven.github.io/2019/04/15/install-ss-in-ubuntu/</a><br/><b>转载请注明出处，谢谢！</b>
    </span></p>
    </div>
  
@@ -568,7 +581,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/programming/" rel="tag"># programming</a>
+            <a href="/tags/Tutorial/" rel="tag"># Tutorial</a>
           
         </div>
       
@@ -581,15 +594,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/03/27/JsonFormat/" rel="next" title="String转JsonObject&JsonArray">
+                <i class="fa fa-chevron-left"></i> String转JsonObject&JsonArray
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/10/mysql-primary/" rel="prev" title="mysql-primary">
-                mysql-primary <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -638,8 +651,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -765,6 +787,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#AWS-Ubuntu-安装SS服务"><span class="nav-number">1.</span> <span class="nav-text">AWS Ubuntu 安装SS服务</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-安装SS服务"><span class="nav-number">1.1.</span> <span class="nav-text">1. 安装SS服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-编写配置文件"><span class="nav-number">1.2.</span> <span class="nav-text">2.编写配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-在根目录新建ss文件夹-并创建ss-json配置文件"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1 在根目录新建ss文件夹,并创建ss.json配置文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-填写如下内容-新手无需改动配置-大神随便改"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2 填写如下内容(新手无需改动配置,大神随便改)</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-启动与关闭"><span class="nav-number">1.3.</span> <span class="nav-text">3.启动与关闭</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-1-启动"><span class="nav-number">1.3.1.</span> <span class="nav-text">3.1 启动</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-如有端口占用-查看并清除进程"><span class="nav-number">1.4.</span> <span class="nav-text">4.如有端口占用,查看并清除进程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-如果还是有问题-查看下AWS实例安全组"><span class="nav-number">1.5.</span> <span class="nav-text">5.如果还是有问题,查看下AWS实例安全组</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

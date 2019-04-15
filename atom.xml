@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2019-03-27T11:01:31.666Z</updated>
+  <updated>2019-04-15T08:34:30.873Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AWS Ubuntu 安装SS服务</title>
+    <link href="https://tonysteven.github.io/2019/04/15/install-ss-in-ubuntu/"/>
+    <id>https://tonysteven.github.io/2019/04/15/install-ss-in-ubuntu/</id>
+    <published>2019-04-15T08:07:46.000Z</published>
+    <updated>2019-04-15T08:34:30.873Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;AWS-Ubuntu-安装SS服务&quot;&gt;&lt;a href=&quot;#AWS-Ubuntu-安装SS服务&quot; class=&quot;headerlink&quot; title=&quot;AWS Ubuntu 安装SS服务&quot;&gt;&lt;/a&gt;AWS Ubuntu 安装SS服务&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="Tutorial" scheme="https://tonysteven.github.io/categories/Tutorial/"/>
+    
+    
+      <category term="Tutorial" scheme="https://tonysteven.github.io/tags/Tutorial/"/>
+    
+  </entry>
   
   <entry>
     <title>String转JsonObject&amp;JsonArray</title>
@@ -395,26 +415,6 @@
     </summary>
     
       <category term="IDE" scheme="https://tonysteven.github.io/categories/IDE/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>oracle数据库锁表解决办法</title>
-    <link href="https://tonysteven.github.io/2018/08/07/oracle_solution_to_unlock_tab/"/>
-    <id>https://tonysteven.github.io/2018/08/07/oracle_solution_to_unlock_tab/</id>
-    <published>2018-08-07T07:40:54.000Z</published>
-    <updated>2018-08-07T07:47:55.771Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;当多人同时操作oracle数据库的同一张表的时候，经常会造成锁表现象，这时需要手动进行解锁&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="problems" scheme="https://tonysteven.github.io/categories/problems/"/>
     
     
   </entry>
