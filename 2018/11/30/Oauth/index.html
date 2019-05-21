@@ -175,9 +175,9 @@
 <meta property="og:description" content="OAuth2.0简介OAuth 2.0是行业标准的授权协议。OAuth 2.0取代了2006年创建的原始OAuth协议所做的工作.OAuth 2.0专注于客户端开发人员的简单性，同时为Web应用程序，桌面应用程序，移动电话和客厅设备提供特定的授权流程。该规范及其扩展正在IETF OAuth工作组内开发。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://oauth.net/images/oauth-2-sm.png">
-<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNbRwly1fxuqe4py7ij30l20iun1a.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwly1fxuqepfgnwj30l90ac76j.jpg">
-<meta property="og:updated_time" content="2018-12-04T07:16:55.996Z">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006tNbRwly1fxuqe4py7ij30l20iun1a.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006tNbRwly1fxuqepfgnwj30l90ac76j.jpg">
+<meta property="og:updated_time" content="2019-05-21T09:20:49.313Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Oauth2.0">
 <meta name="twitter:description" content="OAuth2.0简介OAuth 2.0是行业标准的授权协议。OAuth 2.0取代了2006年创建的原始OAuth协议所做的工作.OAuth 2.0专注于客户端开发人员的简单性，同时为Web应用程序，桌面应用程序，移动电话和客厅设备提供特定的授权流程。该规范及其扩展正在IETF OAuth工作组内开发。">
@@ -459,7 +459,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-12-04 15:16:55" itemprop="dateModified" datetime="2018-12-04T15:16:55+08:00">2018-12-04</time>
+                <time title="修改时间：2019-05-21 17:20:49" itemprop="dateModified" datetime="2019-05-21T17:20:49+08:00">2019-05-21</time>
               
             
           </span>
@@ -513,24 +513,24 @@
         <p><center><br>    <img src="https://oauth.net/images/oauth-2-sm.png"><br></center></p>
 <h3 id="OAuth2-0简介"><a href="#OAuth2-0简介" class="headerlink" title="OAuth2.0简介"></a>OAuth2.0简介</h3><p>OAuth 2.0是行业标准的授权协议。OAuth 2.0取代了2006年创建的原始OAuth协议所做的工作.OAuth 2.0专注于客户端开发人员的简单性，同时为Web应用程序，桌面应用程序，移动电话和客厅设备提供特定的授权流程。该规范及其扩展正在IETF OAuth工作组内开发。</p>
 <a id="more"></a>
-<h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><p>为了理解OAuth的适用场合，让我举一个假设的例子。</p>
-<p>有一个”云冲印”的网站，可以将用户储存在Google的照片，冲印出来。用户为了使用该服务，必须让”云冲印”读取自己储存在Google上的照片。</p>
-<p>问题是只有得到用户的授权，Google才会同意”云冲印”读取这些照片。那么，”云冲印”怎样获得用户的授权呢？</p>
-<p>传统方法是，用户将自己的Google用户名和密码，告诉”云冲印”，后者就可以读取用户的照片了。这样的做法有以下几个严重的缺点。</p>
-<font color="#FF8282" face="STCAIYUN" size="3"><br>（1）”云冲印”为了后续的服务，会保存用户的密码，这样很不安全。<br><br>（2）Google不得不部署密码登录，而我们知道，单纯的密码登录并不安全。<br><br>（3）”云冲印”拥有了获取用户储存在Google所有资料的权力，用户没法限制”云冲印”获得授权的范围和有效期。<br><br>（4）用户只有修改密码，才能收回赋予”云冲印”的权力。但是这样做，会使得其他所有获得用户授权的第三方应用程序全部失效。<br><br>（5）只要有一个第三方应用程序被破解，就会导致用户密码泄漏，以及所有被密码保护的数据泄漏。<br></font>
+<h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><p>为了理解 OAuth 的适用场合，让我举一个假设的例子。</p>
+<p>有一个”云冲印”的网站，可以将用户储存在 Google 的照片，冲印出来。用户为了使用该服务，必须让”云冲印”读取自己储存在 Google 上的照片。</p>
+<p>问题是只有得到用户的授权，Google 才会同意”云冲印”读取这些照片。那么，”云冲印”怎样获得用户的授权呢？</p>
+<p>传统方法是，用户将自己的 Google 用户名和密码，告诉”云冲印”，后者就可以读取用户的照片了。这样的做法有以下几个严重的缺点。</p>
+<font color="#FF8282" face="STCAIYUN" size="3"><br>（1）”云冲印”为了后续的服务，会保存用户的密码，这样很不安全。<br><br>（2）Google 不得不部署密码登录，而我们知道，单纯的密码登录并不安全。<br><br>（3）”云冲印”拥有了获取用户储存在 Google 所有资料的权力，用户没法限制”云冲印”获得授权的范围和有效期。<br><br>（4）用户只有修改密码，才能收回赋予”云冲印”的权力。但是这样做，会使得其他所有获得用户授权的第三方应用程序全部失效。<br><br>（5）只要有一个第三方应用程序被破解，就会导致用户密码泄漏，以及所有被密码保护的数据泄漏。<br></font>
 
-<h3 id="名词定义"><a href="#名词定义" class="headerlink" title="名词定义"></a>名词定义</h3><p>在详细讲解OAuth 2.0之前，需要了解几个专用名词。它们对读懂后面的讲解，尤其是几张图，至关重要。</p>
+<h3 id="名词定义"><a href="#名词定义" class="headerlink" title="名词定义"></a>名词定义</h3><p>在详细讲解 OAuth 2.0 之前，需要了解几个专用名词。它们对读懂后面的讲解，尤其是几张图，至关重要。</p>
 <ul>
 <li><strong>Third-party application</strong> :第三方应用程序，本文中又称”客户端”（client），即上一节例子中的”云冲印”。</li>
-<li><strong>HTTP service</strong>:HTTP服务提供商，本文中简称”服务提供商”，即上一节例子中的Google。</li>
+<li><strong>HTTP service</strong>:HTTP 服务提供商，本文中简称”服务提供商”，即上一节例子中的 Google。</li>
 <li><strong>Resource Owner</strong>:资源所有者，本文中又称”用户”(user)</li>
 <li><strong>User Agent</strong>:用户代理，本文中就是指浏览器</li>
 <li><strong>Authorization server</strong>: 认证服务器，即服务提供商专门用来处理认证的服务器。</li>
 <li><strong>Resource server</strong>:资源服务器，即服务提供商存放用户生成的资源的服务器。它与认证服务器，可以是同一台服务器，也可以是不同的服务器</li>
 </ul>
-<h3 id="OAuth的思路"><a href="#OAuth的思路" class="headerlink" title="OAuth的思路"></a>OAuth的思路</h3><p>OAuth在”客户端”与”服务提供商”之间，设置了一个授权层（authorization layer）。”客户端”不能直接登录”服务提供商”，只能登录授权层，以此将用户与客户端区分开来。”客户端”登录授权层所用的令牌（token），与用户的密码不同。用户可以在登录的时候，指定授权层令牌的权限范围和有效期。</p>
+<h3 id="OAuth-的思路"><a href="#OAuth-的思路" class="headerlink" title="OAuth 的思路"></a>OAuth 的思路</h3><p>OAuth 在”客户端”与”服务提供商”之间，设置了一个授权层（authorization layer）。”客户端”不能直接登录”服务提供商”，只能登录授权层，以此将用户与客户端区分开来。”客户端”登录授权层所用的令牌（token），与用户的密码不同。用户可以在登录的时候，指定授权层令牌的权限范围和有效期。</p>
 <p>“客户端”登录授权层以后，”服务提供商”根据令牌的权限范围和有效期，向”客户端”开放用户储存的资料。</p>
-<h3 id="运行流程"><a href="#运行流程" class="headerlink" title="运行流程"></a>运行流程</h3><p>OAuth 2.0的运行流程如下图，摘自<a href="http://www.rfcreader.com/#rfc6749_line163" target="_blank" rel="noopener">RFC 6749</a>。</p>
+<h3 id="运行流程"><a href="#运行流程" class="headerlink" title="运行流程"></a>运行流程</h3><p>OAuth 2.0 的运行流程如下图，摘自<a href="http://www.rfcreader.com/#rfc6749_line163" target="_blank" rel="noopener">RFC 6749</a>。</p>
 <pre><code>+--------+                               +---------------+
 |        |--(A)- Authorization Request -&gt;|   Resource    |
 |        |                               |     Owner     |
@@ -552,8 +552,8 @@
 <font color="#FF8282" face="STCAIYUN" size="3"><br> （A）客户端请求资源所有者的授权。该授权请求可以直接发送给资源所有者（如图所示），或者最好通过授权间接地服务器作为中介<br><br> （B）客户端收到授权许可，即a表示资源所有者授权的凭证，使用此中定义的四 种授权类型之一表示规范或使用扩展授权类型。该授权授权类型取决于使用的方法客户端请求授权和支持的类型授权服务器<br><br> （C）客户端通过使用身份验证来请求访问令牌授权服务器并提供授权授权.<br><br> （D）授权服务器验证客户端并验证授权授权，如果有效，则发出访问令牌.<br><br> （E）客户端从资源请求受保护资源服务器并通过呈现访问令牌进行身份验证.<br><br> （F）资源服务器验证访问令牌，如果有效，满足要求.</font>
 
 <hr>
-<p><strong>不难看出来，上面六个步骤之中，B是关键，即用户怎样才能给于客户端授权。有了这个授权以后，客户端就可以获取令牌，进而凭令牌获取资源。</strong></p>
-<h3 id="客户端的授权模式"><a href="#客户端的授权模式" class="headerlink" title="客户端的授权模式"></a>客户端的授权模式</h3><p>客户端必须得到用户的授权（authorization grant），才能获得令牌（access token）。OAuth 2.0定义了四种授权方式。</p>
+<p><strong>不难看出来，上面六个步骤之中，B 是关键，即用户怎样才能给于客户端授权。有了这个授权以后，客户端就可以获取令牌，进而凭令牌获取资源。</strong></p>
+<h3 id="客户端的授权模式"><a href="#客户端的授权模式" class="headerlink" title="客户端的授权模式"></a>客户端的授权模式</h3><p>客户端必须得到用户的授权（authorization grant），才能获得令牌（access token）。OAuth 2.0 定义了四种授权方式。</p>
 <ul>
 <li>授权码模式（authorization code）</li>
 <li>简化模式（implicit）</li>
@@ -590,22 +590,13 @@
 <font color="#FF8282" face="STCAIYUN" size="3"><br> （A）客户端通过指导资源所有者来启动流程用户代理到授权端点。客户包括其客户端标识符，请求的范围，本地状态和a授权服务器将发送的重定向URI一旦访问被授予（或拒绝），用户代理就会返回。<br><br> （B）授权服务器验证资源所有者（通过用户代理）并确定资源所有者授予或拒绝客户的访问请求。<br><br> （C）假设资源所有者授予访问权限服务器使用以下命令将用户代理重定向回客户端前面提供的重定向URI（在请求中或在期间）客户注册）。重定向URI包括授权代码和客户端提供的任何本地状态早。<br><br> （D）客户端从授权请求访问令牌服务器的令牌端点，包括授权码在上一步收到。在提出请求时，客户端使用授权服务器进行身份验证客户端包括用于获取授权的重定向URI验证码。<br><br> （E）授权服务器验证客户端，验证客户端授权代码，并确保重定向URI收到匹配用于重定向客户端的URI步骤（C）。如果有效，授权服务器将回复访问令牌(access token)，以及可选的刷新令牌(refresh token)。</font>
 
 <hr>
-<font color="red">A</font>步骤红,客户端申请认证的URL,传参如下:<br><br><em> response_type:表示授权类型，必选项，此处的值固定为”code” 
-</em> client_id:表示客户端的ID<br><em> redirect_uri:表示重定向URI
-</em> scope:表示申请的权限范围<br><em> state:表示客户端的当前状态，可以指定任意值，认证服务器会原封不动地返回这个值<br><br><strong>instance</strong><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://api.ctnma.cn/oauth2/authorize?response_type=CODE&amp;client_id=8280516282&amp;redirect_uri=http://ehall.sdjtzyxy.com/publicapp/sys/ifoadj/api/login.do</span><br></pre></td></tr></table></figure><br><br><font color="red">C</font>步骤红,客户端申请认证的URL,传参如下:
-
-</em> code:表示授权码，必选项。该码的有效期应该很短，通常设为10分钟，客户端只能使用该码一次，否则会被授权服务器拒绝。该码与客户端ID和重定向URI，是一一对应关系。<br>* state:如果客户端的请求中包含这个参数，认证服务器的回应也必须一模一样包含这个参数<br><br>instance<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://ehall.sdjtzyxy.com/publicapp/sys/ifoadj/api/login.do?code=SplxlOBeZQQYbYS6WxSbIA</span><br></pre></td></tr></table></figure><br><br><h4>简化模式(implicit grant type)</h4><br>简化模式（implicit grant type）不通过第三方应用程序的服务器，直接在浏览器中向认证服务器申请令牌，跳过了”授权码”这个步骤，因此得名。所有步骤在浏览器中完成，令牌对访问者是可见的，且客户端不需要认证s<br><br><img src="https://ws2.sinaimg.cn/large/006tNbRwly1fxuqe4py7ij30l20iun1a.jpg" alt=""><br><br><br><font color="#FF8282" face="STCAIYUN" size="3"><br>（A）客户端通过指导资源所有者来启动流程用户代理到授权端点。客户包括其客户端标识符，请求的范围，本地状态和a授权服务器将发送的重定向URI一旦访问被授予（或拒绝），用户代理就会返回。<br><br>（B）授权服务器验证资源所有者（通过用户代理）并确定资源所有者授予或拒绝客户的访问请求。<br><br>（C）假设资源所有者授予访问权限服务器使用以下命令将用户代理重定向回客户端前面提供的重定向URI。重定向URI包括URI片段中的访问令牌。<br><br>（D）用户代理通过制作a来遵循重定向指令请求Web托管的客户端资源（没有包括每个[RFC2616]的片段。用户代理保留片段信息在本地。<br><br>（E）Web托管的客户端资源返回一个网页（通常是一个具有嵌入式脚本的HTML文档）能够访问完整重定向URI，包括由…保留的片段user-agent，并提取访问令牌（和其他片段中包含的参数）<br><br>（F）用户代理执行由Web托管提供的脚本本地客户端资源，提取访问令牌。<br><br>（G）用户代理将访问令牌传递给客户端。<br></font>
+<font color="red">A</font>步骤红,客户端申请认证的 URL,传参如下:<br><br>- response_type:表示授权类型，必选项，此处的值固定为”code”<br>- client_id:表示客户端的 ID<br>- redirect_uri:表示重定向 URI<br>- scope:表示申请的权限范围<br>- state:表示客户端的当前状态，可以指定任意值，认证服务器会原封不动地返回这个值<br><br><strong>instance</strong><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://api.ctnma.cn/oauth2/authorize?response_type=CODE&amp;client_id=8280516282&amp;redirect_uri=http://ehall.sdjtzyxy.com/publicapp/sys/ifoadj/api/login.do</span><br></pre></td></tr></table></figure><br><br><font color="red">C</font>步骤红,客户端申请认证的 URL,传参如下:<br><br>- code:表示授权码，必选项。该码的有效期应该很短，通常设为 10 分钟，客户端只能使用该码一次，否则会被授权服务器拒绝。该码与客户端 ID 和重定向 URI，是一一对应关系。<br>- state:如果客户端的请求中包含这个参数，认证服务器的回应也必须一模一样包含这个参数<br><br>instance<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://ehall.sdjtzyxy.com/publicapp/sys/ifoadj/api/login.do?code=SplxlOBeZQQYbYS6WxSbIA</span><br></pre></td></tr></table></figure><br><br><h4>简化模式(implicit grant type)</h4><br>简化模式（implicit grant type）不通过第三方应用程序的服务器，直接在浏览器中向认证服务器申请令牌，跳过了”授权码”这个步骤，因此得名。所有步骤在浏览器中完成，令牌对访问者是可见的，且客户端不需要认证s<br><br><img src="https://tva1.sinaimg.cn/large/006tNbRwly1fxuqe4py7ij30l20iun1a.jpg" alt=""><br><br><font color="#FF8282" face="STCAIYUN" size="3"><br>（A）客户端通过指导资源所有者来启动流程用户代理到授权端点。客户包括其客户端标识符，请求的范围，本地状态和a授权服务器将发送的重定向URI一旦访问被授予（或拒绝），用户代理就会返回。<br><br>（B）授权服务器验证资源所有者（通过用户代理）并确定资源所有者授予或拒绝客户的访问请求。<br><br>（C）假设资源所有者授予访问权限服务器使用以下命令将用户代理重定向回客户端前面提供的重定向 URI。重定向 URI 包括 URI 片段中的访问令牌。<br><br>（D）用户代理通过制作 a 来遵循重定向指令请求 Web 托管的客户端资源（没有包括每个[RFC2616]的片段。用户代理保留片段信息在本地。<br><br>（E）Web 托管的客户端资源返回一个网页（通常是一个具有嵌入式脚本的 HTML 文档）能够访问完整重定向 URI，包括由…保留的片段 user-agent，并提取访问令牌（和其他片段中包含的参数）<br><br>（F）用户代理执行由 Web 托管提供的脚本本地客户端资源，提取访问令牌。<br><br>（G）用户代理将访问令牌传递给客户端。<br></font>
 
 <hr>
-<font color="red">A</font>步骤红,客户端申请认证的URL,传参如下:<br><em> response_type:表示授权类型，必选项，此处的值固定为”token”,必选项 
-</em> client_id:表示客户端的ID,必选项<br><em> redirect_uri:表示重定向URI,可选项
-</em> scope:表示申请的权限范围,可选项<br><em> state:表示客户端的当前状态，可以指定任意值，认证服务器会原封不动地返回这个值<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">GET  /authorize?response_type=token&amp;client_id=s6BhdRkqt3&amp;state=xyz</span><br><span class="line">        &amp;redirect_uri=https%3A%2F%2Fclient%2Eexample%2Ecom%2Fcb HTTP/1.1</span><br><span class="line">Host: server.example.com</span><br></pre></td></tr></table></figure><br><br><font color="red">C</font>步骤红,客户端申请认证的URL,传参如下:
-</em> access_token:表示访问令牌，必选项<br><em> token_type:表示令牌类型，该值大小写不敏感，必选项
-</em> expires_in:表示过期时间，单位为秒。如果省略该参数，必须其他方式设置过期时间<br><em> scope:表示申请的权限范围,可选项
-</em> state:表示客户端的当前状态，可以指定任意值，认证服务器会原封不动地返回这个值<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">GET  /authorize?response_type=token&amp;client_id=s6BhdRkqt3&amp;state=xyz</span><br><span class="line">        &amp;redirect_uri=https%3A%2F%2Fclient%2Eexample%2Ecom%2Fcb HTTP/1.1</span><br><span class="line">Host: server.example.com</span><br></pre></td></tr></table></figure><br><br>在上面的例子中，认证服务器用HTTP头信息的Location栏，指定浏览器重定向的网址。<br><br>注意，在这个网址的Hash部分包含了令牌。根据上面的D步骤，下一步浏览器会访问Location指定的网址，但是Hash部分不会发送。接下来的E步骤，服务提供商的资源服务器发送过来的代码，会提取出Hash中的令牌<br><br><h4>密码模式</h4><br><br>密码模式（Resource Owner Password Credentials Grant）中，用户向客户端提供自己的用户名和密码。客户端使用这些信息，向”服务商提供商”索要授权。<br><br>在这种模式中，用户必须把自己的密码给客户端，但是客户端不得储存密码。这通常用在用户对客户端高度信任的情况下，比如客户端是操作系统的一部分，或者由一个著名公司出品。而认证服务器只有在其他授权模式无法执行的情况下，才能考虑使用这种模式。<br><br>  <img src="https://ws1.sinaimg.cn/large/006tNbRwly1fxuqepfgnwj30l90ac76j.jpg" alt=""><br><br> <font color="#FF8282" face="STCAIYUN" size="3"><br> （A）用户向客户端提供用户名和密码。<br> （B）客户端将用户名和密码发给认证服务器，向后者请求令牌<br> （C）认证服务器确认无误后，向客户端提供访问令牌</font>
+<font color="red">A</font>步骤红,客户端申请认证的 URL,传参如下:<br><br>- response_type:表示授权类型，必选项，此处的值固定为”token”,必选项<br>- client_id:表示客户端的 ID,必选项<br>- redirect_uri:表示重定向 URI,可选项<br>- scope:表示申请的权限范围,可选项<br>- state:表示客户端的当前状态，可以指定任意值，认证服务器会原封不动地返回这个值<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">GET  /authorize?response_type=token&amp;client_id=s6BhdRkqt3&amp;state=xyz</span><br><span class="line">        &amp;redirect_uri=https%3A%2F%2Fclient%2Eexample%2Ecom%2Fcb HTTP/1.1</span><br><span class="line">Host: server.example.com</span><br></pre></td></tr></table></figure><br><br><font color="red">C</font>步骤红,客户端申请认证的 URL,传参如下:<br><br>- access_token:表示访问令牌，必选项<br>- token_type:表示令牌类型，该值大小写不敏感，必选项<br>- expires_in:表示过期时间，单位为秒。如果省略该参数，必须其他方式设置过期时间<br>- scope:表示申请的权限范围,可选项<br>- state:表示客户端的当前状态，可以指定任意值，认证服务器会原封不动地返回这个值<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">GET  /authorize?response_type=token&amp;client_id=s6BhdRkqt3&amp;state=xyz</span><br><span class="line">        &amp;redirect_uri=https%3A%2F%2Fclient%2Eexample%2Ecom%2Fcb HTTP/1.1</span><br><span class="line">Host: server.example.com</span><br></pre></td></tr></table></figure><br><br>在上面的例子中，认证服务器用 HTTP 头信息的 Location 栏，指定浏览器重定向的网址。<br><br>注意，在这个网址的 Hash 部分包含了令牌。根据上面的 D 步骤，下一步浏览器会访问 Location 指定的网址，但是 Hash 部分不会发送。接下来的 E 步骤，服务提供商的资源服务器发送过来的代码，会提取出 Hash 中的令牌<br><br><h4>密码模式</h4><br><br>密码模式（Resource Owner Password Credentials Grant）中，用户向客户端提供自己的用户名和密码。客户端使用这些信息，向”服务商提供商”索要授权。<br><br>在这种模式中，用户必须把自己的密码给客户端，但是客户端不得储存密码。这通常用在用户对客户端高度信任的情况下，比如客户端是操作系统的一部分，或者由一个著名公司出品。而认证服务器只有在其他授权模式无法执行的情况下，才能考虑使用这种模式。<br><br><img src="https://tva1.sinaimg.cn/large/006tNbRwly1fxuqepfgnwj30l90ac76j.jpg" alt=""><br><br> <font color="#FF8282" face="STCAIYUN" size="3"><br> （A）用户向客户端提供用户名和密码。<br> （B）客户端将用户名和密码发给认证服务器，向后者请求令牌<br> （C）认证服务器确认无误后，向客户端提供访问令牌</font>
 
 <hr>
-<h4 id="客户端需求-Client-Credentials-Grant"><a href="#客户端需求-Client-Credentials-Grant" class="headerlink" title="客户端需求(Client Credentials Grant)"></a>客户端需求(Client Credentials Grant)</h4><p>客户端模式（Client Credentials Grant）指客户端以自己的名义，而不是以用户的名义，向”服务提供商”进行认证。严格地说，客户端模式并不属于OAuth框架所要解决的问题。在这种模式中，用户直接向客户端注册，客户端以自己的名义要求”服务提供商”提供服务，其实不存在授权问题。</p>
+<h4 id="客户端需求-Client-Credentials-Grant"><a href="#客户端需求-Client-Credentials-Grant" class="headerlink" title="客户端需求(Client Credentials Grant)"></a>客户端需求(Client Credentials Grant)</h4><p>客户端模式（Client Credentials Grant）指客户端以自己的名义，而不是以用户的名义，向”服务提供商”进行认证。严格地说，客户端模式并不属于 OAuth 框架所要解决的问题。在这种模式中，用户直接向客户端注册，客户端以自己的名义要求”服务提供商”提供服务，其实不存在授权问题。</p>
 <pre><code>+---------+                                  +---------------+
 |         |                                  |               |
 |         |&gt;--(A)- Client Authentication ---&gt;| Authorization |
@@ -617,18 +608,18 @@
 <blockquote>
 <font color="#FF8282" face="STCAIYUN" size="3">
 </font></blockquote>
-<p> （A）客户端向认证服务器进行身份认证，并要求一个访问令牌。</p>
-<p> （B）认证服务器确认无误后，向客户端提供访问令牌。</p>
+<p>（A）客户端向认证服务器进行身份认证，并要求一个访问令牌。</p>
+<p>（B）认证服务器确认无误后，向客户端提供访问令牌。</p>
 <p></p>
 <hr>
-<p><font color="red">A</font>步骤红,客户端申请认证的URL,传参如下:</p>
+<p><font color="red">A</font>步骤红,客户端申请认证的 URL,传参如下:</p>
 <ul>
-<li>granttype:表示授权类型，必选项，此处的值固定为”clientcredentials”,必选项 </li>
+<li>granttype:表示授权类型，必选项，此处的值固定为”clientcredentials”,必选项</li>
 <li>scope:表示申请的权限范围,可选项</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">POST /token HTTP/1.1</span><br><span class="line">Host: server.example.com</span><br><span class="line">Authorization: Basic czZCaGRSa3F0MzpnWDFmQmF0M2JW</span><br><span class="line">Content-Type: application/x-www-form-urlencoded</span><br><span class="line"></span><br><span class="line">grant_type=client_credentials</span><br></pre></td></tr></table></figure>
 <h3 id="更新令牌-reflash-token"><a href="#更新令牌-reflash-token" class="headerlink" title="更新令牌(reflash_token)"></a>更新令牌(reflash_token)</h3><p>如果用户访问的时候，客户端的”访问令牌”已经过期，则需要使用”更新令牌”申请一个新的访问令牌。</p>
-<p>客户端发出更新令牌的HTTP请求,传参如下:</p>
+<p>客户端发出更新令牌的 HTTP 请求,传参如下:</p>
 <ul>
 <li>granttype: 表示使用的授权模式，此处的值固定为”refreshtoken”，必选项。</li>
 <li>refresh_token:表示早前收到的更新令牌，必选项。</li>
@@ -907,7 +898,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#OAuth2-0简介"><span class="nav-number">1.</span> <span class="nav-text">OAuth2.0简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#应用场景"><span class="nav-number">2.</span> <span class="nav-text">应用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#名词定义"><span class="nav-number">3.</span> <span class="nav-text">名词定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OAuth的思路"><span class="nav-number">4.</span> <span class="nav-text">OAuth的思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行流程"><span class="nav-number">5.</span> <span class="nav-text">运行流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#客户端的授权模式"><span class="nav-number">6.</span> <span class="nav-text">客户端的授权模式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#授权码模式（authorization-code）"><span class="nav-number">6.1.</span> <span class="nav-text">授权码模式（authorization code）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">6.2.</span> <span class="nav-text">简化模式(implicit grant type)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">6.3.</span> <span class="nav-text">密码模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#客户端需求-Client-Credentials-Grant"><span class="nav-number">6.4.</span> <span class="nav-text">客户端需求(Client Credentials Grant)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更新令牌-reflash-token"><span class="nav-number">7.</span> <span class="nav-text">更新令牌(reflash_token)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#OAuth2-0简介"><span class="nav-number">1.</span> <span class="nav-text">OAuth2.0简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#应用场景"><span class="nav-number">2.</span> <span class="nav-text">应用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#名词定义"><span class="nav-number">3.</span> <span class="nav-text">名词定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OAuth-的思路"><span class="nav-number">4.</span> <span class="nav-text">OAuth 的思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行流程"><span class="nav-number">5.</span> <span class="nav-text">运行流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#客户端的授权模式"><span class="nav-number">6.</span> <span class="nav-text">客户端的授权模式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#授权码模式（authorization-code）"><span class="nav-number">6.1.</span> <span class="nav-text">授权码模式（authorization code）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">6.2.</span> <span class="nav-text">简化模式(implicit grant type)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">6.3.</span> <span class="nav-text">密码模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#客户端需求-Client-Credentials-Grant"><span class="nav-number">6.4.</span> <span class="nav-text">客户端需求(Client Credentials Grant)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更新令牌-reflash-token"><span class="nav-number">7.</span> <span class="nav-text">更新令牌(reflash_token)</span></a></li></ol></div>
             
 
           </div>

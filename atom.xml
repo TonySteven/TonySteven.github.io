@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2019-04-15T08:54:23.379Z</updated>
+  <updated>2019-05-21T09:20:57.805Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://tonysteven.github.io/2019/04/15/install-ss-in-ubuntu/"/>
     <id>https://tonysteven.github.io/2019/04/15/install-ss-in-ubuntu/</id>
     <published>2019-04-15T08:07:46.000Z</published>
-    <updated>2019-04-15T08:54:23.379Z</updated>
+    <updated>2019-05-21T09:20:57.805Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;AWS-Ubuntu-安装SS服务&quot;&gt;&lt;a href=&quot;#AWS-Ubuntu-安装SS服务&quot; class=&quot;headerlink&quot; title=&quot;AWS Ubuntu 安装SS服务&quot;&gt;&lt;/a&gt;AWS Ubuntu 安装SS服务&lt;/h3&gt;
+      &lt;h3 id=&quot;AWS-Ubuntu-安装-SS-服务&quot;&gt;&lt;a href=&quot;#AWS-Ubuntu-安装-SS-服务&quot; class=&quot;headerlink&quot; title=&quot;AWS Ubuntu 安装 SS 服务&quot;&gt;&lt;/a&gt;AWS Ubuntu 安装 SS 服务&lt;/h3&gt;
     
     </summary>
     
@@ -67,11 +67,11 @@
     <link href="https://tonysteven.github.io/2019/03/18/gitlabSSH/"/>
     <id>https://tonysteven.github.io/2019/03/18/gitlabSSH/</id>
     <published>2019-03-18T03:23:56.000Z</published>
-    <updated>2019-03-18T03:39:11.518Z</updated>
+    <updated>2019-05-21T09:21:05.199Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;在GitLab-GitHub（Mac环境）&quot;&gt;&lt;a href=&quot;#在GitLab-GitHub（Mac环境）&quot; class=&quot;headerlink&quot; title=&quot;在GitLab/GitHub（Mac环境）&quot;&gt;&lt;/a&gt;在GitLab/GitHub（Mac环境）&lt;/h3&gt;
+      &lt;h3 id=&quot;在-GitLab-GitHub（Mac-环境）&quot;&gt;&lt;a href=&quot;#在-GitLab-GitHub（Mac-环境）&quot; class=&quot;headerlink&quot; title=&quot;在 GitLab/GitHub（Mac 环境）&quot;&gt;&lt;/a&gt;在 GitLab/GitHub（Mac 环境）&lt;/h3&gt;
     
     </summary>
     
@@ -107,7 +107,7 @@
     <link href="https://tonysteven.github.io/2019/02/14/win10-1809-active/"/>
     <id>https://tonysteven.github.io/2019/02/14/win10-1809-active/</id>
     <published>2019-02-14T07:47:47.000Z</published>
-    <updated>2019-02-14T07:59:06.198Z</updated>
+    <updated>2019-05-21T09:20:24.453Z</updated>
     
     <summary type="html">
     
@@ -127,11 +127,11 @@
     <link href="https://tonysteven.github.io/2019/01/30/mac-anywhere/"/>
     <id>https://tonysteven.github.io/2019/01/30/mac-anywhere/</id>
     <published>2019-01-30T05:54:05.000Z</published>
-    <updated>2019-02-14T07:54:02.046Z</updated>
+    <updated>2019-05-21T09:21:05.198Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;mac-开启安装root权限&quot;&gt;&lt;a href=&quot;#mac-开启安装root权限&quot; class=&quot;headerlink&quot; title=&quot;mac 开启安装root权限&quot;&gt;&lt;/a&gt;mac 开启安装root权限&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://ws4.sinaimg.cn/large/006tNc79ly1fzor9qq9kaj30lo0j1n24.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+      &lt;h3 id=&quot;mac-开启安装-root-权限&quot;&gt;&lt;a href=&quot;#mac-开启安装-root-权限&quot; class=&quot;headerlink&quot; title=&quot;mac 开启安装 root 权限&quot;&gt;&lt;/a&gt;mac 开启安装 root 权限&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/006tNc79ly1fzor9qq9kaj30lo0j1n24.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -145,11 +145,11 @@
     <link href="https://tonysteven.github.io/2019/01/07/Proxyee/"/>
     <id>https://tonysteven.github.io/2019/01/07/Proxyee/</id>
     <published>2019-01-07T02:09:34.000Z</published>
-    <updated>2019-01-07T02:32:45.646Z</updated>
+    <updated>2019-05-21T09:21:05.233Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;Proxyee简介&quot;&gt;&lt;a href=&quot;#Proxyee简介&quot; class=&quot;headerlink&quot; title=&quot;Proxyee简介&quot;&gt;&lt;/a&gt;Proxyee简介&lt;/h3&gt;
+      &lt;h3 id=&quot;Proxyee-简介&quot;&gt;&lt;a href=&quot;#Proxyee-简介&quot; class=&quot;headerlink&quot; title=&quot;Proxyee 简介&quot;&gt;&lt;/a&gt;Proxyee 简介&lt;/h3&gt;
     
     </summary>
     
@@ -183,7 +183,7 @@
     <link href="https://tonysteven.github.io/2018/11/30/Oauth/"/>
     <id>https://tonysteven.github.io/2018/11/30/Oauth/</id>
     <published>2018-11-30T06:40:51.000Z</published>
-    <updated>2018-12-04T07:16:55.996Z</updated>
+    <updated>2019-05-21T09:20:49.313Z</updated>
     
     <summary type="html">
     
@@ -220,11 +220,11 @@
     <link href="https://tonysteven.github.io/2018/10/24/outline/"/>
     <id>https://tonysteven.github.io/2018/10/24/outline/</id>
     <published>2018-10-24T15:54:07.000Z</published>
-    <updated>2018-10-24T16:39:23.366Z</updated>
+    <updated>2019-05-21T09:21:05.198Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;outline简介&quot;&gt;&lt;a href=&quot;#outline简介&quot; class=&quot;headerlink&quot; title=&quot;outline简介&quot;&gt;&lt;/a&gt;outline简介&lt;/h3&gt;&lt;p&gt;Outline 是一款爱国工具，Jigsaw 开发的项目——Jigsaw 属于 alphabet 旗下，而 alphabet 是 Google 母公司。那么，这是一款 Google 出品工具？ &lt;/p&gt;
+      &lt;h3 id=&quot;outline-简介&quot;&gt;&lt;a href=&quot;#outline-简介&quot; class=&quot;headerlink&quot; title=&quot;outline 简介&quot;&gt;&lt;/a&gt;outline 简介&lt;/h3&gt;&lt;p&gt;Outline 是一款爱国工具，Jigsaw 开发的项目——Jigsaw 属于 alphabet 旗下，而 alphabet 是 Google 母公司。那么，这是一款 Google 出品工具？&lt;/p&gt;
     
     </summary>
     
@@ -305,13 +305,13 @@
     <link href="https://tonysteven.github.io/2018/09/04/idea-Crack/"/>
     <id>https://tonysteven.github.io/2018/09/04/idea-Crack/</id>
     <published>2018-09-04T08:51:09.000Z</published>
-    <updated>2019-02-16T14:24:33.906Z</updated>
+    <updated>2019-05-21T09:20:57.806Z</updated>
     
     <summary type="html">
     
       &lt;ol&gt;
-&lt;li&gt;下载安装idea&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;下载激活Jar包&lt;br&gt;&lt;a href=&quot;https://pan.baidu.com/s/1kVHRLFkqJxcn9cCoztAT-w&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;链接: https://pan.baidu.com/s/1kVHRLFkqJxcn9cCoztAT-w&lt;/a&gt;&lt;br&gt;密码: xcyd&lt;/p&gt;
+&lt;li&gt;下载安装 idea&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;下载激活 Jar 包&lt;br&gt;&lt;a href=&quot;https://pan.baidu.com/s/1kVHRLFkqJxcn9cCoztAT-w&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;链接: https://pan.baidu.com/s/1kVHRLFkqJxcn9cCoztAT-w&lt;/a&gt;&lt;br&gt;密码: xcyd&lt;/p&gt;
     
     </summary>
     
@@ -361,11 +361,11 @@
     <link href="https://tonysteven.github.io/2018/08/07/java-RESTful-api/"/>
     <id>https://tonysteven.github.io/2018/08/07/java-RESTful-api/</id>
     <published>2018-08-07T09:15:39.000Z</published>
-    <updated>2018-08-23T09:38:11.929Z</updated>
+    <updated>2019-05-21T09:20:49.311Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;结构路径&quot;&gt;&lt;a href=&quot;#结构路径&quot; class=&quot;headerlink&quot; title=&quot;结构路径&quot;&gt;&lt;/a&gt;结构路径&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/0069RVTdly1fu19b2l8w1j307d08141m.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+      &lt;h3 id=&quot;结构路径&quot;&gt;&lt;a href=&quot;#结构路径&quot; class=&quot;headerlink&quot; title=&quot;结构路径&quot;&gt;&lt;/a&gt;结构路径&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/0069RVTdly1fu19b2l8w1j307d08141m.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
     
     </summary>
     

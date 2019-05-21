@@ -167,21 +167,21 @@
 
 
 
-  <meta name="description" content="在GitLab/GitHub（Mac环境）">
+  <meta name="description" content="在 GitLab/GitHub（Mac 环境）">
 <meta name="keywords" content="Tutorial">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在GitLab&#x2F;GitHub（Mac环境）使用SSH Key">
 <meta property="og:url" content="https://tonysteven.github.io/2019/03/18/gitlabSSH/index.html">
 <meta property="og:site_name" content="Genesis">
-<meta property="og:description" content="在GitLab/GitHub（Mac环境）">
+<meta property="og:description" content="在 GitLab/GitHub（Mac 环境）">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tKfTcly1g16shljzr6j30ru0j3443.jpg">
-<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tKfTcly1g16sinrto0j318q0evq6r.jpg">
-<meta property="og:updated_time" content="2019-03-18T03:39:11.518Z">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006tKfTcly1g16shljzr6j30ru0j3443.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006tKfTcly1g16sinrto0j318q0evq6r.jpg">
+<meta property="og:updated_time" content="2019-05-21T09:21:05.199Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在GitLab&#x2F;GitHub（Mac环境）使用SSH Key">
-<meta name="twitter:description" content="在GitLab/GitHub（Mac环境）">
-<meta name="twitter:image" content="https://ws4.sinaimg.cn/large/006tKfTcly1g16shljzr6j30ru0j3443.jpg">
+<meta name="twitter:description" content="在 GitLab/GitHub（Mac 环境）">
+<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/006tKfTcly1g16shljzr6j30ru0j3443.jpg">
 
 
 
@@ -442,12 +442,24 @@
                 
               
 
-              <time title="创建时间：2019-03-18 11:23:56 / 修改时间：11:39:11" itemprop="dateCreated datePublished" datetime="2019-03-18T11:23:56+08:00">2019-03-18</time>
+              <time title="创建时间：2019-03-18 11:23:56" itemprop="dateCreated datePublished" datetime="2019-03-18T11:23:56+08:00">2019-03-18</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-21 17:21:05" itemprop="dateModified" datetime="2019-05-21T17:21:05+08:00">2019-05-21</time>
               
             
           </span>
@@ -498,27 +510,27 @@
       
 
       
-        <h3 id="在GitLab-GitHub（Mac环境）"><a href="#在GitLab-GitHub（Mac环境）" class="headerlink" title="在GitLab/GitHub（Mac环境）"></a>在GitLab/GitHub（Mac环境）</h3><a id="more"></a>
+        <h3 id="在-GitLab-GitHub（Mac-环境）"><a href="#在-GitLab-GitHub（Mac-环境）" class="headerlink" title="在 GitLab/GitHub（Mac 环境）"></a>在 GitLab/GitHub（Mac 环境）</h3><a id="more"></a>
 <h4 id="1-概念介绍"><a href="#1-概念介绍" class="headerlink" title="1.概念介绍"></a>1.概念介绍</h4><blockquote>
-<p>git是分布式的代码管理工具，远程的代码管理是基于ssh的，所以要使用远程的git则需要ssh的配置。简单的说，Git - 版本控制工具；Github是一个网站，提供给用户空间创建git仓储，保存用户的一些数据文档或者代码等；GitLab是基于Git的项目管理软件</p>
+<p>git 是分布式的代码管理工具，远程的代码管理是基于 ssh 的，所以要使用远程的 git 则需要 ssh 的配置。简单的说，Git - 版本控制工具；Github 是一个网站，提供给用户空间创建 git 仓储，保存用户的一些数据文档或者代码等；GitLab 是基于 Git 的项目管理软件</p>
 </blockquote>
-<p>首先，使用代码管理工具把本地的代码上传到服务器时需要加密处理，加密传输的算法有很多种，git可使用rsa，rsa要解决的一个核心问题是，如何使用一对密钥，使其中一个可以用来加密，而另外一个可以用来解密。这这对密钥就是public key（公钥）和private key（私钥）。<br>​       其中，公钥就是那个用来加密的密钥，这也就是为什么你在本机生成了公钥之后，要上传到github的原因。从github发回来的，用那公钥加密过的数据，可以用你本地的私钥来还原。如果你的key丢失了，不管是公钥还是私钥，丢失一个都不能用了，解决方法也很简单，删除原有的key，重新再生成一次，然后在GitHub/GitLab里再设置一次就行<br>​</p>
+<p>首先，使用代码管理工具把本地的代码上传到服务器时需要加密处理，加密传输的算法有很多种，git 可使用 rsa，rsa 要解决的一个核心问题是，如何使用一对密钥，使其中一个可以用来加密，而另外一个可以用来解密。这这对密钥就是 public key（公钥）和 private key（私钥）。<br>​ 其中，公钥就是那个用来加密的密钥，这也就是为什么你在本机生成了公钥之后，要上传到 github 的原因。从 github 发回来的，用那公钥加密过的数据，可以用你本地的私钥来还原。如果你的 key 丢失了，不管是公钥还是私钥，丢失一个都不能用了，解决方法也很简单，删除原有的 key，重新再生成一次，然后在 GitHub/GitLab 里再设置一次就行<br>​</p>
 <blockquote>
-<p>在个人电脑生成ssh密钥后，会同时生成一个公开密钥和一个私有密钥，默认情况下在用户主目录下的.ssh目录中，密钥为id_rsa，公开密钥为id_rsa.pub。</p>
+<p>在个人电脑生成 ssh 密钥后，会同时生成一个公开密钥和一个私有密钥，默认情况下在用户主目录下的.ssh 目录中，密钥为 id_rsa，公开密钥为 id_rsa.pub。</p>
 </blockquote>
 <p>密钥和公开密钥是共同使用的，协同开发中，一般会将公钥配置在服务器中，这样方便经常登录，也不需要输入密码，这是现在集群和各种云平台常用的登录方式，密钥在本地不被泄漏就非常安全。</p>
-<h4 id="2-如何生成并设置SSH-Key"><a href="#2-如何生成并设置SSH-Key" class="headerlink" title="2.如何生成并设置SSH Key"></a>2.如何生成并设置SSH Key</h4><h5 id="2-1-检查是否已经存在SSH-Key"><a href="#2-1-检查是否已经存在SSH-Key" class="headerlink" title="2.1 检查是否已经存在SSH Key"></a>2.1 检查是否已经存在SSH Key</h5><p>打开电脑终端，输入以下命令：</p>
+<h4 id="2-如何生成并设置-SSH-Key"><a href="#2-如何生成并设置-SSH-Key" class="headerlink" title="2.如何生成并设置 SSH Key"></a>2.如何生成并设置 SSH Key</h4><h5 id="2-1-检查是否已经存在-SSH-Key"><a href="#2-1-检查是否已经存在-SSH-Key" class="headerlink" title="2.1 检查是否已经存在 SSH Key"></a>2.1 检查是否已经存在 SSH Key</h5><p>打开电脑终端，输入以下命令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -al ~/.ssh</span><br></pre></td></tr></table></figure>
-<h5 id="2-2-如已有"><a href="#2-2-如已有" class="headerlink" title="2.2 如已有"></a>2.2 如已有</h5><p><img src="https://ws4.sinaimg.cn/large/006tKfTcly1g16shljzr6j30ru0j3443.jpg" alt=""></p>
-<p>复制SSH KEY </p>
+<h5 id="2-2-如已有"><a href="#2-2-如已有" class="headerlink" title="2.2 如已有"></a>2.2 如已有</h5><p><img src="https://tva1.sinaimg.cn/large/006tKfTcly1g16shljzr6j30ru0j3443.jpg" alt=""></p>
+<p>复制 SSH KEY</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pbcopy &lt; ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
-<p>在gitlab添加即可</p>
-<p><img src="https://ws3.sinaimg.cn/large/006tKfTcly1g16sinrto0j318q0evq6r.jpg" alt=""></p>
-<h5 id="2-3-终端未出现id-rsa-pub-或-id-dsa-pub文件，表示该电脑还没有配置SSH-Key"><a href="#2-3-终端未出现id-rsa-pub-或-id-dsa-pub文件，表示该电脑还没有配置SSH-Key" class="headerlink" title="2.3 终端未出现id_rsa.pub 或 id_dsa.pub文件，表示该电脑还没有配置SSH Key"></a>2.3 终端未出现id_rsa.pub 或 id_dsa.pub文件，表示该电脑还没有配置SSH Key</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
-<p>默认会在相应路径下（/your_home_path）生成id_rsa和id_rsa.pub两个文件，此时终端会显示：</p>
+<p>在 gitlab 添加即可</p>
+<p><img src="https://tva1.sinaimg.cn/large/006tKfTcly1g16sinrto0j318q0evq6r.jpg" alt=""></p>
+<h5 id="2-3-终端未出现-id-rsa-pub-或-id-dsa-pub-文件，表示该电脑还没有配置-SSH-Key"><a href="#2-3-终端未出现-id-rsa-pub-或-id-dsa-pub-文件，表示该电脑还没有配置-SSH-Key" class="headerlink" title="2.3 终端未出现 id_rsa.pub 或 id_dsa.pub 文件，表示该电脑还没有配置 SSH Key"></a>2.3 终端未出现 id_rsa.pub 或 id_dsa.pub 文件，表示该电脑还没有配置 SSH Key</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
+<p>默认会在相应路径下（/your_home_path）生成 id_rsa 和 id_rsa.pub 两个文件，此时终端会显示：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Generating public/private rsa key pair.</span><br><span class="line"></span><br><span class="line">Enter file in which to save the key (/your_home_path/.ssh/id_rsa):</span><br></pre></td></tr></table></figure>
 <p>连续回车即可，也可能会让你输入密码，密码就是你的开机密码</p>
-<p>此时再输入命令：ls -al ~/.ssh 就会出现id_rsa.pub 和 id_dsa.pub两个文件,再执行上面的SSH KEY 复制语句即可</p>
+<p>此时再输入命令：ls -al ~/.ssh 就会出现 id_rsa.pub 和 id_dsa.pub 两个文件,再执行上面的 SSH KEY 复制语句即可</p>
 
       
     </div>
@@ -797,7 +809,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#在GitLab-GitHub（Mac环境）"><span class="nav-number">1.</span> <span class="nav-text">在GitLab/GitHub（Mac环境）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-概念介绍"><span class="nav-number">1.1.</span> <span class="nav-text">1.概念介绍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-如何生成并设置SSH-Key"><span class="nav-number">1.2.</span> <span class="nav-text">2.如何生成并设置SSH Key</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-检查是否已经存在SSH-Key"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1 检查是否已经存在SSH Key</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-如已有"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2 如已有</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-终端未出现id-rsa-pub-或-id-dsa-pub文件，表示该电脑还没有配置SSH-Key"><span class="nav-number">1.2.3.</span> <span class="nav-text">2.3 终端未出现id_rsa.pub 或 id_dsa.pub文件，表示该电脑还没有配置SSH Key</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#在-GitLab-GitHub（Mac-环境）"><span class="nav-number">1.</span> <span class="nav-text">在 GitLab/GitHub（Mac 环境）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-概念介绍"><span class="nav-number">1.1.</span> <span class="nav-text">1.概念介绍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-如何生成并设置-SSH-Key"><span class="nav-number">1.2.</span> <span class="nav-text">2.如何生成并设置 SSH Key</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-检查是否已经存在-SSH-Key"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1 检查是否已经存在 SSH Key</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-如已有"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2 如已有</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-终端未出现-id-rsa-pub-或-id-dsa-pub-文件，表示该电脑还没有配置-SSH-Key"><span class="nav-number">1.2.3.</span> <span class="nav-text">2.3 终端未出现 id_rsa.pub 或 id_dsa.pub 文件，表示该电脑还没有配置 SSH Key</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
