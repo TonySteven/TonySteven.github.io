@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Ubuntu16.04 安装 SSR 服务]]></title>
+    <url>%2F2019%2F06%2F12%2Finstall-SSR-in-ubuntu16-04%2F</url>
+    <content type="text"><![CDATA[Ubuntu 安装 SSR 服务 1. 安装 SSR 服务 执行脚本 1234wget -N --no-check-certificate https://softs.fun/Bash/ssr.sh&amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh//备用脚本wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh&amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh 根据自己需求去配置 大功告成 更改配置 123find / -name ssr.sh //查找ssr.shbash ssr.sh //启动ssr.sh 2.SSR客户端下载ssr 客户端 for Windowsssr 客户端 for Mac OSssr 客户端 for Linuxssr 客户端 for Android iOS/iPad/苹果客户端我目前用的是Wingy &amp; Shadowrocket，支持ssr，可以通过PP助手去下载，当然你可以直接去申请一个美国App Store，然后去美区下载]]></content>
+      <categories>
+        <category>Tutorial</category>
+      </categories>
+      <tags>
+        <tag>Tutorial</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Ubuntu16.04 安装SVN]]></title>
+    <url>%2F2019%2F06%2F12%2Finstall-svn-in-ubuntu16-04%2F</url>
+    <content type="text"><![CDATA[Ubuntu16.04 安装SVN 1.卸载SVN服务12root@VM-0-3-ubuntu:/home/ubuntu# svnType &apos;svn help&apos; for usage. 输入svn,返回 Type ‘svn help’ for usage,说明已经按照SVN 1sudo apt-get remove --purge subversion //卸载SVN 2.安装SVN服务12sudo apt-get update //更新sudo apt-get install subversion //安装 3.创建SVN版本库1234sudo mkdir /home/svn //创建home下的svn文件夹sudo mkdir /home/svn/repository //创建svn下的repository文件夹sudo chmod -R 777 /home/svn/repository //更改repository的权限（第一次搭建没有赋予权限，客户端访问服务器被拒绝）sudo svnadmin create /home/svn/repository 创建版本库 完成后会在repository文件夹下生成以下文件 12root@VM-0-3-ubuntu:/home/svn/repository# lsREADME.txt conf db format hooks locks db进行权限设置 1sudo chmod -R 777 db 修改配置文件conf/svnserve.conf 123456789101112sudo vim /home/svn/repository/conf/svnserve.conf//说明#匿名用户可读anon-access = read（可改成none，即不可读）#权限用户可写auth-access = write#密码文件为passwdpassword-db = passwd#权限文件为authzauthz-db = authz 添加访问用户conf/passwd 1sudo vim /home/svn/repository/conf/passwd 设置用户权限conf/authz 123456sudo vim /home/svn/repository/conf/authzadmin = steven(设置的用户名)@admin = rw //admin权限组的权限是读和写* = rw 所有的组都具有读权限和写权限 开启并测试服务 启动服务 1svnserve -d -r /home/svn //（-d：表示在后台运行 ，-r：指定服务器的根目录） 查看svnserve是否已经运行 123456ps aux | grep svnserve//开启成功显示如下root@VM-0-3-ubuntu:/home/svn/repository# ps aux | grep svnserveroot 3278 0.0 0.3 70604 2852 ? Ss 16:57 0:00 svnserve -d -r /home/svnroot 9099 0.0 0.1 11284 932 pts/0 S+ 17:59 0:00 grep --color=auto svnserve 停止服务 1killall svnserve 测试]]></content>
+      <categories>
+        <category>Tutorial</category>
+      </categories>
+      <tags>
+        <tag>Tutorial</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[AWS Ubuntu 安装gitlab]]></title>
+    <url>%2F2019%2F06%2F06%2Finstall-gitlab-in-ubuntu%2F</url>
+    <content type="text"><![CDATA[AWS Ubuntu 安装gitlab]]></content>
+      <categories>
+        <category>Tutorial</category>
+      </categories>
+      <tags>
+        <tag>Tutorial</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[AWS Ubuntu 安装SS服务]]></title>
     <url>%2F2019%2F04%2F15%2Finstall-ss-in-ubuntu%2F</url>
     <content type="text"><![CDATA[AWS Ubuntu 安装 SS 服务 1. 安装 SS 服务12345sudo apt-get updatesudo apt-get install python-pip（有pip的就不用了）sudo apt-get install python-setuptools m2crypto（安装ss的依赖）pip install shadowsockssudo apt-get install shadowsocks 2.编写配置文件2.1 在根目录新建 ss 文件夹,并创建 ss.json 配置文件1234cd /mkdir sscd sssudo vim ss.json 2.2 填写如下内容123456789101112&#123; "server": "0.0.0.0", "local_address": "127.0.0.1", "local_port": 1080, "port_password": &#123; "8899": "passwordFor8899Port", "9001": "passwordFor9001Port" &#125;, "timeout": 300, "method": "aes-256-cfb", "fast_open": false&#125; 3.启动与关闭3.1 启动1ssserver -c /ss/ss.json -d start strated 表示启动成功 1ssserver -c /ss/ss.json -stop stoped 表示关闭成功 如遇下图所示错误的 用vim打开文件：vim /usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py (该路径请根据自己的系统情况自行修改，如果不知道该文件在哪里的话，可以使用find命令查找文件位置) 跳转到52行（shadowsocks2.8.2版本，其他版本搜索一下cleanup） 进入编辑模式并显示行号 :i :set nu 将第52行libcrypto.EVP_CIPHER_CTX_cleanup.argtypes = (c_void_p,)改为libcrypto.EVP_CIPHER_CTX_reset.argtypes = (c_void_p,) 再次搜索cleanup（全文件共2处，此处位于111行），将libcrypto.EVP_CIPHER_CTX_cleanup(self._ctx)改为libcrypto.EVP_CIPHER_CTX_reset(self._ctx) 保存并退出 :wq 4.如有端口占用,查看并清除进程1sudo kill -9 $(lsof -i:端口号 -t) 5.如果还是有问题,查看下 AWS 实例安全组 出站配置同上 6.下载客户端并测试ss 客户端 for Windowsss 客户端 for Mac OSss 客户端 for Linuxss 客户端 for Android]]></content>

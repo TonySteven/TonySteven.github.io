@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2019-06-06T07:17:15.427Z</updated>
+  <updated>2019-06-12T11:21:16.624Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -17,11 +17,77 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Ubuntu16.04 安装 SSR 服务</title>
+    <link href="https://tonysteven.github.io/2019/06/12/install-SSR-in-ubuntu16-04/"/>
+    <id>https://tonysteven.github.io/2019/06/12/install-SSR-in-ubuntu16-04/</id>
+    <published>2019-06-12T09:40:46.000Z</published>
+    <updated>2019-06-12T11:21:16.624Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Ubuntu-安装-SSR-服务&quot;&gt;&lt;a href=&quot;#Ubuntu-安装-SSR-服务&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu 安装 SSR 服务&quot;&gt;&lt;/a&gt;Ubuntu 安装 SSR 服务&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="Tutorial" scheme="https://tonysteven.github.io/categories/Tutorial/"/>
+    
+    
+      <category term="Tutorial" scheme="https://tonysteven.github.io/tags/Tutorial/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu16.04 安装SVN</title>
+    <link href="https://tonysteven.github.io/2019/06/12/install-svn-in-ubuntu16-04/"/>
+    <id>https://tonysteven.github.io/2019/06/12/install-svn-in-ubuntu16-04/</id>
+    <published>2019-06-12T09:38:58.000Z</published>
+    <updated>2019-06-12T11:18:45.506Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Ubuntu16-04-安装SVN&quot;&gt;&lt;a href=&quot;#Ubuntu16-04-安装SVN&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu16.04 安装SVN&quot;&gt;&lt;/a&gt;Ubuntu16.04 安装SVN&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="Tutorial" scheme="https://tonysteven.github.io/categories/Tutorial/"/>
+    
+    
+      <category term="Tutorial" scheme="https://tonysteven.github.io/tags/Tutorial/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AWS Ubuntu 安装gitlab</title>
+    <link href="https://tonysteven.github.io/2019/06/06/install-gitlab-in-ubuntu/"/>
+    <id>https://tonysteven.github.io/2019/06/06/install-gitlab-in-ubuntu/</id>
+    <published>2019-06-06T07:40:24.000Z</published>
+    <updated>2019-06-06T07:41:35.943Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;AWS-Ubuntu-安装gitlab&quot;&gt;&lt;a href=&quot;#AWS-Ubuntu-安装gitlab&quot; class=&quot;headerlink&quot; title=&quot;AWS Ubuntu 安装gitlab&quot;&gt;&lt;/a&gt;AWS Ubuntu
+        
+      
+    
+    </summary>
+    
+      <category term="Tutorial" scheme="https://tonysteven.github.io/categories/Tutorial/"/>
+    
+    
+      <category term="Tutorial" scheme="https://tonysteven.github.io/tags/Tutorial/"/>
+    
+  </entry>
+  
+  <entry>
     <title>AWS Ubuntu 安装SS服务</title>
     <link href="https://tonysteven.github.io/2019/04/15/install-ss-in-ubuntu/"/>
     <id>https://tonysteven.github.io/2019/04/15/install-ss-in-ubuntu/</id>
     <published>2019-04-15T08:07:46.000Z</published>
-    <updated>2019-06-06T07:17:15.427Z</updated>
+    <updated>2019-06-12T11:08:14.813Z</updated>
     
     <summary type="html">
     
@@ -352,69 +418,6 @@
     </summary>
     
       <category term="git" scheme="https://tonysteven.github.io/categories/git/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>接口Demo(Java)</title>
-    <link href="https://tonysteven.github.io/2018/08/07/java-RESTful-api/"/>
-    <id>https://tonysteven.github.io/2018/08/07/java-RESTful-api/</id>
-    <published>2018-08-07T09:15:39.000Z</published>
-    <updated>2019-05-21T09:20:49.311Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;结构路径&quot;&gt;&lt;a href=&quot;#结构路径&quot; class=&quot;headerlink&quot; title=&quot;结构路径&quot;&gt;&lt;/a&gt;结构路径&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/0069RVTdly1fu19b2l8w1j307d08141m.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="api" scheme="https://tonysteven.github.io/categories/api/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>幂等性浅谈</title>
-    <link href="https://tonysteven.github.io/2018/08/07/Idempotency/"/>
-    <id>https://tonysteven.github.io/2018/08/07/Idempotency/</id>
-    <published>2018-08-07T08:47:32.000Z</published>
-    <updated>2018-10-17T09:38:04.296Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;幂等性原本是数学上的概念，即使公式：f(x)=f(f(x)) 能够成立的数学性质。用在编程领域，则意为&lt;font color=&quot;#FF7F50&quot;&gt;对同一个系统，使用同样的条件，一次请求和重复的多次请求对系统资源的影响是一致的&lt;/font&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;幂等性是分布式系统设计中十分重要的概念，具有这一性质的接口在设计时总是秉持这样的一种理念：&lt;font color=&quot;#FF7F50&quot;&gt;调用接口发生异常并且重复尝试时，总是会造成系统所无法承受的损失，所以必须阻止这种现象的发生&lt;/font&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;幂等有两个维度：一是空间维度上的幂等，即幂等对象的范围，是个人还是机构，是某一次交易还是某种类型的交易…二是时间维度上的幂等，即幂等的保证时间，是几秒、几分钟还是永久性的…&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;不同的需求，会有不一样的解决方案，难度和成本也不一样&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="算法" scheme="https://tonysteven.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>eclipse操作指南</title>
-    <link href="https://tonysteven.github.io/2018/08/07/eclipse-keymap/"/>
-    <id>https://tonysteven.github.io/2018/08/07/eclipse-keymap/</id>
-    <published>2018-08-07T07:55:36.000Z</published>
-    <updated>2018-08-07T08:24:00.325Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;一、基本操作入门&quot;&gt;&lt;a href=&quot;#一、基本操作入门&quot; class=&quot;headerlink&quot; title=&quot;一、基本操作入门&quot;&gt;&lt;/a&gt;一、基本操作入门&lt;/h3&gt;&lt;p&gt;（1）内容提示：Alt + /&lt;br&gt;（2）快速修复：Ctrl + 1&lt;br&gt;（3）导包：Ctrl + shift + O&lt;br&gt;（4）代码快速排版：Ctrl + Shift + F&lt;br&gt;（5）代码位置调换：Alt+上下键&lt;br&gt;（6）添加/除去单行注释 Ctrl+/&lt;br&gt;（7）添加/除去多行注释 Ctrl+Shift+/和Ctrl+Shift+\&lt;br&gt;（8）打印语句快速提示：Syso+Alt+/ （同理foreach,while,if,for等）&lt;br&gt;（9）大小写转换：ctrl + shift +x ：选中部分转换为大写，+y转换为小写&lt;br&gt;（10）快速定位源代码：ctrl + 鼠标放在需要定位的方法/类 &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="IDE" scheme="https://tonysteven.github.io/categories/IDE/"/>
     
     
   </entry>
