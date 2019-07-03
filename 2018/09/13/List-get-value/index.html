@@ -167,17 +167,17 @@
 
 
 
-  <meta name="description" content="12345678910111213141516171819202122232425  String userId = user.getUserId();  String GDSS = null;    	String sql = &quot;select SSMC from T_IT_DLCX where XH = ?&quot;;List&amp;lt;Map&amp;lt;String, Object&amp;gt;&amp;gt; SSLis">
+  <meta name="description" content="1234567891011121314151617181920212223242526String department = StringUtil.getString(paramMap.get(&quot;deptCode&quot;));		String tencentdeptid = null;		String sql = &quot;select BY3 from usr_api.t_xg_dw where DWDM =">
 <meta property="og:type" content="article">
 <meta property="og:title" content="遍历取数据库字段值">
 <meta property="og:url" content="https://tonysteven.github.io/2018/09/13/List-get-value/index.html">
 <meta property="og:site_name" content="Genesis">
-<meta property="og:description" content="12345678910111213141516171819202122232425  String userId = user.getUserId();  String GDSS = null;    	String sql = &quot;select SSMC from T_IT_DLCX where XH = ?&quot;;List&amp;lt;Map&amp;lt;String, Object&amp;gt;&amp;gt; SSLis">
+<meta property="og:description" content="1234567891011121314151617181920212223242526String department = StringUtil.getString(paramMap.get(&quot;deptCode&quot;));		String tencentdeptid = null;		String sql = &quot;select BY3 from usr_api.t_xg_dw where DWDM =">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-13T09:43:36.450Z">
+<meta property="og:updated_time" content="2019-07-03T02:38:33.232Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="遍历取数据库字段值">
-<meta name="twitter:description" content="12345678910111213141516171819202122232425  String userId = user.getUserId();  String GDSS = null;    	String sql = &quot;select SSMC from T_IT_DLCX where XH = ?&quot;;List&amp;lt;Map&amp;lt;String, Object&amp;gt;&amp;gt; SSLis">
+<meta name="twitter:description" content="1234567891011121314151617181920212223242526String department = StringUtil.getString(paramMap.get(&quot;deptCode&quot;));		String tencentdeptid = null;		String sql = &quot;select BY3 from usr_api.t_xg_dw where DWDM =">
 
 
 
@@ -438,12 +438,24 @@
                 
               
 
-              <time title="创建时间：2018-09-13 17:33:19 / 修改时间：17:43:36" itemprop="dateCreated datePublished" datetime="2018-09-13T17:33:19+08:00">2018-09-13</time>
+              <time title="创建时间：2018-09-13 17:33:19" itemprop="dateCreated datePublished" datetime="2018-09-13T17:33:19+08:00">2018-09-13</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-03 10:38:33" itemprop="dateModified" datetime="2019-07-03T10:38:33+08:00">2019-07-03</time>
               
             
           </span>
@@ -494,7 +506,7 @@
       
 
       
-        <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">  String userId = user.getUserId();</span><br><span class="line">  String GDSS = <span class="keyword">null</span>;</span><br><span class="line">  </span><br><span class="line">  	String sql = <span class="string">"select SSMC from T_IT_DLCX where XH = ?"</span>;</span><br><span class="line">List&lt;Map&lt;String, Object&gt;&gt; SSList = <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">	SSList = DbUtil.query(sql3, <span class="keyword">new</span> Object[] &#123;userId&#125;);</span><br><span class="line">&#125; <span class="keyword">catch</span> (Exception e1) &#123;</span><br><span class="line">	<span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">	e1.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (Iterator iterators = SSList.iterator(); iterators.hasNext();) &#123;</span><br><span class="line">	String GHvalue = <span class="keyword">null</span>;</span><br><span class="line">	Map&lt;String, Object&gt; example = (Map&lt;String, Object&gt;) iterators.next();<span class="comment">// 获取当前遍历的元素，指定为Example对象</span></span><br><span class="line">	Iterator entries = example.entrySet().iterator();</span><br><span class="line">	<span class="keyword">while</span> (entries.hasNext()) &#123;</span><br><span class="line">		Map.Entry entry = (Map.Entry) entries.next();</span><br><span class="line">		Object key = entry.getKey();</span><br><span class="line">		Object value = entry.getValue();</span><br><span class="line">		<span class="keyword">if</span> (key.equals(<span class="string">"SSMC"</span>)) &#123;</span><br><span class="line">			GDSS = value.toString();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;			</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">String department = StringUtil.getString(paramMap.get(<span class="string">"deptCode"</span>));</span><br><span class="line">		String tencentdeptid = <span class="keyword">null</span>;</span><br><span class="line">		String sql = <span class="string">"select BY3 from usr_api.t_xg_dw where DWDM = ?"</span>;</span><br><span class="line">		List&lt;Map&lt;String, Object&gt;&gt; SSList = <span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			SSList = DbUtil.query(sql, <span class="keyword">new</span> Object[] &#123; department &#125;);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e1) &#123;</span><br><span class="line">			<span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">			e1.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (SSList != <span class="keyword">null</span>) &#123;</span><br><span class="line">			<span class="keyword">for</span> (Iterator iterators = SSList.iterator(); iterators.hasNext();) &#123;</span><br><span class="line">				String GHvalue = <span class="keyword">null</span>;</span><br><span class="line">				Map&lt;String, Object&gt; example = (Map&lt;String, Object&gt;) iterators.next();<span class="comment">// 获取当前遍历的元素，指定为Example对象</span></span><br><span class="line">				Iterator entries = example.entrySet().iterator();</span><br><span class="line">				<span class="keyword">while</span> (entries.hasNext()) &#123;</span><br><span class="line">					Map.Entry entry = (Map.Entry) entries.next();</span><br><span class="line">					Object key = entry.getKey();</span><br><span class="line">					Object value = entry.getValue();</span><br><span class="line">					<span class="keyword">if</span> (key.equals(<span class="string">"BY3"</span>)) &#123;</span><br><span class="line">						tencentdeptid = value.toString();</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -641,7 +653,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">32</span>
+                    <span class="site-state-item-count">33</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -715,7 +727,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

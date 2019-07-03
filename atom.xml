@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2019-06-12T11:26:57.675Z</updated>
+  <updated>2019-06-28T07:33:31.931Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Axure9.0 激活码</title>
+    <link href="https://tonysteven.github.io/2019/06/28/Axure9-0-listencode/"/>
+    <id>https://tonysteven.github.io/2019/06/28/Axure9-0-listencode/</id>
+    <published>2019-06-28T07:31:55.000Z</published>
+    <updated>2019-06-28T07:33:31.931Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Axure9-0-激活码&quot;&gt;&lt;a href=&quot;#Axure9-0-激活码&quot; class=&quot;headerlink&quot; title=&quot;Axure9.0 激活码&quot;&gt;&lt;/a&gt;Axure9.0 激活码&lt;/h3&gt;&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+      <category term="破解" scheme="https://tonysteven.github.io/categories/%E7%A0%B4%E8%A7%A3/"/>
+    
+    
+      <category term="破解" scheme="https://tonysteven.github.io/tags/%E7%A0%B4%E8%A7%A3/"/>
+    
+  </entry>
   
   <entry>
     <title>Ubuntu16.04 安装 SSR 服务</title>
@@ -347,7 +373,7 @@
     <link href="https://tonysteven.github.io/2018/09/13/List-get-value/"/>
     <id>https://tonysteven.github.io/2018/09/13/List-get-value/</id>
     <published>2018-09-13T09:33:19.000Z</published>
-    <updated>2018-09-13T09:43:36.450Z</updated>
+    <updated>2019-07-03T02:38:33.232Z</updated>
     
     <summary type="html">
     
@@ -400,24 +426,6 @@
     </summary>
     
       <category term="api" scheme="https://tonysteven.github.io/categories/api/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>git 常用命令</title>
-    <link href="https://tonysteven.github.io/2018/08/17/git-command/"/>
-    <id>https://tonysteven.github.io/2018/08/17/git-command/</id>
-    <published>2018-08-17T02:32:46.000Z</published>
-    <updated>2018-08-17T02:55:55.976Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;一般配置&quot;&gt;&lt;a href=&quot;#一般配置&quot; class=&quot;headerlink&quot; title=&quot;一般配置&quot;&gt;&lt;/a&gt;一般配置&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git --version   //查看git的版本信息&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git config --global user.name   //获取当前登录的用户&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git config --global user.email  //获取当前登录用户的邮箱&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="git" scheme="https://tonysteven.github.io/categories/git/"/>
     
     
   </entry>

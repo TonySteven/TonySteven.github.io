@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Axure9.0 激活码]]></title>
+    <url>%2F2019%2F06%2F28%2FAxure9-0-listencode%2F</url>
+    <content type="text"><![CDATA[Axure9.0 激活码12345678910111213axure rp pro 9.0专业版：被授权人：www.ddooo.com授权秘钥：UdMLVdonmFlplbTMoBppfrUXZMhEQ6Mf2shBAkTCJBk5ycQJs2NALgvLsHhyfoYRaxure rp pro 9.0 Enterprise企业版：被授权人：www.ddooo.com授权秘钥：Bv6P2wrR10Sq5UCpPSB0+LMjkWU2i1XgQNFaWV84qWvx+1HHVnK01ilcxOOEGIfqaxure rp pro 9.0 Team团队版：被授权人：www.ddooo.com授权秘钥：BaOifFBSUZ8tROgZzdfn/TV77k8+D8lVumI5alvEHXctoJNVeSR77YlckA+oAJKE]]></content>
+      <categories>
+        <category>破解</category>
+      </categories>
+      <tags>
+        <tag>破解</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Ubuntu16.04 安装 SSR 服务]]></title>
     <url>%2F2019%2F06%2F12%2Finstall-SSR-in-ubuntu16-04%2F</url>
     <content type="text"><![CDATA[Ubuntu 安装 SSR 服务 1. 安装 SSR 服务 执行脚本 1234wget -N --no-check-certificate https://softs.fun/Bash/ssr.sh&amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh//备用脚本wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh&amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh 根据自己需求去配置 大功告成 更改配置 123find / -name ssr.sh //查找ssr.shbash ssr.sh //启动ssr.sh 2.SSR客户端下载ssr 客户端 for Windowsssr 客户端 for Mac OSssr 客户端 for Linuxssr 客户端 for Android iOS/iPad/苹果客户端我目前用的是Wingy &amp; Shadowrocket，支持ssr，可以通过PP助手去下载，当然你可以直接去申请一个美国App Store，然后去美区下载]]></content>
@@ -158,7 +169,7 @@
   <entry>
     <title><![CDATA[遍历取数据库字段值]]></title>
     <url>%2F2018%2F09%2F13%2FList-get-value%2F</url>
-    <content type="text"><![CDATA[12345678910111213141516171819202122232425 String userId = user.getUserId(); String GDSS = null; String sql = "select SSMC from T_IT_DLCX where XH = ?";List&lt;Map&lt;String, Object&gt;&gt; SSList = null;try &#123; SSList = DbUtil.query(sql3, new Object[] &#123;userId&#125;);&#125; catch (Exception e1) &#123; // TODO Auto-generated catch block e1.printStackTrace();&#125;for (Iterator iterators = SSList.iterator(); iterators.hasNext();) &#123; String GHvalue = null; Map&lt;String, Object&gt; example = (Map&lt;String, Object&gt;) iterators.next();// 获取当前遍历的元素，指定为Example对象 Iterator entries = example.entrySet().iterator(); while (entries.hasNext()) &#123; Map.Entry entry = (Map.Entry) entries.next(); Object key = entry.getKey(); Object value = entry.getValue(); if (key.equals("SSMC")) &#123; GDSS = value.toString(); &#125; &#125; &#125;]]></content>
+    <content type="text"><![CDATA[1234567891011121314151617181920212223242526String department = StringUtil.getString(paramMap.get("deptCode")); String tencentdeptid = null; String sql = "select BY3 from usr_api.t_xg_dw where DWDM = ?"; List&lt;Map&lt;String, Object&gt;&gt; SSList = null; try &#123; SSList = DbUtil.query(sql, new Object[] &#123; department &#125;); &#125; catch (Exception e1) &#123; // TODO Auto-generated catch block e1.printStackTrace(); &#125; if (SSList != null) &#123; for (Iterator iterators = SSList.iterator(); iterators.hasNext();) &#123; String GHvalue = null; Map&lt;String, Object&gt; example = (Map&lt;String, Object&gt;) iterators.next();// 获取当前遍历的元素，指定为Example对象 Iterator entries = example.entrySet().iterator(); while (entries.hasNext()) &#123; Map.Entry entry = (Map.Entry) entries.next(); Object key = entry.getKey(); Object value = entry.getValue(); if (key.equals("BY3")) &#123; tencentdeptid = value.toString(); &#125; &#125; &#125; &#125;]]></content>
       <categories>
         <category>java</category>
       </categories>
