@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2019-11-12T05:53:33.459Z</updated>
+  <updated>2020-01-03T11:01:03.841Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ubuntu16.04 安装frp内网穿透服务</title>
+    <link href="https://tonysteven.github.io/2020/01/03/install-frp-in-ubuntu1604/"/>
+    <id>https://tonysteven.github.io/2020/01/03/install-frp-in-ubuntu1604/</id>
+    <published>2020-01-03T09:33:28.000Z</published>
+    <updated>2020-01-03T11:01:03.841Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Ubuntu-安装-frp内网穿透服务&quot;&gt;&lt;a href=&quot;#Ubuntu-安装-frp内网穿透服务&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu 安装 frp内网穿透服务&quot;&gt;&lt;/a&gt;Ubuntu 安装 frp内网穿透服务&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="Tutorial" scheme="https://tonysteven.github.io/categories/Tutorial/"/>
+    
+    
+      <category term="Tutorial" scheme="https://tonysteven.github.io/tags/Tutorial/"/>
+    
+  </entry>
   
   <entry>
     <title>map转换成com.google.gson.JsonObject</title>
@@ -414,26 +434,6 @@
     </summary>
     
       <category term="java" scheme="https://tonysteven.github.io/categories/java/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>idea 2018.2 for mac永久破解激活方法</title>
-    <link href="https://tonysteven.github.io/2018/09/04/idea-Crack/"/>
-    <id>https://tonysteven.github.io/2018/09/04/idea-Crack/</id>
-    <published>2018-09-04T08:51:09.000Z</published>
-    <updated>2019-05-21T09:20:57.806Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ol&gt;
-&lt;li&gt;下载安装 idea&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;下载激活 Jar 包&lt;br&gt;&lt;a href=&quot;https://pan.baidu.com/s/1kVHRLFkqJxcn9cCoztAT-w&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;链接: https://pan.baidu.com/s/1kVHRLFkqJxcn9cCoztAT-w&lt;/a&gt;&lt;br&gt;密码: xcyd&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="破解" scheme="https://tonysteven.github.io/categories/%E7%A0%B4%E8%A7%A3/"/>
     
     
   </entry>
