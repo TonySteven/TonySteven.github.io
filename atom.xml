@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2020-02-05T10:11:42.584Z</updated>
+  <updated>2020-06-27T08:33:20.140Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ClashX</title>
+    <link href="https://tonysteven.github.io/2020/06/27/ClashX/"/>
+    <id>https://tonysteven.github.io/2020/06/27/ClashX/</id>
+    <published>2020-06-27T08:29:03.000Z</published>
+    <updated>2020-06-27T08:33:20.140Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/Dreamacro/clash&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Clash&lt;/a&gt; 是一个使用 Go 语言编写、基于规则的跨平台代理软件核心程序。Clash目前有Windows、MacOS、Android等多个平台的GUI程序，支持SS/V2ray/Trojan多种协议，功能强大。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Tutorial" scheme="https://tonysteven.github.io/categories/Tutorial/"/>
+    
+    
+      <category term="Tutorial" scheme="https://tonysteven.github.io/tags/Tutorial/"/>
+    
+  </entry>
   
   <entry>
     <title>Portainer docker可视化工具 (windows环境安装)</title>
@@ -412,24 +432,6 @@
     </summary>
     
       <category term="linux" scheme="https://tonysteven.github.io/categories/linux/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>验证sign的API</title>
-    <link href="https://tonysteven.github.io/2018/10/17/IDS-Api/"/>
-    <id>https://tonysteven.github.io/2018/10/17/IDS-Api/</id>
-    <published>2018-10-17T09:32:58.000Z</published>
-    <updated>2018-10-17T09:38:01.904Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;验证sign的API&quot;&gt;&lt;a href=&quot;#验证sign的API&quot; class=&quot;headerlink&quot; title=&quot;验证sign的API&quot;&gt;&lt;/a&gt;验证sign的API&lt;/h3&gt;
-    
-    </summary>
-    
-      <category term="java" scheme="https://tonysteven.github.io/categories/java/"/>
     
     
   </entry>
