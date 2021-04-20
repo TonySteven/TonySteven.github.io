@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[springBoot]]></title>
+    <url>%2F2021%2F04%2F20%2Fspringboot%2F</url>
+    <content type="text"><![CDATA[简介SpringBoot框架 Spring Boot是一个便捷搭建 基于spring工程的脚手架；作用是帮助开发人员快速搭建大型的spring 项目。简化工程的配置，依赖管理；实现开发人员把时间都集中在业务开发上。 笔记链接如下Notion文档]]></content>
+      <categories>
+        <category>Java后端知识</category>
+      </categories>
+      <tags>
+        <tag>Spring框架</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[dubbo]]></title>
+    <url>%2F2021%2F04%2F18%2Fdubbo%2F</url>
+    <content type="text"><![CDATA[简介Docker Apache Dubbo是一款高性能的Java RPC框架。其前身是阿里巴巴公司开源的一个高性能、轻量级的开源Java RPC框架，可以和Spring框架无缝集成。 笔记链接如下Notion文档]]></content>
+      <categories>
+        <category>Java后端知识</category>
+      </categories>
+      <tags>
+        <tag>RPC框架</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[docker]]></title>
     <url>%2F2021%2F03%2F27%2Fdocker%2F</url>
     <content type="text"><![CDATA[简介Docker Docker 是一个开放源代码软件，是一个开放平台，用于开发应用、交付（shipping）应用、运行应用。 Docker允许用户将基础设施（Infrastructure）中的应用单独分割出来，形成更小的颗粒（容器），从而提高交付软件的速度。 教学链接如下Notion文档]]></content>
