@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[springcloud]]></title>
+    <url>%2F2021%2F04%2F20%2Fspringcloud%2F</url>
+    <content type="text"><![CDATA[简介SpringCloud框架 Spring Cloud整合的组件和版本特征 笔记链接如下Notion文档]]></content>
+      <categories>
+        <category>Java后端知识</category>
+      </categories>
+      <tags>
+        <tag>SpringCloud</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[springBoot]]></title>
     <url>%2F2021%2F04%2F20%2Fspringboot%2F</url>
     <content type="text"><![CDATA[简介SpringBoot框架 Spring Boot是一个便捷搭建 基于spring工程的脚手架；作用是帮助开发人员快速搭建大型的spring 项目。简化工程的配置，依赖管理；实现开发人员把时间都集中在业务开发上。 笔记链接如下Notion文档]]></content>

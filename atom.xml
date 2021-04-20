@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tonysteven.github.io/"/>
-  <updated>2021-04-20T04:08:13.432Z</updated>
+  <updated>2021-04-20T08:06:34.906Z</updated>
   <id>https://tonysteven.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>springcloud</title>
+    <link href="https://tonysteven.github.io/2021/04/20/springcloud/"/>
+    <id>https://tonysteven.github.io/2021/04/20/springcloud/</id>
+    <published>2021-04-20T08:04:51.000Z</published>
+    <updated>2021-04-20T08:06:34.906Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-cloud&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;SpringCloud框架&lt;/a&gt; Spring Cloud整合的组件和版本特征&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Java后端知识" scheme="https://tonysteven.github.io/categories/Java%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="SpringCloud" scheme="https://tonysteven.github.io/tags/SpringCloud/"/>
+    
+  </entry>
   
   <entry>
     <title>springBoot</title>
@@ -413,25 +433,6 @@
     
     
       <category term="工具类" scheme="https://tonysteven.github.io/tags/%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Oauth2.0</title>
-    <link href="https://tonysteven.github.io/2018/11/30/Oauth/"/>
-    <id>https://tonysteven.github.io/2018/11/30/Oauth/</id>
-    <published>2018-11-30T06:40:51.000Z</published>
-    <updated>2019-05-21T09:20:49.313Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;center&gt;&lt;br&gt;    &lt;img src=&quot;https://oauth.net/images/oauth-2-sm.png&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;/p&gt;
-&lt;h3 id=&quot;OAuth2-0简介&quot;&gt;&lt;a href=&quot;#OAuth2-0简介&quot; class=&quot;headerlink&quot; title=&quot;OAuth2.0简介&quot;&gt;&lt;/a&gt;OAuth2.0简介&lt;/h3&gt;&lt;p&gt;OAuth 2.0是行业标准的授权协议。OAuth 2.0取代了2006年创建的原始OAuth协议所做的工作.OAuth 2.0专注于客户端开发人员的简单性，同时为Web应用程序，桌面应用程序，移动电话和客厅设备提供特定的授权流程。该规范及其扩展正在IETF OAuth工作组内开发。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="api" scheme="https://tonysteven.github.io/categories/api/"/>
-    
     
   </entry>
   
